@@ -10,6 +10,7 @@
 ## Prepare Installation Media
 
 * SOURCE: [Prepare Installation Media](https://docs.voidlinux.org/installation/live-images/prep.html)
+
 (This part just make a USB LIVE IMAGE)
 
 ## Boot from USB LIVE-IMAGE 
