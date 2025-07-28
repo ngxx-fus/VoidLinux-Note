@@ -24,6 +24,8 @@ run `void-installer` to start install VoidLinux.
 
 ### Parition notes
 
+SOURCE: [https://docs.voidlinux.org/installation/live-images/partitions.html](https://docs.voidlinux.org/installation/live-images/partitions.html)
+
 This is your free disk:
 
     [-----------------------------------------]
