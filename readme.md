@@ -17,7 +17,7 @@
 
 ### BASH
 
-VoidLinux installation progress only has CLI. For comforatble you may use `bash` by type `bash` in shell.
+Void Linux installation only provides a command-line interface (CLI). For a more comfortable experience, you can use `Bash` by typing `bash` in the shell.
 
 ### Void-Installer
 
