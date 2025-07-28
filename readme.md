@@ -36,3 +36,22 @@ My recommend:
     [--EFI:250MB---|--SWAP:4GB--|--ROOT(/)----]
 
 ### To be cont. :>
+
+# THIS REPO
+
+Back-up tree:
+
+```
+├── etc
+│   └── acpi
+│       └── handler.sh
+├── home
+│   └── fus
+│       ├── .backup.sh
+│       ├── .config
+│       └── .fus
+├── readme.md
+└── usr
+    └── share
+        └── fonts
+```
