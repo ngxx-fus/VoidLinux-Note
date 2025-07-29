@@ -232,13 +232,18 @@ i xf86-video-intel
 
 **xinitrc:**
 ```Zsh
-export BROWSER=firefox						# Default browser
-
+# GLOBAL VARS #################################################################
+export BROWSER=firefox
+export _HDMI=$(xrandr | grep -E '^HDMI[-0-9]* connected' | awk '{print $1}')
+export _eDP=$(xrandr | grep -E '^eDP[-0-9]* connected' | awk '{print $1}')
+# START-UP APP ################################################################
+exec /usr/bin/picom --backend glx           &
 exec /usr/local/bin/dwmblocks               &
 exec /home/fus/.fus/init_display.sh         &
 exec /home/fus/.fus/setup_background.sh     & 
-
+# DWM #########################################################################
 exec dwm
+
 ```
 
 ## DWM
