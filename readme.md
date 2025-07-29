@@ -87,6 +87,8 @@ sudo xbps-install -Sy fastfetch
 sudo xbps-install -Sy curl
 # Version control system (essential for cloning and managing source code)
 sudo xbps-install -Sy git
+# Modern Terminal Emulator
+sudo xbps-install -Sy alacritty
 ```
 
 ## Zsh/Oh-my-zsh
@@ -269,9 +271,40 @@ static const Block blocks[] = {
 };
 ```
 
-## Apply all
+## Build & Install DWM, DWMBlocks, ST, DMENU
 
 I have written a script - [update_dwm.sh](home/fus/.fus/update_dwm.sh) build and install DWM, DWM-BLOCKS, ST, DMENU.
+
+## NetworkManager
+
+It's a command-line tool used to control and monitor NetworkManager, a system service that manages network connections.
+
+### Install NetworkManager
+```Zsh
+sudo xbps-install -Sy NetworkManager
+```
+
+### Enable and Start service
+
+```Zsh
+sudo ln -s /etc/sv/NetworkManager /var/service
+```
+
+### Check service
+
+```Zsh
+sudo sv status NetworkManager
+```
+
+### Error: Error: 802-11-wireless-security.key-mgmt: property is missing.
+
+FIX: add ```--ask```
+```Zsh
+sudo nmcli device wifi connect XXXXXXXXX --ask
+sudo nmcli device wifi connect XXXXXXXXX password XXXXXXXXX
+```
+
+### 
 
 ## To be cont.
 
