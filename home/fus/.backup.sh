@@ -16,6 +16,7 @@ DIRNAME=/usr/bin/dirname
 # The slash before $path ensures it's treated as an absolute path from root.
 BACKUP=(
   "home/fus/.fus"
+  "home/fus/.zshrc"
   "usr/share/fonts"
   "home/fus/.backup.sh"
   "etc/acpi/handler.sh"
@@ -59,8 +60,6 @@ if [ $? -gt 0 ]; then
     print_msg "${LRED}---> Exit!"
     exit 0
 fi
-
-
 
 for path in "${BACKUP[@]}"; do
     print_msg "${LYELLOW}Backup $path${NORM}"

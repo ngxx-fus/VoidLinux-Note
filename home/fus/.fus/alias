@@ -8,8 +8,6 @@ alias u="sudo xbps-install -Suy"
 alias r="sudo xbps-remove -y"
 alias q="sudo xbps-query -Rs"
 
-
-
 alias l='ls -CF'
 
 alias downloads='cd ~/Downloads'
