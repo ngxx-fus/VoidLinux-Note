@@ -103,6 +103,8 @@ sudo xbps-install -Sy gcc make autoconf
 sudo xbps-install -Sy ripgrep
 # Git: essential version control system (used to clone and manage source code, e.g. suckless)
 sudo xbps-install -Sy git
+# GitHub
+sudo xbps-install -Sy gh-cli
 # =============================================================================
 # Internet tools
 # =============================================================================
@@ -228,6 +230,17 @@ i xorg xinit xrandr
 i xf86-video-intel
 ```
 
+**xinitrc:**
+```Zsh
+export BROWSER=firefox						# Default browser
+
+exec /usr/local/bin/dwmblocks               &
+exec /home/fus/.fus/init_display.sh         &
+exec /home/fus/.fus/setup_background.sh     & 
+
+exec dwm
+```
+
 ## DWM
 
 `dwm` is a dynamic window manager for X. It supports tiled, monocle, and floating layouts, all of which can be switched dynamically. Any configuration changes require recompiling the source.
@@ -252,7 +265,7 @@ make
 sudo install
 ```
 
-### Sound/Brightness nofi
+### Sound/Brightness noti
 
 I found that all `acpi` signals is handle by [handler.sh](etc/acpi/handler.sh). You can set noti by using xsetroot. E.g:
 
