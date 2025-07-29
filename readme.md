@@ -67,57 +67,63 @@ Some tools and utils u need to install.
 # =============================================================================
 # Essential system tools
 # =============================================================================
-# Modern system monitor (like top/htop but more user-friendly)
+# btop: modern resource monitor with mouse support and beautiful TUI (like htop but better)
 sudo xbps-install -Sy btop
-# Power and battery info (useful for laptops, also used by status bars like dwmblocks)
+# upower: provides battery and power statistics for laptops; used by status bars like dwmblocks
 sudo xbps-install -Sy upower
-# D-Bus message bus (used by many graphical applications for interprocess communication)
+# dbus: essential message bus system for communication between desktop apps and services
 sudo xbps-install -Sy dbus
-# elogind handles user sessions and power management (needed by DWM for logout, reboot, suspend)
+# elogind: manages user sessions and permissions (needed for shutdown, suspend, logout in DWM)
 sudo xbps-install -Sy elogind
-# udisks2 allows disk management and automount (used by file managers like Thunar, PCManFM)
+# udisks2: allows safe mounting/unmounting of USB drives and disks; needed by GUI file managers
 sudo xbps-install -Sy udisks2
-# ACPI daemon handles power button, lid switch, sleep key events
+# acpid: listens to ACPI events (lid close, power button); used for laptop power handling
 sudo xbps-install -Sy acpid
-# Clipboard access (used in CLI tools and DWM configs to copy/paste)
+# xclip: access X11 clipboard from terminal (used in screenshot scripts, copy-paste from CLI)
 sudo xbps-install -Sy xclip
-# Network management daemon and CLI tool (enables nmcli and GUI frontends like nmtui)
+# xdotool: simulate keyboard and mouse input, window movement, and other X11 actions
+sudo xbps-install -Sy xdotool
+# maim: fast screenshot tool (like `scrot`, supports selection and automation with `xdotool`)
+# scrot: simple screenshot tool (less modern but widely supported and scriptable)
+sudo xbps-install -Sy maim scrot
+# NetworkManager: universal network configuration daemon; works with `nmtui`, `nmcli`, and GUIs
 sudo xbps-install -Sy NetworkManager
 # =============================================================================
 # UI & appearance tools
 # =============================================================================
-# Lightweight notification daemon (used with notify-send or status scripts)
+# dunst: lightweight and configurable notification daemon (used by `notify-send`)
 sudo xbps-install -Sy dunst
-# Wallpaper manager and image viewer (common in DWM/X11 to set backgrounds)
+# feh: fast image viewer and wallpaper setter (used to set backgrounds in `.xinitrc`)
 sudo xbps-install -Sy feh
-# Fast terminal-based system fetcher (alternative to neofetch)
+# picom: compositor for X11 to enable transparency, shadows, fading, and VSync (essential for eye-candy)
+sudo xbps-install -Sy picom
+# fastfetch: minimal and blazing-fast system info fetcher (alternative to neofetch)
 sudo xbps-install -Sy fastfetch
-# xdg-utils provides tools like xdg-open, xdg-mime to open files/URLs with default apps
+# xdg-utils: desktop integration tools like `xdg-open` (used to open files/URLs with default apps)
 sudo xbps-install -Sy xdg-utils
 # =============================================================================
 # Development tools
 # =============================================================================
-# GNU Compiler Collection (gcc), Make, Autoconf — required for building most software
+# gcc, make, autoconf: core tools for compiling C/C++ programs and building most open-source projects
 sudo xbps-install -Sy gcc make autoconf
-# ripgrep: fast recursive grep tool (used for code search and scripting)
+# ripgrep (rg): blazing-fast search tool (like grep, but recursive, respects .gitignore, and faster)
 sudo xbps-install -Sy ripgrep
-# Git: essential version control system (used to clone and manage source code, e.g. suckless)
+# git: distributed version control system; essential for downloading source code (like suckless)
 sudo xbps-install -Sy git
-# GitHub
+# gh-cli: GitHub CLI to interact with GitHub repositories, issues, pull requests directly from terminal
 sudo xbps-install -Sy gh-cli
 # =============================================================================
 # Internet tools
 # =============================================================================
-# curl: fetch files over HTTP(S), used in many install scripts and APIs
+# curl: flexible tool to make HTTP requests, download files, or interact with APIs (used everywhere)
 sudo xbps-install -Sy curl
-# Web browser (you can choose your own; Firefox is reliable and compatible with most sites)
+# firefox: full-featured web browser; replace with chromium or other if preferred
 sudo xbps-install -Sy firefox
 # =============================================================================
 # Terminal emulator
 # =============================================================================
-# GPU-accelerated modern terminal emulator (used instead of xterm or st)
+# alacritty: GPU-accelerated terminal emulator (fast, minimal, with modern rendering)
 sudo xbps-install -Sy alacritty
-
 ```
 
 ## Zsh/Oh-my-zsh
