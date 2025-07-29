@@ -94,9 +94,9 @@ sudo xbps-install -Sy feh
 sudo xbps-install -Sy fastfetch
 # xdg-utils provides tools like xdg-open, xdg-mime to open files/URLs with default apps
 sudo xbps-install -Sy xdg-utils
-# =======================
+# =============================================================================
 # Development tools
-# =======================
+# =============================================================================
 # GNU Compiler Collection (gcc), Make, Autoconf — required for building most software
 sudo xbps-install -Sy gcc make autoconf
 # ripgrep: fast recursive grep tool (used for code search and scripting)
