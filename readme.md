@@ -93,6 +93,9 @@ sudo xbps-install -Sy alacritty
 sudo xbps-install -Sy gcc make autoconf
 # RIPGREP
 sudo xbps-install -Sy ripgrep
+# Browser
+sudo xbps-install -Sy firefox
+
 ```
 
 ## Zsh/Oh-my-zsh
