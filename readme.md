@@ -125,7 +125,7 @@ sudo xbps-install -Sy firefox
 # alacritty: GPU-accelerated terminal emulator (fast, minimal, with modern rendering)
 sudo xbps-install -Sy alacritty
 # FONT
-sudo xbps-install -Sy liberation-fonts-ttf
+sudo xbps-install -Sy liberation-fonts-ttf nerd-fonts-ttf
 ```
 
 ## Zsh/Oh-my-zsh
