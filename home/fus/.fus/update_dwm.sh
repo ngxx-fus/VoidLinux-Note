@@ -4,7 +4,6 @@ source /home/fus/.fus/text_effects
 printf "\n\n${LYELLOW}${BOLD}[Update all]${NORM}\n"
 
 export wm_dir=/home/fus/.WindowsManager
-# export wm_dir=/tmp/tmp_wm
 
 export dwm_dir=$wm_dir/dwm
 export st_dir=$wm_dir/st

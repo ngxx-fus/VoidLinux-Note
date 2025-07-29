@@ -2,10 +2,10 @@
 
 ## HW (Hardware) repair
 
-- USB (>=4GB)
-- Live-image [https://voidlinux.org/download/](https://voidlinux.org/download/)
-- Linux OS (I have installed VoidLinux from UBUNTU)
-- USB-Windows-Installation (For failing installation) HAHAHAHA.
+- USB (>=4GB).
+- Live-image [https://voidlinux.org/download/](https://voidlinux.org/download/).
+- Linux OS (I have installed VoidLinux from UBUNTU).
+- USB Windows Installation (For Failed Install Attempts).
 
 ## Prepare Installation Media
 
@@ -58,6 +58,37 @@ Back-up tree:
 
 # VoidLinux NOTE - Right after the first boot
 
+## Utils & Tools
+
+Some tools and utils u need to install.
+
+```Zsh
+# System monitor with modern UI (like top/htop)
+sudo xbps-install -Sy btop
+# Power and battery information (for laptops, used in status bars)
+sudo xbps-install -Sy upower
+# Message bus system (needed by many GUI apps and services)
+sudo xbps-install -Sy dbus
+# Handles user sessions and power management (e.g. reboot/suspend in DWM)
+sudo xbps-install -Sy elogind
+# Disk management (used by file managers like Thunar, for automounting)
+sudo xbps-install -Sy udisks2
+# ACPI daemon (responds to power button, lid close, etc.)
+sudo xbps-install -Sy acpid
+# Clipboard tool (lets you copy/paste in CLI and scripts)
+sudo xbps-install -Sy xclip
+# Lightweight notification daemon (used with notify-send in DWM)
+sudo xbps-install -Sy dunst
+# Wallpaper setter and image viewer (used to set background in DWM)
+sudo xbps-install -Sy feh
+# Fast system info fetcher (like neofetch, but faster)
+sudo xbps-install -Sy fastfetch
+# Tool to fetch files from the internet (used in many scripts)
+sudo xbps-install -Sy curl
+# Version control system (essential for cloning and managing source code)
+sudo xbps-install -Sy git
+```
+
 ## Zsh/Oh-my-zsh
 
 ZSH is modern shell that save your time in your work; oh-my-zsh help your Terminal look prety with some helpful plugins.
@@ -71,6 +102,8 @@ sudo xbps-install -Sy zsh   # Install zsh
 ```
 
 ### Install OH-MY-ZSH
+
+**DEP**: curl
 
 ```Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -138,3 +171,93 @@ source $ZSH/oh-my-zsh.sh
 source /home/fus/.fus/shell_utils.sh
 source /home/fus/.fus/alias
 ```
+
+# VoidLinux/DWM NOTE - Right after the first boot
+
+## My words
+
+I have make `.Display` directory to store DWM, ST, DWM-Blocks.
+
+```Bash
+.Display
+├── dmenu           # Search, Start app
+├── dwm             # Window manager
+├── dwmblocks       # Manage status bar
+└── st              # Simple Terminal (Stuck :v, it have change to `alacritty`)
+```
+
+## Xorg
+
+Xorg (or X.Org Server) is the open-source implementation of the X Window System, which provides the graphical display layer on Unix-like operating systems (Linux, BSD, etc.).
+
+```Zsh
+i xorg xinit xrandr
+```
+
+## DWM
+
+`dwm` is a dynamic window manager for X. It supports tiled, monocle, and floating layouts, all of which can be switched dynamically. Any configuration changes require recompiling the source.
+
+### Dependencies
+
+```Zsh
+i git make gcc pkg-config libX11-devel libXft-devel libXinerama-devel
+```
+
+### Clone from Github
+
+```Zsh
+git clone https://github.com/Digital-Chaos/dwm.git
+```
+
+### Build & Install
+
+```Zsh
+cd dwm
+make
+sudo install
+```
+
+### Sound/Brightness nofi
+
+I found that all `acpi` signals is handle by [handler.sh](etc/acpi/handler.sh). You can set noti by using xsetroot. E.g:
+
+```Zsh
+write_noti() {
+    local msg="$*"
+    su - fus -c "DISPLAY=:0 xsetroot -name '$msg'" &
+}
+```
+
+## DWM-Block
+
+Same with DWM, clone, edit, build, install (copy). But i found a little bug on Makefile, blocks.def.h will copy and rename to blocks.h, but make clean not remove old blocks.h, hence new config is not applied.
+
+```Zsh
+git clone https://github.com/torrinfail/dwmblocks.git
+cd dwmblocks
+make
+sudo make install
+```
+**FIX Makefile (OLD)**
+```Makefile
+blocks.h:
+	cp blocks.def.h $@
+
+clean:
+	rm -f *.o *.gch dwmblocks
+```
+**FIX Makefile (NEW)**
+```Makefile
+blocks.h:
+	cp blocks.def.h $@
+
+clean:
+	rm -f *.o *.gch dwmblocks blocks.h
+```
+
+## Apply all
+
+I have written a script - [update_dwm.sh](home/fus/.fus/update_dwm.sh) build and install DWM, DWM-BLOCKS, ST, DMENU.
+
+## To be cont.
