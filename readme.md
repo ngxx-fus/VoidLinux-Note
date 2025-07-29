@@ -306,6 +306,18 @@ sudo nmcli device wifi connect XXXXXXXXX password XXXXXXXXX
 
 ### 
 
+## Swap L/R-Mouse
+
+Make rule at `/etc/X11/xorg.conf.d/90-mouse-swap.conf`
+
+```conf
+Section "InputClass"
+    Identifier "Swap Mouse Buttons"
+    MatchIsPointer "on"
+    Option "ButtonMapping" "3 2 1"
+EndSection
+```
+
 ## To be cont.
 
 # Final DEMO
