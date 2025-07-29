@@ -391,6 +391,12 @@ Section "InputClass"
     Option "ButtonMapping" "3 2 1"
 EndSection
 ```
+## Disable PowerButton
+
+**EDIT:** `/etc/elogind/logind.conf`
+```Zsh
+HandlePowerKey=ignore
+```
 
 ## To be cont.
 
