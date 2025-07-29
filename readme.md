@@ -63,38 +63,58 @@ Back-up tree:
 Some tools and utils u need to install.
 
 ```Zsh
-# System monitor with modern UI (like top/htop)
+#!/bin/sh
+# =============================================================================
+# Essential system tools
+# =============================================================================
+# Modern system monitor (like top/htop but more user-friendly)
 sudo xbps-install -Sy btop
-# Power and battery information (for laptops, used in status bars)
+# Power and battery info (useful for laptops, also used by status bars like dwmblocks)
 sudo xbps-install -Sy upower
-# Message bus system (needed by many GUI apps and services)
+# D-Bus message bus (used by many graphical applications for interprocess communication)
 sudo xbps-install -Sy dbus
-# Handles user sessions and power management (e.g. reboot/suspend in DWM)
+# elogind handles user sessions and power management (needed by DWM for logout, reboot, suspend)
 sudo xbps-install -Sy elogind
-# Disk management (used by file managers like Thunar, for automounting)
+# udisks2 allows disk management and automount (used by file managers like Thunar, PCManFM)
 sudo xbps-install -Sy udisks2
-# ACPI daemon (responds to power button, lid close, etc.)
+# ACPI daemon handles power button, lid switch, sleep key events
 sudo xbps-install -Sy acpid
-# Clipboard tool (lets you copy/paste in CLI and scripts)
+# Clipboard access (used in CLI tools and DWM configs to copy/paste)
 sudo xbps-install -Sy xclip
-# Lightweight notification daemon (used with notify-send in DWM)
+# Network management daemon and CLI tool (enables nmcli and GUI frontends like nmtui)
+sudo xbps-install -Sy NetworkManager
+# =============================================================================
+# UI & appearance tools
+# =============================================================================
+# Lightweight notification daemon (used with notify-send or status scripts)
 sudo xbps-install -Sy dunst
-# Wallpaper setter and image viewer (used to set background in DWM)
+# Wallpaper manager and image viewer (common in DWM/X11 to set backgrounds)
 sudo xbps-install -Sy feh
-# Fast system info fetcher (like neofetch, but faster)
+# Fast terminal-based system fetcher (alternative to neofetch)
 sudo xbps-install -Sy fastfetch
-# Tool to fetch files from the internet (used in many scripts)
-sudo xbps-install -Sy curl
-# Version control system (essential for cloning and managing source code)
-sudo xbps-install -Sy git
-# Modern Terminal Emulator
-sudo xbps-install -Sy alacritty
-# C compiler
+# xdg-utils provides tools like xdg-open, xdg-mime to open files/URLs with default apps
+sudo xbps-install -Sy xdg-utils
+# =======================
+# Development tools
+# =======================
+# GNU Compiler Collection (gcc), Make, Autoconf — required for building most software
 sudo xbps-install -Sy gcc make autoconf
-# RIPGREP
+# ripgrep: fast recursive grep tool (used for code search and scripting)
 sudo xbps-install -Sy ripgrep
-# Browser
+# Git: essential version control system (used to clone and manage source code, e.g. suckless)
+sudo xbps-install -Sy git
+# =============================================================================
+# Internet tools
+# =============================================================================
+# curl: fetch files over HTTP(S), used in many install scripts and APIs
+sudo xbps-install -Sy curl
+# Web browser (you can choose your own; Firefox is reliable and compatible with most sites)
 sudo xbps-install -Sy firefox
+# =============================================================================
+# Terminal emulator
+# =============================================================================
+# GPU-accelerated modern terminal emulator (used instead of xterm or st)
+sudo xbps-install -Sy alacritty
 
 ```
 
