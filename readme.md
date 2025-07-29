@@ -123,7 +123,7 @@ ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%})"
 
 Preview:
 
-![alt text](image.png)
+![alt text](imgs/image.png)
 
 ## Fater with Alias 
 
@@ -257,6 +257,7 @@ clean:
 ```
 
 P/S: DWMBLOCKS-blocks.def.h
+
 ```
 static const Block blocks[] = {
     /* Icon   */    /* Command */                                                                                      /* Interval */    /* Signal */
@@ -273,3 +274,8 @@ static const Block blocks[] = {
 I have written a script - [update_dwm.sh](home/fus/.fus/update_dwm.sh) build and install DWM, DWM-BLOCKS, ST, DMENU.
 
 ## To be cont.
+
+# Final DEMO
+
+![alt text](imgs/image-1.png)
+![alt text](imgs/image-2.png)
