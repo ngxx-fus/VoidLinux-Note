@@ -398,6 +398,12 @@ EndSection
 HandlePowerKey=ignore
 ```
 
+Restart (Start if not started yet) elogind:
+
+```Zsh
+sudo ln -s  /etc/sv/elogind /var/service
+```
+
 ## To be cont.
 
 # Final DEMO
