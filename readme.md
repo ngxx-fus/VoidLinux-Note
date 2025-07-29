@@ -89,6 +89,10 @@ sudo xbps-install -Sy curl
 sudo xbps-install -Sy git
 # Modern Terminal Emulator
 sudo xbps-install -Sy alacritty
+# C compiler
+sudo xbps-install -Sy gcc make autoconf
+# RIPGREP
+sudo xbps-install -Sy ripgrep
 ```
 
 ## Zsh/Oh-my-zsh
@@ -285,6 +289,7 @@ I have written a script - [update_dwm.sh](home/fus/.fus/update_dwm.sh) build and
 It's a command-line tool used to control and monitor NetworkManager, a system service that manages network connections.
 
 ### Install NetworkManager
+
 ```Zsh
 sudo xbps-install -Sy NetworkManager
 ```
