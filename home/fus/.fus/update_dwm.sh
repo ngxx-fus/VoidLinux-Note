@@ -3,7 +3,7 @@
 source /home/fus/.fus/text_effects
 printf "\n\n${LYELLOW}${BOLD}[Update all]${NORM}\n"
 
-export wm_dir=/home/fus/.WindowsManager
+export wm_dir=/home/fus/.display
 
 export dwm_dir=$wm_dir/dwm
 export st_dir=$wm_dir/st
@@ -12,6 +12,7 @@ export dwmblocks_dir=$wm_dir/dwmblocks
 
 cd $dwm_dir
 printf "\n\n${LYELLOW}${BOLD}[build] dwm@$dwm_dir${NORM}\n"
+make clean
 make 
 printf "\n\n${LYELLOW}${BOLD}[install] dwm@$dwm_dir${NORM}\n"
 sudo make  install

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 
 export _fus="/home/fus/.fus"
 
@@ -7,6 +7,14 @@ join_mode="$_fus/screenjoin.sh"
 
 APP_NAME="DisplaySwitcher"
 DEFAULT_NOTI_TIME=5000  # 2 seconds
+
+if [ -z "$_HDMI" ]; then
+    export _HDMI=HDMI-1
+fi
+
+if [ -z "$_eDP" ]; then 
+    export _eDP=eDP-1
+fi
 
 # Function to send desktop notifications
 # Arguments: $1=title, $2=message, $3=urgency (low, normal, critical), $4=timeout_ms (optional), $5=icon_path (optional)
@@ -45,12 +53,12 @@ echo "$mode" > "$state_file"
 # Run the corresponding mode
 case "$mode" in
     1)
-        send_notification "Display Mode" "Mode 1: Built-in only (eDP1)" normal
-        xrandr --output HDMI1 --off --output eDP1 --auto --primary
+        send_notification "Display Mode" "Mode 1: Built-in only (${_eDP})" normal
+        xrandr --output ${_HDMI} --off --output ${_eDP} --auto --primary
         ;;
     2)
-        send_notification "Display Mode" "Mode 2: External only (HDMI1)" normal
-        xrandr --output eDP1 --off --output HDMI1 --mode 1920x1080 --rate 60 --primary
+        send_notification "Display Mode" "Mode 2: External only (${_HDMI})" normal
+        xrandr --output ${_eDP} --off --output ${_HDMI} --mode 1920x1080 --rate 60 --primary
         ;;
     3)
         send_notification "Display Mode" "Mode 3: Join (dual monitor layout)" normal
@@ -62,7 +70,7 @@ case "$mode" in
         ;;
     4)
         send_notification "Display Mode" "Mode 4: Mirror (duplicate displays)" normal
-        xrandr --output eDP1 --auto --output HDMI1 --auto --same-as eDP1
+        xrandr --output ${_eDP} --auto --output ${_HDMI} --auto --same-as eDP1
         ;;
 esac
 

@@ -18,6 +18,7 @@ BACKUP=(
   "home/fus/.fus"
   "home/fus/.zshrc"
   "usr/share/fonts"
+  "home/fus/.display"
   "home/fus/.backup.sh"
   "etc/acpi/handler.sh"
   "home/fus/.config/nvim"
@@ -51,8 +52,18 @@ for path in "${BACKUP[@]}"; do
     print_msg "\t$SOURCE_DIR/$path"
 done
 
-# print_msg "${LYELLOW}Do you want to continue?${NORM}"
-print_msg "Backup paths:"
+# print_msg "Backup paths:"
+
+print_msg "${LYELLOW}Do you want to keep all old files in ${TARGET_DIR}?${NORM}"
+
+yes_or_no
+
+if [ $? -gt 0 ]; then
+    print_msg "$SUDO rm -vrf ${TARGET_DIR}/*"
+    $SUDO rm -vrf ${TARGET_DIR}/*
+fi
+
+print_msg "${LYELLOW}Do you want to continue?${NORM}"
 
 yes_or_no
 
@@ -60,6 +71,7 @@ if [ $? -gt 0 ]; then
     print_msg "${LRED}---> Exit!"
     exit 0
 fi
+
 
 for path in "${BACKUP[@]}"; do
     print_msg "${LYELLOW}Backup $path${NORM}"

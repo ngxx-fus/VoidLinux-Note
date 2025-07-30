@@ -1,38 +1,50 @@
-#LOCATION: /home/fus/.fus/get_acpi_msg.sh
 #!/bin/sh
 # Default acpi script that takes an entry for all actions
 
 # NOTE: This is a 2.6-centric script.  If you use 2.4.x, you'll have to
 #       modify it to not use /sys
-
-
 # This function will write text into xsetroot of DWM (mod by FUS)
 write_noti() {
     local msg="$*"
     su - fus -c "DISPLAY=:0 xsetroot -name '$msg'" &
 }
 
-# write_noti() {
-#     local msg="$*"
-#     echo "$msg" > /home/fus/.fus/.acpi_msg
-#     su - fus -c "kill -RTMIN+1 \$(pidof dwmblocks)" &
-# }
+export PACTL="/usr/bin/pactl"
 
+export DEF_SINK=$(sudo -u fus \
+  XDG_RUNTIME_DIR="/run/user/$(id -u fus)" \
+  DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/$(id -u fus)/bus" \
+  "$PACTL" get-default-sink)
+
+export SVOLUME_VALUE=$(sudo -u fus \
+  XDG_RUNTIME_DIR="/run/user/$(id -u fus)" \
+  DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/$(id -u fus)/bus" \
+  "$PACTL" get-sink-volume "$DEF_SINK" | awk -F'/' '/Volume:/ {gsub(/ /, "", $2); print $2}' | tr -d '%')
+
+set_volume(){
+    sudo -u fus XDG_RUNTIME_DIR="/run/user/$(id -u fus)" \
+                DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/$(id -u fus)/bus" \
+                "$PACTL" set-sink-volume "$DEF_SINK" $1
+}
 
 volume_up() {
-    amixer set Master 1+
+    if [ $SVOLUME_VALUE -lt 100 ]; then
+        SVOLUME_VALUE=$((SVOLUME_VALUE+1))
+        set_volume "${SVOLUME_VALUE}%"
+    fi
 }
 
 volume_down() {
-    amixer set Master 1-
+    if [ $SVOLUME_VALUE -gt 0 ]; then
+        SVOLUME_VALUE=$((SVOLUME_VALUE-1))
+        set_volume "${SVOLUME_VALUE}%"
+    fi
 }
 
 volume_mute_toggle() {
-    amixer set Master toggle
-}
-
-volume_get() {
-    amixer get Master | awk -F'[][]' '/dB/ { print $2; exit }'
+    sudo -u fus XDG_RUNTIME_DIR="/run/user/$(id -u fus)" \
+                DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/$(id -u fus)/bus" \
+                "$PACTL" set-sink-mute "$DEF_SINK" toggle
 }
 
 get_brightness() {
@@ -70,6 +82,7 @@ case "$1" in
             PBTN|PWRF)
                 logger "PowerButton pressed: $2, pypass to suspending :>"
                 write_noti ">>> PowerButton is IGNORED >>>"
+                zzz
                 ;;
             *)  logger "ACPI action undefined: $2" ;;
         esac
@@ -143,15 +156,15 @@ case "$1" in
 
     button/volumedown)
         volume_down
-        write_noti "  [-] [$(volume_get)]"
+        write_noti "  [$SVOLUME_VALUE]"
         ;;
     button/volumeup)
         volume_up
-        write_noti "  [+] [$(volume_get)]"
+        write_noti "  [$SVOLUME_VALUE]"
         ;;
     button/mute)
         volume_mute_toggle
-        write_noti "  [x] [$(volume_get)]"
+        write_noti "  [$SVOLUME_VALUE]"
         ;;
 
     *)
