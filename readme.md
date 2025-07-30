@@ -411,6 +411,27 @@ i dolphin gvfs udisks2 xdg-utils
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3ce39dbf-50f2-40ec-9df9-9d96db4b8a7b" />
 
+## MoveStack (patch)
+
+SOURCE: [https://dwm.suckless.org/patches/movestack/](https://dwm.suckless.org/patches/movestack/)
+
+**Install `patch`:**
+
+```Zsh
+i patch
+```
+
+**Downloads `dwm-movestack-20211115-a786211.diff` from `suckless`**
+
+```Zsh
+cd path/to/dwm/
+curl https://dwm.suckless.org/patches/movestack/dwm-movestack-20211115-a786211.diff -o movestack.diff
+patch < ./movestack.diff
+```
+
+Sumarry: That will add the function named `movestack`, help you change order of windows on tag.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5fbf30c8-3e4d-4907-8282-ff2c1636277d" />
 
 
 ## To be cont.
