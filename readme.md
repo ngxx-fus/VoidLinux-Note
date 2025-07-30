@@ -403,6 +403,15 @@ Restart (Start if not started yet) elogind:
 ```Zsh
 sudo ln -s  /etc/sv/elogind /var/service
 ```
+## File browser
+
+```Zsh
+i dolphin gvfs udisks2 xdg-utils
+```
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3ce39dbf-50f2-40ec-9df9-9d96db4b8a7b" />
+
+
 
 ## To be cont.
 
