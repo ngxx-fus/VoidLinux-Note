@@ -475,6 +475,9 @@ OUTPUT:
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/28bdb760-5693-443a-9937-71fd96179b0e" />
 
+Source: [https://www.reddit.com/r/voidlinux/comments/15l6kix/fcitx5_not_working_in_certain_applications/](https://www.reddit.com/r/voidlinux/comments/15l6kix/fcitx5_not_working_in_certain_applications/)
+<img width="691" height="120" alt="image" src="https://github.com/user-attachments/assets/177de707-710f-47a9-b170-1c0f92e82c2f" />
+
 
 ## To be cont.
 
