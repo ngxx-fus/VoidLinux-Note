@@ -473,6 +473,9 @@ OUTPUT:
 		$XMODIFIERS = @im=fcitx
 ```
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/28bdb760-5693-443a-9937-71fd96179b0e" />
+
+
 ## To be cont.
 
 # Final DEMO
