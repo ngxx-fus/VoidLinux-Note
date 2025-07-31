@@ -433,6 +433,45 @@ Sumarry: That will add the function named `movestack`, help you change order of 
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/5fbf30c8-3e4d-4907-8282-ff2c1636277d" />
 
+## Vietnamese typing with fcitx5-unikey
+
+**DEPs:**
+```Zsh
+i fcitx5 fcitx5-qt fcitx5-gtk fcitx5-configtool fcitx5-unikey
+```
+
+**ENVs:**
+
+```Zsh
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+export INPUT_METHOD=fcitx 		(optional)
+export SDL_IM_MODULE=fcitx		(optional)
+```
+
+**IF NOT WORK WITH FIREFOX/GTKAPP (E.G: MOUSEPAD):**
+
+```Zsh
+i fcitx5-gtk4 fcitx5-gtk+2 fcitx5-gtk+3
+```
+
+**CHECK-LIST:**
+
+```Text
+CMD:		ls /usr/lib/gtk-3.0/3.0.0/immodules | grep fcitx
+OUTPUT:		im-fcitx5.so
+```
+
+```Text
+CMD:		echo "\$GTK_IM_MODULE = $GTK_IM_MODULE"
+		echo "\$QT_IM_MODULE = $QT_IM_MODULE"
+		echo "\$XMODIFIERS = $XMODIFIERS"
+OUTPUT:
+		$GTK_IM_MODULE = fcitx
+		$QT_IM_MODULE = fcitx
+		$XMODIFIERS = @im=fcitx
+```
 
 ## To be cont.
 
