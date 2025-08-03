@@ -414,7 +414,7 @@ i dolphin gvfs udisks2 xdg-utils
 ## Sound/Bluetooth
 
 ```Zsh
-i libpulseaudio pavucontrol pulseaudio-utils bluez bluez-alsa libbluetooth sbc pulseaudio blueman
+i libpulseaudio pavucontrol pulseaudio-utils bluez bluez-alsa libbluetooth sbc pulseaudio blueman bluetuith alsa-utils
 ```
 
 Preview: (MoveStack)
@@ -485,6 +485,26 @@ OUTPUT:
 
 Source: [https://www.reddit.com/r/voidlinux/comments/15l6kix/fcitx5_not_working_in_certain_applications/](https://www.reddit.com/r/voidlinux/comments/15l6kix/fcitx5_not_working_in_certain_applications/)
 <img width="691" height="120" alt="image" src="https://github.com/user-attachments/assets/177de707-710f-47a9-b170-1c0f92e82c2f" />
+
+
+## VirtualBox
+
+**Check if installation is available**
+```Zsh
+CMD:			q virtualbox
+OUTPUT:			[*] virtualbox-ose-7.1.12_1            General-purpose full virtualizer for x86 hardware
+			[*] virtualbox-ose-dkms-7.1.12_1       General-purpose full virtualizer for x86 hardware - kernel module sources for dkms
+			[*] virtualbox-ose-guest-7.1.12_1      General-purpose full virtualizer for x86 hardware - guest utilities
+			[*] virtualbox-ose-guest-dkms-7.1.12_1 General-purpose full virtualizer for x86 hardware - guest addition module source for dkms
+```
+
+**Install all**
+
+```Zsh
+i virtualbox-ose-7.1.12_1 virtualbox-ose-dkms-7.1.12_1 virtualbox-ose-guest-7.1.12_1 virtualbox-ose-guest-dkms-7.1.12_1
+```
+**Add `export XDG_RUNTIME_DIR=/run/user/$(id -u)` if has not added yet (in `.xinitrc`**
+
 
 
 ## To be cont.
