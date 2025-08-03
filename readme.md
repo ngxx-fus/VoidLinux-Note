@@ -43,17 +43,21 @@ Back-up tree:
 
 ```
 ├── etc
-│   └── acpi
-│       └── handler.sh
+│   ├── acpi
+│   │   └── handler.sh
+│   └── dunst
+│       └── dunstrc
 ├── home
 │   └── fus
-│       ├── .backup.sh
-│       ├── .config
-│       └── .fus
-├── readme.md
 └── usr
     └── share
         └── fonts
+            ├── TTF
+            ├── X11
+            ├── fonts
+            ├── fus
+            ├── noto
+            └── noto-emoji
 ```
 
 # VoidLinux NOTE - Right after the first boot
@@ -240,15 +244,23 @@ i xf86-video-intel
 
 **xinitrc:**
 ```Zsh
+
 # GLOBAL VARS #################################################################
 export BROWSER=firefox
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+export XDG_RUNTIME_DIR=/run/user/$(id -u)
+export ROFI_PNG_OUTPUT=/home/fus/Pictures/Rofi-Captures.jpg
 export _HDMI=$(xrandr | grep -E '^HDMI[-0-9]* connected' | awk '{print $1}')
 export _eDP=$(xrandr | grep -E '^eDP[-0-9]* connected' | awk '{print $1}')
 # START-UP APP ################################################################
-exec /usr/bin/picom --backend glx           &
-exec /usr/local/bin/dwmblocks               &
-exec /home/fus/.fus/init_display.sh         &
-exec /home/fus/.fus/setup_background.sh     & 
+exec /usr/bin/picom --backend glx                       					&
+exec /usr/local/bin/dwmblocks                           					&
+exec /home/fus/.fus/init_display.sh                     					&
+exec /home/fus/.fus/setup_background.sh                 					&
+exec /home/fus/.fus/disable_built_in_keyboard.sh        					&
+exec /usr/bin/fcitx5                                                        &
 # DWM #########################################################################
 exec dwm
 
@@ -503,8 +515,9 @@ OUTPUT:			[*] virtualbox-ose-7.1.12_1            General-purpose full virtualize
 ```Zsh
 i virtualbox-ose-7.1.12_1 virtualbox-ose-dkms-7.1.12_1 virtualbox-ose-guest-7.1.12_1 virtualbox-ose-guest-dkms-7.1.12_1
 ```
-**Add `export XDG_RUNTIME_DIR=/run/user/$(id -u)` if has not added yet (in `.xinitrc`**
+**Add `export XDG_RUNTIME_DIR=/run/user/$(id -u)` if has not added yet (in `.xinitrc`)**
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/feb1fbea-bf96-4163-a4ef-0e6974e71e73" />
 
 
 ## To be cont.
