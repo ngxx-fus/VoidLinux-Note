@@ -519,6 +519,34 @@ i virtualbox-ose-7.1.12_1 virtualbox-ose-dkms-7.1.12_1 virtualbox-ose-guest-7.1.
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/feb1fbea-bf96-4163-a4ef-0e6974e71e73" />
 
+## VMWare WorkStation
+
+### Installation VMWare WorkStation
+Source: [https://github.com/void-linux/void-packages/issues/33557#issuecomment-1538937175](https://github.com/void-linux/void-packages/issues/33557#issuecomment-1538937175)
+
+<img width="1015" height="712" alt="image" src="https://github.com/user-attachments/assets/a86ea1f2-2c9d-4cf6-a633-3b252c090c2d" />
+
+### Install module `vmmon` and `vmnet`
+
+Source: [https://github.com/gleb-kun/vmware-host-modules/tree/workstation-17.6.1?tab=readme-ov-file](https://github.com/gleb-kun/vmware-host-modules/tree/workstation-17.6.1?tab=readme-ov-file)
+
+```Zsh
+cd vmware-host-modules
+sudo make
+sudo make install
+```
+
+**Error from old source:**
+
+```
+#define read_lock_list() read_lock(&dev_base_lock)
+#define read_unlock_list() read_unlock(&dev_base_lock)
+
+Change to:
+
+#define read_lock_list() rcu_read_lock()
+#define read_unlock_list() rcu_read_unlock()
+```
 
 ## To be cont.
 
