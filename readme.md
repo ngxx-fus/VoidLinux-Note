@@ -551,6 +551,7 @@ Change to:
 **NOTE:** 
 - Make sure `vmmon` and `vmnet` is probed via (sudo modprobe); 
 - Has started `/etc/init.d/vmware start &` and `/etc/init.d/vmware-USBArbitrator start &`
+- At 1st time of `vmware`, u need run it in Terminal, bcz it require Auth.
 
 **DEMO**:
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ce247817-d37a-48a0-83fd-e36eba4c57e6" />
