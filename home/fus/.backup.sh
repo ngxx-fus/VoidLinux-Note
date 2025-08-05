@@ -16,6 +16,7 @@ DIRNAME=/usr/bin/dirname
 # The slash before $path ensures it's treated as an absolute path from root.
 BACKUP=(
     "home/fus/.fus"
+    "home/fus/.zshrc"
     "usr/share/fonts"
     "etc/sv/MyService0"
     "etc/sv/MyService1"
