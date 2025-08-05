@@ -45,8 +45,15 @@ Back-up tree:
 ├── etc
 │   ├── acpi
 │   │   └── handler.sh
-│   └── dunst
-│       └── dunstrc
+│   ├── dunst
+│   │   └── dunstrc
+│   └── sv
+│       ├── MyService0
+│       │   ├── run
+│       │   └── supervise
+│       └── MyService1
+│           ├── run
+│           └── supervise
 ├── home
 │   └── fus
 └── usr
