@@ -1,5 +1,5 @@
 /* See LICENSE file for copyright and license details. */
-#include "movestack.c"
+// #include "movestack.c"
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
@@ -98,7 +98,7 @@ static const Key keys[] = {
     { WINKEY|ShiftMask,             XK_s,       spawn,          SHCMD("/home/fus/.fus/prt_sc.sh --area") },
     { WINKEY,                       XK_p,       spawn,          SHCMD("/home/fus/.fus/toggle_display.sh") },
     { WINKEY,                       XK_r,       spawn,          {.v = termcmd }},
-    { MODKEY,                       XK_space,   spawn,          {.v = dmenucmd }},
+    { MODKEY,                       XK_space,   spawn,          SHCMD("rofi -show combi") },
 	//// ENDMODE ///////////////////////////////////////////////////////////////
     TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)

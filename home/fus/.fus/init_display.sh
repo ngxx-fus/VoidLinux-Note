@@ -2,11 +2,11 @@
 #!/bin/zsh
 
 if [ -z "$_HDMI" ]; then
-    export _HDMI=HDMI-1
+    export _HDMI=HDMI1
 fi
 
 if [ -z "$_eDP" ]; then 
-    export _eDP=eDP-1
+    export _eDP=eDP1
 fi
 
 

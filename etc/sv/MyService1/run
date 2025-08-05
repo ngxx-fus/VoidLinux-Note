@@ -1,0 +1,5 @@
+#!/bin/zsh
+
+/usr/bin/fcitx5 &
+
+while sleep 60; do :; done
