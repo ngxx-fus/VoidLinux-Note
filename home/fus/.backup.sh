@@ -17,17 +17,19 @@ DIRNAME=/usr/bin/dirname
 BACKUP=(
     "home/fus/.fus"
     "home/fus/.zshrc"
-    "usr/share/fonts"
+    # "usr/share/fonts"
     "etc/sv/MyService0"
     "etc/sv/MyService1"
     "etc/dunst/dunstrc"
     "home/fus/.xinitrc"
     "home/fus/.display"
+    "home/fus/.zprofile"
     "etc/acpi/handler.sh"
     "home/fus/.backup.sh"
     "home/fus/.config/nvim"
     "home/fus/.config/fcitx"
     "home/fus/.config/fcitx5"
+    "home/fus/.oh-my-zsh/themes/mine.zsh-theme"
 )
 
 EXCLUDE=(
