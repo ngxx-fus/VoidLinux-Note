@@ -49,13 +49,52 @@ Back-up tree:
 │   │   └── dunstrc
 │   └── sv
 │       ├── MyService0
+│       │   ├── MyService0
 │       │   ├── run
 │       │   └── supervise
 │       └── MyService1
+│           ├── MyService1
 │           ├── run
 │           └── supervise
 ├── home
 │   └── fus
+│       ├── .backup.sh
+│       ├── .config
+│       │   ├── fcitx
+│       │   ├── fcitx5
+│       │   └── nvim
+│       ├── .display
+│       │   ├── .display
+│       │   ├── dmenu
+│       │   ├── dwm
+│       │   └── dwmblocks
+│       ├── .fus
+│       │   ├── .BG
+│       │   ├── .data_exchange
+│       │   ├── .fus
+│       │   ├── alias
+│       │   ├── capture-dbus-all.sh
+│       │   ├── disable_built_in_keyboard.sh
+│       │   ├── dwm-status.sh
+│       │   ├── get_wifi.sh
+│       │   ├── init_display.sh
+│       │   ├── internet_check.sh
+│       │   ├── monitor_mode
+│       │   ├── mount_external_ssd.sh
+│       │   ├── mount_sdcard.sh
+│       │   ├── prt_sc.sh
+│       │   ├── rofi_filebrowser.sh
+│       │   ├── screenjoin.sh
+│       │   ├── setup_background.sh
+│       │   ├── shell_utils.sh
+│       │   ├── toggle_display.sh
+│       │   └── update_dwm.sh
+│       ├── .oh-my-zsh
+│       │   └── themes
+│       ├── .xinitrc
+│       ├── .zprofile
+│       └── .zshrc
+├── readme.md
 └── usr
     └── share
         └── fonts
