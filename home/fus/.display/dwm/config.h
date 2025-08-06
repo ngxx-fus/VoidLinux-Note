@@ -1,5 +1,4 @@
 /* See LICENSE file for copyright and license details. */
-// #include "movestack.c"
 /* appearance */
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 32;       /* snap pixel */
@@ -11,15 +10,31 @@ static const char *fonts[] = { "CodeNewRoman Nerd Font:size=10" };
 // static const char dmenufont[]       = "monospace:size=10";
 static const char dmenufont[]       = "CodeNewRoman Nerd Font:size=10";
 //// ENDMODE ///////////////////////////////////////////////////////////////
-static const char col_gray1[]       = "#222222";
+static const char col_gray1[]       = "#222831";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
-static const char col_cyan[]        = "#005577";
+// static const char col_cyan[]        = "#005577";
+static const char col_cyan[]        = "#393E46";
+static const char col_black[]       = "#000000";
+static const char col_red[]         = "#ff0000";
+static const char col_yellow[]      = "#ffff00";
+static const char col_white[]       = "#ffffff";
+static const char col_fus0[]        = "#CD4545";
+static const char col_fus1[]        = "#FFDE63";
+static const char col_fus2[]        = "#ffffff";
+static const char col_fus3[]        = "#ffffff";
+
 static const char *colors[][3]      = {
-	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
+	/*					fg          bg          border   */
+	[SchemeNorm] =	 { col_gray3,   col_gray1,  col_gray2 },    // 0x1 (1st)
+	[SchemeSel]  =	 { col_gray4,   col_cyan,   col_cyan },     // 0x2 
+	[SchemeWarn] =	 { col_yellow,  col_gray1,  col_gray2 },    
+	[SchemeUrgent]=	 { col_red,     col_gray1,  col_gray2 },
+    [SchemeFus0] =   { col_fus0,    col_gray1,  col_gray2},     // 0x5 
+    [SchemeFus1] =   { col_fus1,    col_gray1,  col_gray2},     // 0x6
+    [SchemeFus2] =   { col_fus2,    col_gray1,  col_gray2},     // 0x7 
+    [SchemeFus3] =   { col_fus3,    col_gray1,  col_gray2},     // 0X8 
 };
 
 /* tagging */
@@ -33,7 +48,7 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	// { "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "Firefox",  NULL,       NULL,       1,            0,           -1 },
 };
 
 /* layout(s) */
@@ -43,10 +58,11 @@ static const int resizehints = 1;    /* 1 means respect size hints in tiled resi
 static const int lockfullscreen = 1; /* 1 will force focus on the fullscreen window */
 
 static const Layout layouts[] = {
-	/* symbol     arrange function */
-    { "[]=",      tile },    /* first entry is default */
-    { "><>",      NULL },    /* no layout function means floating behavior */
-	{ "[M]",      monocle },
+	/* symbol       arrange function */
+    { " ",         tile },
+    { "󰁁 ",         NULL },     /// 󰿢
+	{ "",          monocle },
+    { " ",         horizontal },/// 
 };
 
 /* key definitions */
@@ -94,11 +110,15 @@ static const Key keys[] = {
     //// MOD BY NGXXFUS ////////////////////////////////////////////////////////
     // { MODKEY,                       XK_space,  setlayout,      {0} },
     // { MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
+    { WINKEY|ShiftMask,             XK_f,       spawn,          SHCMD("/home/fus/.fus/prt_sc.sh --full") },
     { WINKEY|ShiftMask,             XK_w,       spawn,          SHCMD("/home/fus/.fus/prt_sc.sh --window") },
     { WINKEY|ShiftMask,             XK_s,       spawn,          SHCMD("/home/fus/.fus/prt_sc.sh --area") },
     { WINKEY,                       XK_p,       spawn,          SHCMD("/home/fus/.fus/toggle_display.sh") },
     { WINKEY,                       XK_r,       spawn,          {.v = termcmd }},
     { MODKEY,                       XK_space,   spawn,          SHCMD("rofi -show combi") },
+	{ MODKEY,                       XK_Escape,  focusstack,     {.i = +1 } },
+    { MODKEY,                       XK_n,       setlayout,      {.v = &layouts[3]} },
+    { WINKEY,                       XK_f,       togglefullscreen,{0}},     
 	//// ENDMODE ///////////////////////////////////////////////////////////////
     TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)

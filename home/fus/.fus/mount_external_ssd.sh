@@ -5,7 +5,7 @@ PWD=$(pwd)
 LOG_FILEPATH=$PWD/mount_sdcard.log
 MOUNT_EXTERNAL_SSD_LOG=y
 MOUNTPOINT=/mnt/ExtSSD
-DEV=/dev/sdc
+DEV=/dev/ssd_fus
 
 
 print_msg(){

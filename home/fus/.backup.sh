@@ -17,7 +17,7 @@ DIRNAME=/usr/bin/dirname
 BACKUP=(
     "home/fus/.fus"
     "home/fus/.zshrc"
-    # "usr/share/fonts"
+    "usr/share/fonts"
     "etc/sv/MyService0"
     "etc/sv/MyService1"
     "etc/dunst/dunstrc"

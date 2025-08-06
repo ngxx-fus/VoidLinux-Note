@@ -1,9 +1,11 @@
 #!/bin/zsh
 
+return 0 # By pass :>
+
 DATA_EXCHANGE_PATH=/tmp/.data_exchange
 OUTPUT_FILENAME=internet_check
-SLEEP_TIME=1
-PING_COUNT=4
+SLEEP_TIME=3
+PING_COUNT=1
 CHECK_IP=8.8.8.8
 
 get_RSSI(){
