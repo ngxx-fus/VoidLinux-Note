@@ -629,5 +629,7 @@ SUBSYSTEM=="block", ENV{ID_SERIAL_SHORT}=="012345679989", SYMLINK+="ssd_fus"
 
 # Final DEMO
 
-![alt text](imgs/image-1.png)
-![alt text](imgs/image-2.png)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/3b75623b-6eb9-4ba4-be14-2952a0ec7a90" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/30ed421d-79dd-4783-a67e-9bc5f038f251" />
+
