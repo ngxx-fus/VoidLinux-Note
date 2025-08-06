@@ -602,6 +602,28 @@ Change to:
 **DEMO**:
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ce247817-d37a-48a0-83fd-e36eba4c57e6" />
 
+## Specify symlink for reamovable device
+
+### Identify your device by ID
+
+NOTE: Combine with lsblk command to determine the ID/ID_SHORT of the external drive.
+
+```Zsh
+ls -l /dev/disk/by-id/
+```
+<img width="1920" height="1061" alt="image" src="https://github.com/user-attachments/assets/6bbb501c-f832-4e96-bffc-f8ed7f250d08" />
+
+
+### Make rule
+
+Make rule at `/etc/udev/rules.d/99-ssd-fus.rules`
+
+```
+SUBSYSTEM=="block", ENV{ID_SERIAL_SHORT}=="012345679989", SYMLINK+="ssd_fus"
+```
+
+<img width="1920" height="1061" alt="image" src="https://github.com/user-attachments/assets/145651eb-ceaf-40dc-ad67-a48e19fc7b5c" />
+
 
 ## To be cont.
 
