@@ -81,7 +81,8 @@ case "$1" in
         case "$2" in
             PBTN|PWRF)
                 logger "PowerButton pressed: $2, pypass to suspending :>"
-                write_noti ">>> PowerButton is IGNORED >>>"
+                write_noti ">>> PUT TO SLEEP >>>"
+                sleep 1
                 zzz
                 ;;
             *)  logger "ACPI action undefined: $2" ;;
@@ -98,19 +99,15 @@ case "$1" in
         esac
         ;;
     ac_adapter)
-        write_noti ">>> AC_ADAPTER CHANGED >>>"
+        pkill -RTMIN+16 dwmblocks
         case "$2" in
             AC|ACAD|ADP0)
                 case "$4" in
                     00000000)
                         cat "$minspeed" >"$setspeed"
-                        write_noti ">>> BATTERY MODE >>>"
-                        #/etc/laptop-mode/laptop-mode start
                     ;;
                     00000001)
                         cat "$maxspeed" >"$setspeed"
-                        write_noti ">>> ADAPTER MODE >>>"
-                        #/etc/laptop-mode/laptop-mode stop
                     ;;
                 esac
                 ;;
@@ -156,15 +153,17 @@ case "$1" in
 
     button/volumedown)
         volume_down
-        write_noti "  [$SVOLUME_VALUE]"
+        pkill -RTMIN+15 dwmblocks
+        # write_noti "  [$SVOLUME_VALUE]"
         ;;
     button/volumeup)
         volume_up
-        write_noti "  [$SVOLUME_VALUE]"
+        pkill -RTMIN+15 dwmblocks
+        # write_noti "  [$SVOLUME_VALUE]"
         ;;
     button/mute)
         volume_mute_toggle
-        write_noti "  [$SVOLUME_VALUE]"
+        # write_noti "  [$SVOLUME_VALUE]"
         ;;
 
     *)

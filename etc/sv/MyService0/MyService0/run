@@ -1,0 +1,6 @@
+#!/bin/sh
+
+sudo /etc/init.d/vmware start &
+sudo /etc/init.d/vmware-USBArbitrator start &
+
+while sleep 60; do :; done
