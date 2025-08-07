@@ -624,6 +624,17 @@ SUBSYSTEM=="block", ENV{ID_SERIAL_SHORT}=="012345679989", SYMLINK+="ssd_fus"
 
 <img width="1920" height="1061" alt="image" src="https://github.com/user-attachments/assets/145651eb-ceaf-40dc-ad67-a48e19fc7b5c" />
 
+# Fix unstable Mesh Wi-Fi 
+
+My inn has Mesh-System, and `nmcli` often jump between two APs.
+
+<img width="947" height="328" alt="image" src="https://github.com/user-attachments/assets/281e80aa-f066-4fc9-ac8e-357360c70c75" />
+
+I will lock the the connection to a specific BSSID:
+```Zsh
+nmcli connection modify "BAC THIEN5g" wifi.bssid 2A:77:77:98:38:69 # BAC THIEN5g
+nmcli connection down "BAC THIEN5g" && nmcli connection up "BAC THIEN5g" # Restart the connection
+```
 
 ## To be cont.
 
