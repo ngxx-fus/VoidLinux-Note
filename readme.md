@@ -626,7 +626,7 @@ SUBSYSTEM=="block", ENV{ID_SERIAL_SHORT}=="012345679989", SYMLINK+="ssd_fus"
 
 # Fix unstable Mesh Wi-Fi 
 
-My inn has Mesh-System, and `nmcli` often jump between two APs.
+My inn has a Wi-Fi Mesh System, and NetworkManager (nmcli) keeps roaming between mesh nodes (APs) with the same SSID, causing connection instability.
 
 <img width="947" height="328" alt="image" src="https://github.com/user-attachments/assets/281e80aa-f066-4fc9-ac8e-357360c70c75" />
 
