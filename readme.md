@@ -641,7 +641,7 @@ nmcli connection down "BAC THIEN5g" && nmcli connection up "BAC THIEN5g" # Resta
 # Final DEMO
 
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/30ed421d-79dd-4783-a67e-9bc5f038f251" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c1a1b827-f022-406b-b6fd-59c7cc24d405" />
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/74c2d631-afa3-471d-b4c0-bb641c421ff6" />
 
