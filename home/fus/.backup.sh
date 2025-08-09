@@ -29,6 +29,7 @@ BACKUP=(
     "home/fus/.config/nvim"
     "home/fus/.config/fcitx"
     "home/fus/.config/fcitx5"
+    "home/fus/.ngxxfus.init.system.sh"
     "home/fus/.oh-my-zsh/themes/mine.zsh-theme"
 )
 

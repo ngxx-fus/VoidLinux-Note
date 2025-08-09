@@ -3,6 +3,7 @@
 
 # NOTE: This is a 2.6-centric script.  If you use 2.4.x, you'll have to
 #       modify it to not use /sys
+
 # This function will write text into xsetroot of DWM (mod by FUS)
 write_noti() {
     local msg="$*"
@@ -81,8 +82,6 @@ case "$1" in
         case "$2" in
             PBTN|PWRF)
                 logger "PowerButton pressed: $2, pypass to suspending :>"
-                write_noti ">>> PUT TO SLEEP >>>"
-                sleep 1
                 zzz
                 ;;
             *)  logger "ACPI action undefined: $2" ;;
@@ -144,11 +143,13 @@ case "$1" in
         ;;
     video/brightnessdown)
         step_backlight -
-        write_noti "󰃞  [-] [$(get_brightness)]"
+        # write_noti "󰃞  [-] [$(get_brightness)]"
+        pkill -RTMIN+17 dwmblocks
         ;;
     video/brightnessup)
         step_backlight +
-        write_noti "󰃠  [+] [$(get_brightness)]"
+        pkill -RTMIN+17 dwmblocks
+        # write_noti "󰃠  [+] [$(get_brightness)]"
         ;;
 
     button/volumedown)
