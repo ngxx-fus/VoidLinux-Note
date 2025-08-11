@@ -6,7 +6,6 @@ RSSI_THRES=( 20 40 65 85 101)
 RSSI_WARN_THRES=50
 
 get_RSSI(){
-    # echo -e "$(nmcli -f IN-USE,SIGNAL dev wifi | grep '^\*' | awk '{print $2}')"
     echo -e "$(iw dev wlo1 link | awk '/signal/ {print $2}')"
 }
 

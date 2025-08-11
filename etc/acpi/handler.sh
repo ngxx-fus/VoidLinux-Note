@@ -10,7 +10,8 @@ write_noti() {
     su - fus -c "DISPLAY=:0 xsetroot -name '$msg'" &
 }
 
-export PACTL="/usr/bin/pactl"
+PACTL=/usr/bin/pactl
+AMIXER=/usr/bin/amixer
 
 export DEF_SINK=$(sudo -u fus \
   XDG_RUNTIME_DIR="/run/user/$(id -u fus)" \
@@ -29,23 +30,35 @@ set_volume(){
 }
 
 volume_up() {
-    if [ $SVOLUME_VALUE -lt 100 ]; then
-        SVOLUME_VALUE=$((SVOLUME_VALUE+1))
-        set_volume "${SVOLUME_VALUE}%"
+    if [ -e $PACTL ]; then 
+        if [ $SVOLUME_VALUE -lt 100 ]; then
+            SVOLUME_VALUE=$((SVOLUME_VALUE+1))
+            set_volume "${SVOLUME_VALUE}%"
+        fi
+    else 
+        amixer set Master 1+
     fi
 }
 
 volume_down() {
-    if [ $SVOLUME_VALUE -gt 0 ]; then
-        SVOLUME_VALUE=$((SVOLUME_VALUE-1))
-        set_volume "${SVOLUME_VALUE}%"
+    if [ -e $PACTL ]; then 
+        if [ $SVOLUME_VALUE -gt 0 ]; then
+            SVOLUME_VALUE=$((SVOLUME_VALUE-1))
+            set_volume "${SVOLUME_VALUE}%"
+        fi
+    else 
+        amixer set Master 1-
     fi
 }
 
 volume_mute_toggle() {
-    sudo -u fus XDG_RUNTIME_DIR="/run/user/$(id -u fus)" \
-                DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/$(id -u fus)/bus" \
-                "$PACTL" set-sink-mute "$DEF_SINK" toggle
+    if [ -e $PACTL ]; then 
+        sudo -u fus XDG_RUNTIME_DIR="/run/user/$(id -u fus)" \
+            DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/$(id -u fus)/bus" \
+            "$PACTL" set-sink-mute "$DEF_SINK" toggle
+    else 
+        amixer set Master toggle
+    fi
 }
 
 get_brightness() {
@@ -60,7 +73,6 @@ get_brightness() {
     echo "N/A"
     return 1
 }
-
 
 # $1 should be + or - to step up or down the brightness.
 step_backlight() {

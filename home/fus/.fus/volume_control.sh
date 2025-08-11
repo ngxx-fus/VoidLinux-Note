@@ -81,10 +81,14 @@ export DEF_SINK=$(sudo -u $USERNAME \
   "$PACTL" get-default-sink)
 
 # Get current volume (first channel)
-export SVOLUME_VALUE=$(sudo -u $USERNAME \
-  XDG_RUNTIME_DIR=$XDG_RUNTIME_DIR \
-  DBUS_SESSION_BUS_ADDRESS=$DBUS_SESSION_BUS_ADDRESS \
-  "$PACTL" get-sink-volume "$DEF_SINK" | awk -F'/' '/Volume:/ {gsub(/ /, "", $2); print $2}' | tr -d '%')
+if [ -e $PACTL ]; then
+    export SVOLUME_VALUE=$(sudo -u $USERNAME \
+      XDG_RUNTIME_DIR=$XDG_RUNTIME_DIR \
+      DBUS_SESSION_BUS_ADDRESS=$DBUS_SESSION_BUS_ADDRESS \
+      "$PACTL" get-sink-volume "$DEF_SINK" | awk -F'/' '/Volume:/ {gsub(/ /, "", $2); print $2}' | tr -d '%')
+else
+    export SVOLUME_VALUE=$(amixer get Master | awk -F'[][]' '/dB/ { print $2; exit }')
+fi
 
 # Get current mute state (yes/no)
 export IS_MUTED=$(sudo -u $USERNAME \

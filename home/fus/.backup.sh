@@ -6,7 +6,7 @@ source /home/fus/.fus/shell_utils.sh
 export DEV_MODE=0
 SOURCE_DIR=
 HOME_DIR=/home/fus
-TARGET_DIR=/mnt/ExtSSD/VoidBackup
+TARGET_DIR=/mnt/ExtSSD/VoidLinux-Note
 # BINs ################################
 SUDO=/usr/bin/sudo
 DIRNAME=/usr/bin/dirname
