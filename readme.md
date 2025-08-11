@@ -506,7 +506,7 @@ fus bin sys kmem wheel tty tape daemon floppy disk lp dialout audio video utmp a
 sudo usermod -a -G bluetooth $USER
 ```
 
-## Create symlink to `/var/service` to auto start `dbus` and `bluetoothd`
+### Create symlink to `/var/service` to auto start `dbus` and `bluetoothd`
 
 ```Zsh
 sudo ln -s /etc/sv/dbus  		/var/service/dbus
