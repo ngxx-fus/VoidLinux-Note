@@ -381,12 +381,16 @@ P/S: DWMBLOCKS-blocks.def.h
 
 ```
 static const Block blocks[] = {
-    /* Icon   */    /* Command */                                                                                      /* Interval */    /* Signal */
-    { "   ",      "top -bn1 | awk '/^%Cpu/ { printf \"%.1f%%\\n\", 100 - $8 }'",                                      1,              0 },
-    { "   ",      "free -h | awk '/^Mem/ { print $3 }' | sed 's/i//g'",                                               1,              0 },
-    { " 󰂑  ",      "echo \"$(cat /sys/class/power_supply/BAT0/capacity)%\"",                                          15,             0 },
-    { " 󰥔  ",      "date '+%H:%M:%S'",                                                                                1,              0 },
-    { "   ",      "date '+%d:%m:%Y'",                                                                                1,              0 },
+    /* Icon   */    /* Command */                                                                       /* Interval */    /* Signal */
+    { " [",         "", 0, 0},
+    { " ",         "top -bn1 | awk '/^%Cpu/ { printf \"%.1f%%\\n\", 100 - $8 }'",                      1,              0 },
+    { " ",         "free -h | awk '/^Mem/ { print $3 }' | sed 's/i//g'",                               1,              0 },
+    { "| ",         "/home/fus/.fus/get_wifi.sh",                                                       1,              0 },
+    { "| 󰃠 ",       "/home/fus/.fus/brightness_control.sh --get-value",                                60,             17 },
+    { "|  ",       "/home/fus/.fus/volume_control.sh --get-volume",                                    60,             15 },
+    { "| ",         "/home/fus/.fus/get_battery_level.sh",                                              60,             16 },
+    { "| 󰔟 ",       "date '+%H:%M:%S %d/%m/%Y'",                                                       1,              0 },
+    { "]   ",      "", 0, 0},
 };
 ```
 
@@ -589,9 +593,9 @@ Source: [https://www.reddit.com/r/voidlinux/comments/15l6kix/fcitx5_not_working_
 ```Zsh
 CMD:			q virtualbox
 OUTPUT:			[*] virtualbox-ose-7.1.12_1            General-purpose full virtualizer for x86 hardware
-			[*] virtualbox-ose-dkms-7.1.12_1       General-purpose full virtualizer for x86 hardware - kernel module sources for dkms
-			[*] virtualbox-ose-guest-7.1.12_1      General-purpose full virtualizer for x86 hardware - guest utilities
-			[*] virtualbox-ose-guest-dkms-7.1.12_1 General-purpose full virtualizer for x86 hardware - guest addition module source for dkms
+				[*] virtualbox-ose-dkms-7.1.12_1       General-purpose full virtualizer for x86 hardware - kernel module sources for dkms
+				[*] virtualbox-ose-guest-7.1.12_1      General-purpose full virtualizer for x86 hardware - guest utilities
+				[*] virtualbox-ose-guest-dkms-7.1.12_1 General-purpose full virtualizer for x86 hardware - guest addition module source for dkms
 ```
 
 **Install all**
