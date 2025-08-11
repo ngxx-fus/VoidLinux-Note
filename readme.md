@@ -474,8 +474,36 @@ i dolphin gvfs udisks2 xdg-utils
 
 ## Sound/Bluetooth
 
+### Install dependancies
 ```Zsh
-i libpulseaudio pavucontrol pulseaudio-utils bluez bluez-alsa libbluetooth sbc pulseaudio blueman bluetuith alsa-utils
+i libpulseaudio pavucontrol pulseaudio-utils pulseaudio bluez bluez-alsa
+```
+### Enable Bluetooth
+
+```Zsh
+sudo ln -s /etc/sv/bluetoothd /var/service/bluetoothd
+```
+### Check pulseaudio server
+```
+fus@ngxxfus-lap ~
+> pactl info
+Server String: /run/user/1000/pulse/native
+...
+Server Name: pulseaudio
+...
+```
+### Check if current user belong to `bluetooth` group
+
+```Zsh
+fus@ngxxfus-lap ~
+> groups
+fus bin sys kmem wheel tty tape daemon floppy disk lp dialout audio video utmp adm cdrom optical mail storage scanner network kvm input plugdev usbmon sgx users xbuilder
+```
+
+### Add current user to `bluetooth` group
+
+```Zsh
+sudo usermod -a -G bluetooth $USER
 ```
 
 Preview: (MoveStack)
