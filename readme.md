@@ -476,7 +476,7 @@ i dolphin gvfs udisks2 xdg-utils
 
 ### Install dependancies
 ```Zsh
-i libpulseaudio pavucontrol pulseaudio-utils pulseaudio bluez bluez-alsa
+i libpulseaudio pavucontrol pulseaudio-utils pulseaudio bluez blueman bluez-alsa
 ```
 ### Enable Bluetooth
 
@@ -504,6 +504,13 @@ fus bin sys kmem wheel tty tape daemon floppy disk lp dialout audio video utmp a
 
 ```Zsh
 sudo usermod -a -G bluetooth $USER
+```
+
+## Create symlink to `/var/service` to auto start `dbus` and `bluetoothd`
+
+```Zsh
+sudo ln -s /etc/sv/dbus  		/var/service/dbus
+sudo ln -s /etc/sv/bluetoothd 	/var/service/bluetoothd
 ```
 
 Preview: (MoveStack)
