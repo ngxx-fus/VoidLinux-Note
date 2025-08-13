@@ -43,12 +43,19 @@ map("t", "<Esc><Esc>", [[<C-\><C-n>]], { desc = "Double Esc: Exit terminal mode"
 map("n", "<C-/>", function()
   require("Comment.api").toggle.linewise.current()
 end, { desc = "Toggle comment (linewise)" })
+map("n", "<C-k>", function()
+  require("Comment.api").toggle.linewise.current()
+end, { desc = "Toggle comment (linewise)" })
+
 
 -- Toggle comment in visual mode
 map("v", "<C-_>", function()
   require("Comment.api").toggle.linewise(vim.fn.visualmode())
 end, { desc = "Toggle comment (visual)", silent = true })
 
+map("v", "<C-k>", function()
+  require("Comment.api").toggle.linewise(vim.fn.visualmode())
+end, { desc = "Toggle comment (visual)", silent = true })
 
 -- Keymap: <leader>t - Open a new terminal at the bottom (1/4 height)
 -- This keymap creates a new horizontal split window below the current one,
@@ -139,10 +146,18 @@ map("n", "<leader>fb", "<cmd>Telescope buffers<CR>",    { desc = "Buffers" })
 map("n", "<leader>fh", "<cmd>Telescope help_tags<CR>",  { desc = "Help Tags" })
 
 -- LSB Dio
-map("n", "<leader>d", vim.diagnostic.open_float, { desc = "LSP float diagnostic" })
+map("n", "<C-d>", vim.diagnostic.open_float, { desc = "LSP float diagnostic" })
 
 -- Search
 map("v", "/s", [[y/\V<C-r>=escape(@",'/\')<CR><CR>]], { noremap = true, silent = true, desc = "Search for selected text" })
 
 -- NO HIGHLIGHT
 map("n", "<Esc><Esc>", ":noh<CR>", { noremap = true, silent = true })
+
+-- Close completion menu
+vim.keymap.set("i", "<C-e>", function()
+  if vim.fn.pumvisible() == 1 then
+    return "<C-e>"  -- Close popup menu
+  end
+  return "<Esc>"    -- Fallback if no menu is open
+end, { expr = true, desc = "Close completion popup" })

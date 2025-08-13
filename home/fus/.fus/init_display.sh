@@ -9,14 +9,11 @@ if [ -z "$_eDP" ]; then
     export _eDP=eDP1
 fi
 
-
 export _fus="/home/fus/.fus"
 state_file="$_fus/monitor_mode"
 
-APP_NAME="DisplayInit"
-DEFAULT_NOTI_TIME=5000  # 2 seconds
-
-# Initialize 
+# Initialize
 mode=1
+mkdir -p /tmp/.fus/
 echo "$mode" > "$state_file"
 xrandr --output $_HDMI --off --output $_eDP --auto --primary

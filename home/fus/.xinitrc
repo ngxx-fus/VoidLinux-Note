@@ -15,11 +15,7 @@ exec /home/fus/.fus/setup_background.sh                 					&
 exec /home/fus/.fus/init_display.sh                     					&
 exec /usr/local/bin/dwmblocks                           					&
 # exec /home/fus/.fus/mount_sdcard.sh                                         &
-exec /home/fus/.fus/mount_external_ssd.sh                                   &
-# exec /etc/init.d/vmware start                                               &
-# exec /etc/init.d/vmware-USBArbitrator start                                 &
-# exec /home/fus/.fus/internet_check.sh                                       &
+# exec /home/fus/.fus/mount_external_ssd.sh                                   &
 exec /usr/bin/fcitx5                                                        &
 # DWM ######################################################################### 
-exec dwm
-
+exec dwm 

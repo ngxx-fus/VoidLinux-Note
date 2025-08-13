@@ -5,9 +5,9 @@ static const Block blocks[] = {
     { " ",         "top -bn1 | awk '/^%Cpu/ { printf \"%.1f%%\\n\", 100 - $8 }'",                      1,              0 },
     { " ",         "free -h | awk '/^Mem/ { print $3 }' | sed 's/i//g'",                               1,              0 },
     { "| ",         "/home/fus/.fus/get_wifi.sh",                                                       1,              0 },
-    { "| 󰃠 ",       "/home/fus/.fus/brightness_control.sh --get-value",                                 60,             17 },
-    { "|  ",       "/home/fus/.fus/volume_control.sh --get-volume",                                    60,             15 },
-    { "| ",         "/home/fus/.fus/get_battery_level.sh",                                              60,             16 },
+    { "| 󰃠 ",       "/home/fus/.fus/brightness_control.sh --get-value",                                 1,              17 },
+    { "|  ",       "/home/fus/.fus/volume_control.sh --get-volume",                                    1,              15 },
+    { "| ",         "/home/fus/.fus/get_battery_level.sh",                                              1,              16 },
     { "| 󰔟 ",       "date '+%H:%M:%S %d/%m/%Y'",                                                        1,              0 },
     { "]   ",      "", 0, 0},
 };

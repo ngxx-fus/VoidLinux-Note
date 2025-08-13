@@ -1,4 +1,4 @@
-1171
+1124
 DejaVuMathTeXGyre.ttf -misc-dejavu math tex gyre-medium-r-normal--0-0-0-0-p-0-adobe-standard
 DejaVuMathTeXGyre.ttf -misc-dejavu math tex gyre-medium-r-normal--0-0-0-0-p-0-iso10646-1
 DejaVuMathTeXGyre.ttf -misc-dejavu math tex gyre-medium-r-normal--0-0-0-0-p-0-iso8859-16
@@ -13,7 +13,6 @@ DejaVuSans-Bold.ttf -misc-dejavu sans-bold-r-normal--0-0-0-0-p-0-iso10646-1
 DejaVuSans-Bold.ttf -misc-dejavu sans-bold-r-normal--0-0-0-0-p-0-iso8859-1
 DejaVuSans-Bold.ttf -misc-dejavu sans-bold-r-normal--0-0-0-0-p-0-iso8859-10
 DejaVuSans-Bold.ttf -misc-dejavu sans-bold-r-normal--0-0-0-0-p-0-iso8859-13
-DejaVuSans-Bold.ttf -misc-dejavu sans-bold-r-normal--0-0-0-0-p-0-iso8859-14
 DejaVuSans-Bold.ttf -misc-dejavu sans-bold-r-normal--0-0-0-0-p-0-iso8859-15
 DejaVuSans-Bold.ttf -misc-dejavu sans-bold-r-normal--0-0-0-0-p-0-iso8859-16
 DejaVuSans-Bold.ttf -misc-dejavu sans-bold-r-normal--0-0-0-0-p-0-iso8859-2
@@ -43,7 +42,6 @@ DejaVuSans-BoldOblique.ttf -misc-dejavu sans-bold-o-normal--0-0-0-0-p-0-iso10646
 DejaVuSans-BoldOblique.ttf -misc-dejavu sans-bold-o-normal--0-0-0-0-p-0-iso8859-1
 DejaVuSans-BoldOblique.ttf -misc-dejavu sans-bold-o-normal--0-0-0-0-p-0-iso8859-10
 DejaVuSans-BoldOblique.ttf -misc-dejavu sans-bold-o-normal--0-0-0-0-p-0-iso8859-13
-DejaVuSans-BoldOblique.ttf -misc-dejavu sans-bold-o-normal--0-0-0-0-p-0-iso8859-14
 DejaVuSans-BoldOblique.ttf -misc-dejavu sans-bold-o-normal--0-0-0-0-p-0-iso8859-15
 DejaVuSans-BoldOblique.ttf -misc-dejavu sans-bold-o-normal--0-0-0-0-p-0-iso8859-16
 DejaVuSans-BoldOblique.ttf -misc-dejavu sans-bold-o-normal--0-0-0-0-p-0-iso8859-2
@@ -65,7 +63,6 @@ DejaVuSans-ExtraLight.ttf -misc-dejavu sans light-extralight-r-normal--0-0-0-0-p
 DejaVuSans-ExtraLight.ttf -misc-dejavu sans light-extralight-r-normal--0-0-0-0-p-0-iso8859-1
 DejaVuSans-ExtraLight.ttf -misc-dejavu sans light-extralight-r-normal--0-0-0-0-p-0-iso8859-10
 DejaVuSans-ExtraLight.ttf -misc-dejavu sans light-extralight-r-normal--0-0-0-0-p-0-iso8859-13
-DejaVuSans-ExtraLight.ttf -misc-dejavu sans light-extralight-r-normal--0-0-0-0-p-0-iso8859-14
 DejaVuSans-ExtraLight.ttf -misc-dejavu sans light-extralight-r-normal--0-0-0-0-p-0-iso8859-15
 DejaVuSans-ExtraLight.ttf -misc-dejavu sans light-extralight-r-normal--0-0-0-0-p-0-iso8859-16
 DejaVuSans-ExtraLight.ttf -misc-dejavu sans light-extralight-r-normal--0-0-0-0-p-0-iso8859-2
@@ -85,7 +82,6 @@ DejaVuSans-Oblique.ttf -misc-dejavu sans-medium-o-normal--0-0-0-0-p-0-iso10646-1
 DejaVuSans-Oblique.ttf -misc-dejavu sans-medium-o-normal--0-0-0-0-p-0-iso8859-1
 DejaVuSans-Oblique.ttf -misc-dejavu sans-medium-o-normal--0-0-0-0-p-0-iso8859-10
 DejaVuSans-Oblique.ttf -misc-dejavu sans-medium-o-normal--0-0-0-0-p-0-iso8859-13
-DejaVuSans-Oblique.ttf -misc-dejavu sans-medium-o-normal--0-0-0-0-p-0-iso8859-14
 DejaVuSans-Oblique.ttf -misc-dejavu sans-medium-o-normal--0-0-0-0-p-0-iso8859-15
 DejaVuSans-Oblique.ttf -misc-dejavu sans-medium-o-normal--0-0-0-0-p-0-iso8859-16
 DejaVuSans-Oblique.ttf -misc-dejavu sans-medium-o-normal--0-0-0-0-p-0-iso8859-2
@@ -112,7 +108,6 @@ DejaVuSans.ttf -misc-dejavu sans-medium-r-normal--0-0-0-0-p-0-iso10646-1
 DejaVuSans.ttf -misc-dejavu sans-medium-r-normal--0-0-0-0-p-0-iso8859-1
 DejaVuSans.ttf -misc-dejavu sans-medium-r-normal--0-0-0-0-p-0-iso8859-10
 DejaVuSans.ttf -misc-dejavu sans-medium-r-normal--0-0-0-0-p-0-iso8859-13
-DejaVuSans.ttf -misc-dejavu sans-medium-r-normal--0-0-0-0-p-0-iso8859-14
 DejaVuSans.ttf -misc-dejavu sans-medium-r-normal--0-0-0-0-p-0-iso8859-15
 DejaVuSans.ttf -misc-dejavu sans-medium-r-normal--0-0-0-0-p-0-iso8859-16
 DejaVuSans.ttf -misc-dejavu sans-medium-r-normal--0-0-0-0-p-0-iso8859-2
@@ -142,7 +137,6 @@ DejaVuSansCondensed-Bold.ttf -misc-dejavu sans condensed-bold-r-semicondensed--0
 DejaVuSansCondensed-Bold.ttf -misc-dejavu sans condensed-bold-r-semicondensed--0-0-0-0-p-0-iso8859-1
 DejaVuSansCondensed-Bold.ttf -misc-dejavu sans condensed-bold-r-semicondensed--0-0-0-0-p-0-iso8859-10
 DejaVuSansCondensed-Bold.ttf -misc-dejavu sans condensed-bold-r-semicondensed--0-0-0-0-p-0-iso8859-13
-DejaVuSansCondensed-Bold.ttf -misc-dejavu sans condensed-bold-r-semicondensed--0-0-0-0-p-0-iso8859-14
 DejaVuSansCondensed-Bold.ttf -misc-dejavu sans condensed-bold-r-semicondensed--0-0-0-0-p-0-iso8859-15
 DejaVuSansCondensed-Bold.ttf -misc-dejavu sans condensed-bold-r-semicondensed--0-0-0-0-p-0-iso8859-16
 DejaVuSansCondensed-Bold.ttf -misc-dejavu sans condensed-bold-r-semicondensed--0-0-0-0-p-0-iso8859-2
@@ -172,7 +166,6 @@ DejaVuSansCondensed-BoldOblique.ttf -misc-dejavu sans condensed-bold-o-semiconde
 DejaVuSansCondensed-BoldOblique.ttf -misc-dejavu sans condensed-bold-o-semicondensed--0-0-0-0-p-0-iso8859-1
 DejaVuSansCondensed-BoldOblique.ttf -misc-dejavu sans condensed-bold-o-semicondensed--0-0-0-0-p-0-iso8859-10
 DejaVuSansCondensed-BoldOblique.ttf -misc-dejavu sans condensed-bold-o-semicondensed--0-0-0-0-p-0-iso8859-13
-DejaVuSansCondensed-BoldOblique.ttf -misc-dejavu sans condensed-bold-o-semicondensed--0-0-0-0-p-0-iso8859-14
 DejaVuSansCondensed-BoldOblique.ttf -misc-dejavu sans condensed-bold-o-semicondensed--0-0-0-0-p-0-iso8859-15
 DejaVuSansCondensed-BoldOblique.ttf -misc-dejavu sans condensed-bold-o-semicondensed--0-0-0-0-p-0-iso8859-16
 DejaVuSansCondensed-BoldOblique.ttf -misc-dejavu sans condensed-bold-o-semicondensed--0-0-0-0-p-0-iso8859-2
@@ -199,7 +192,6 @@ DejaVuSansCondensed-Oblique.ttf -misc-dejavu sans condensed-medium-o-semicondens
 DejaVuSansCondensed-Oblique.ttf -misc-dejavu sans condensed-medium-o-semicondensed--0-0-0-0-p-0-iso8859-1
 DejaVuSansCondensed-Oblique.ttf -misc-dejavu sans condensed-medium-o-semicondensed--0-0-0-0-p-0-iso8859-10
 DejaVuSansCondensed-Oblique.ttf -misc-dejavu sans condensed-medium-o-semicondensed--0-0-0-0-p-0-iso8859-13
-DejaVuSansCondensed-Oblique.ttf -misc-dejavu sans condensed-medium-o-semicondensed--0-0-0-0-p-0-iso8859-14
 DejaVuSansCondensed-Oblique.ttf -misc-dejavu sans condensed-medium-o-semicondensed--0-0-0-0-p-0-iso8859-15
 DejaVuSansCondensed-Oblique.ttf -misc-dejavu sans condensed-medium-o-semicondensed--0-0-0-0-p-0-iso8859-16
 DejaVuSansCondensed-Oblique.ttf -misc-dejavu sans condensed-medium-o-semicondensed--0-0-0-0-p-0-iso8859-2
@@ -226,7 +218,6 @@ DejaVuSansCondensed.ttf -misc-dejavu sans condensed-medium-r-semicondensed--0-0-
 DejaVuSansCondensed.ttf -misc-dejavu sans condensed-medium-r-semicondensed--0-0-0-0-p-0-iso8859-1
 DejaVuSansCondensed.ttf -misc-dejavu sans condensed-medium-r-semicondensed--0-0-0-0-p-0-iso8859-10
 DejaVuSansCondensed.ttf -misc-dejavu sans condensed-medium-r-semicondensed--0-0-0-0-p-0-iso8859-13
-DejaVuSansCondensed.ttf -misc-dejavu sans condensed-medium-r-semicondensed--0-0-0-0-p-0-iso8859-14
 DejaVuSansCondensed.ttf -misc-dejavu sans condensed-medium-r-semicondensed--0-0-0-0-p-0-iso8859-15
 DejaVuSansCondensed.ttf -misc-dejavu sans condensed-medium-r-semicondensed--0-0-0-0-p-0-iso8859-16
 DejaVuSansCondensed.ttf -misc-dejavu sans condensed-medium-r-semicondensed--0-0-0-0-p-0-iso8859-2
@@ -255,7 +246,6 @@ DejaVuSansMono-Bold.ttf -misc-dejavu sans mono-bold-r-normal--0-0-0-0-m-0-iso106
 DejaVuSansMono-Bold.ttf -misc-dejavu sans mono-bold-r-normal--0-0-0-0-m-0-iso8859-1
 DejaVuSansMono-Bold.ttf -misc-dejavu sans mono-bold-r-normal--0-0-0-0-m-0-iso8859-10
 DejaVuSansMono-Bold.ttf -misc-dejavu sans mono-bold-r-normal--0-0-0-0-m-0-iso8859-13
-DejaVuSansMono-Bold.ttf -misc-dejavu sans mono-bold-r-normal--0-0-0-0-m-0-iso8859-14
 DejaVuSansMono-Bold.ttf -misc-dejavu sans mono-bold-r-normal--0-0-0-0-m-0-iso8859-15
 DejaVuSansMono-Bold.ttf -misc-dejavu sans mono-bold-r-normal--0-0-0-0-m-0-iso8859-16
 DejaVuSansMono-Bold.ttf -misc-dejavu sans mono-bold-r-normal--0-0-0-0-m-0-iso8859-2
@@ -283,7 +273,6 @@ DejaVuSansMono-BoldOblique.ttf -misc-dejavu sans mono-bold-o-normal--0-0-0-0-m-0
 DejaVuSansMono-BoldOblique.ttf -misc-dejavu sans mono-bold-o-normal--0-0-0-0-m-0-iso8859-1
 DejaVuSansMono-BoldOblique.ttf -misc-dejavu sans mono-bold-o-normal--0-0-0-0-m-0-iso8859-10
 DejaVuSansMono-BoldOblique.ttf -misc-dejavu sans mono-bold-o-normal--0-0-0-0-m-0-iso8859-13
-DejaVuSansMono-BoldOblique.ttf -misc-dejavu sans mono-bold-o-normal--0-0-0-0-m-0-iso8859-14
 DejaVuSansMono-BoldOblique.ttf -misc-dejavu sans mono-bold-o-normal--0-0-0-0-m-0-iso8859-15
 DejaVuSansMono-BoldOblique.ttf -misc-dejavu sans mono-bold-o-normal--0-0-0-0-m-0-iso8859-16
 DejaVuSansMono-BoldOblique.ttf -misc-dejavu sans mono-bold-o-normal--0-0-0-0-m-0-iso8859-2
@@ -308,7 +297,6 @@ DejaVuSansMono-Oblique.ttf -misc-dejavu sans mono-medium-o-normal--0-0-0-0-m-0-i
 DejaVuSansMono-Oblique.ttf -misc-dejavu sans mono-medium-o-normal--0-0-0-0-m-0-iso8859-1
 DejaVuSansMono-Oblique.ttf -misc-dejavu sans mono-medium-o-normal--0-0-0-0-m-0-iso8859-10
 DejaVuSansMono-Oblique.ttf -misc-dejavu sans mono-medium-o-normal--0-0-0-0-m-0-iso8859-13
-DejaVuSansMono-Oblique.ttf -misc-dejavu sans mono-medium-o-normal--0-0-0-0-m-0-iso8859-14
 DejaVuSansMono-Oblique.ttf -misc-dejavu sans mono-medium-o-normal--0-0-0-0-m-0-iso8859-15
 DejaVuSansMono-Oblique.ttf -misc-dejavu sans mono-medium-o-normal--0-0-0-0-m-0-iso8859-16
 DejaVuSansMono-Oblique.ttf -misc-dejavu sans mono-medium-o-normal--0-0-0-0-m-0-iso8859-2
@@ -333,7 +321,6 @@ DejaVuSansMono.ttf -misc-dejavu sans mono-medium-r-normal--0-0-0-0-m-0-iso10646-
 DejaVuSansMono.ttf -misc-dejavu sans mono-medium-r-normal--0-0-0-0-m-0-iso8859-1
 DejaVuSansMono.ttf -misc-dejavu sans mono-medium-r-normal--0-0-0-0-m-0-iso8859-10
 DejaVuSansMono.ttf -misc-dejavu sans mono-medium-r-normal--0-0-0-0-m-0-iso8859-13
-DejaVuSansMono.ttf -misc-dejavu sans mono-medium-r-normal--0-0-0-0-m-0-iso8859-14
 DejaVuSansMono.ttf -misc-dejavu sans mono-medium-r-normal--0-0-0-0-m-0-iso8859-15
 DejaVuSansMono.ttf -misc-dejavu sans mono-medium-r-normal--0-0-0-0-m-0-iso8859-16
 DejaVuSansMono.ttf -misc-dejavu sans mono-medium-r-normal--0-0-0-0-m-0-iso8859-2
@@ -361,7 +348,6 @@ DejaVuSerif-Bold.ttf -misc-dejavu serif-bold-r-normal--0-0-0-0-p-0-iso10646-1
 DejaVuSerif-Bold.ttf -misc-dejavu serif-bold-r-normal--0-0-0-0-p-0-iso8859-1
 DejaVuSerif-Bold.ttf -misc-dejavu serif-bold-r-normal--0-0-0-0-p-0-iso8859-10
 DejaVuSerif-Bold.ttf -misc-dejavu serif-bold-r-normal--0-0-0-0-p-0-iso8859-13
-DejaVuSerif-Bold.ttf -misc-dejavu serif-bold-r-normal--0-0-0-0-p-0-iso8859-14
 DejaVuSerif-Bold.ttf -misc-dejavu serif-bold-r-normal--0-0-0-0-p-0-iso8859-15
 DejaVuSerif-Bold.ttf -misc-dejavu serif-bold-r-normal--0-0-0-0-p-0-iso8859-16
 DejaVuSerif-Bold.ttf -misc-dejavu serif-bold-r-normal--0-0-0-0-p-0-iso8859-2
@@ -386,7 +372,6 @@ DejaVuSerif-BoldItalic.ttf -misc-dejavu serif-bold-i-normal--0-0-0-0-p-0-iso1064
 DejaVuSerif-BoldItalic.ttf -misc-dejavu serif-bold-i-normal--0-0-0-0-p-0-iso8859-1
 DejaVuSerif-BoldItalic.ttf -misc-dejavu serif-bold-i-normal--0-0-0-0-p-0-iso8859-10
 DejaVuSerif-BoldItalic.ttf -misc-dejavu serif-bold-i-normal--0-0-0-0-p-0-iso8859-13
-DejaVuSerif-BoldItalic.ttf -misc-dejavu serif-bold-i-normal--0-0-0-0-p-0-iso8859-14
 DejaVuSerif-BoldItalic.ttf -misc-dejavu serif-bold-i-normal--0-0-0-0-p-0-iso8859-15
 DejaVuSerif-BoldItalic.ttf -misc-dejavu serif-bold-i-normal--0-0-0-0-p-0-iso8859-16
 DejaVuSerif-BoldItalic.ttf -misc-dejavu serif-bold-i-normal--0-0-0-0-p-0-iso8859-2
@@ -411,7 +396,6 @@ DejaVuSerif-Italic.ttf -misc-dejavu serif-medium-i-normal--0-0-0-0-p-0-iso10646-
 DejaVuSerif-Italic.ttf -misc-dejavu serif-medium-i-normal--0-0-0-0-p-0-iso8859-1
 DejaVuSerif-Italic.ttf -misc-dejavu serif-medium-i-normal--0-0-0-0-p-0-iso8859-10
 DejaVuSerif-Italic.ttf -misc-dejavu serif-medium-i-normal--0-0-0-0-p-0-iso8859-13
-DejaVuSerif-Italic.ttf -misc-dejavu serif-medium-i-normal--0-0-0-0-p-0-iso8859-14
 DejaVuSerif-Italic.ttf -misc-dejavu serif-medium-i-normal--0-0-0-0-p-0-iso8859-15
 DejaVuSerif-Italic.ttf -misc-dejavu serif-medium-i-normal--0-0-0-0-p-0-iso8859-16
 DejaVuSerif-Italic.ttf -misc-dejavu serif-medium-i-normal--0-0-0-0-p-0-iso8859-2
@@ -436,7 +420,6 @@ DejaVuSerif.ttf -misc-dejavu serif-medium-r-normal--0-0-0-0-p-0-iso10646-1
 DejaVuSerif.ttf -misc-dejavu serif-medium-r-normal--0-0-0-0-p-0-iso8859-1
 DejaVuSerif.ttf -misc-dejavu serif-medium-r-normal--0-0-0-0-p-0-iso8859-10
 DejaVuSerif.ttf -misc-dejavu serif-medium-r-normal--0-0-0-0-p-0-iso8859-13
-DejaVuSerif.ttf -misc-dejavu serif-medium-r-normal--0-0-0-0-p-0-iso8859-14
 DejaVuSerif.ttf -misc-dejavu serif-medium-r-normal--0-0-0-0-p-0-iso8859-15
 DejaVuSerif.ttf -misc-dejavu serif-medium-r-normal--0-0-0-0-p-0-iso8859-16
 DejaVuSerif.ttf -misc-dejavu serif-medium-r-normal--0-0-0-0-p-0-iso8859-2
@@ -461,7 +444,6 @@ DejaVuSerifCondensed-Bold.ttf -misc-dejavu serif condensed-bold-r-semicondensed-
 DejaVuSerifCondensed-Bold.ttf -misc-dejavu serif condensed-bold-r-semicondensed--0-0-0-0-p-0-iso8859-1
 DejaVuSerifCondensed-Bold.ttf -misc-dejavu serif condensed-bold-r-semicondensed--0-0-0-0-p-0-iso8859-10
 DejaVuSerifCondensed-Bold.ttf -misc-dejavu serif condensed-bold-r-semicondensed--0-0-0-0-p-0-iso8859-13
-DejaVuSerifCondensed-Bold.ttf -misc-dejavu serif condensed-bold-r-semicondensed--0-0-0-0-p-0-iso8859-14
 DejaVuSerifCondensed-Bold.ttf -misc-dejavu serif condensed-bold-r-semicondensed--0-0-0-0-p-0-iso8859-15
 DejaVuSerifCondensed-Bold.ttf -misc-dejavu serif condensed-bold-r-semicondensed--0-0-0-0-p-0-iso8859-16
 DejaVuSerifCondensed-Bold.ttf -misc-dejavu serif condensed-bold-r-semicondensed--0-0-0-0-p-0-iso8859-2
@@ -486,7 +468,6 @@ DejaVuSerifCondensed-BoldItalic.ttf -misc-dejavu serif condensed-bold-i-semicond
 DejaVuSerifCondensed-BoldItalic.ttf -misc-dejavu serif condensed-bold-i-semicondensed--0-0-0-0-p-0-iso8859-1
 DejaVuSerifCondensed-BoldItalic.ttf -misc-dejavu serif condensed-bold-i-semicondensed--0-0-0-0-p-0-iso8859-10
 DejaVuSerifCondensed-BoldItalic.ttf -misc-dejavu serif condensed-bold-i-semicondensed--0-0-0-0-p-0-iso8859-13
-DejaVuSerifCondensed-BoldItalic.ttf -misc-dejavu serif condensed-bold-i-semicondensed--0-0-0-0-p-0-iso8859-14
 DejaVuSerifCondensed-BoldItalic.ttf -misc-dejavu serif condensed-bold-i-semicondensed--0-0-0-0-p-0-iso8859-15
 DejaVuSerifCondensed-BoldItalic.ttf -misc-dejavu serif condensed-bold-i-semicondensed--0-0-0-0-p-0-iso8859-16
 DejaVuSerifCondensed-BoldItalic.ttf -misc-dejavu serif condensed-bold-i-semicondensed--0-0-0-0-p-0-iso8859-2
@@ -511,7 +492,6 @@ DejaVuSerifCondensed-Italic.ttf -misc-dejavu serif condensed-medium-i-semiconden
 DejaVuSerifCondensed-Italic.ttf -misc-dejavu serif condensed-medium-i-semicondensed--0-0-0-0-p-0-iso8859-1
 DejaVuSerifCondensed-Italic.ttf -misc-dejavu serif condensed-medium-i-semicondensed--0-0-0-0-p-0-iso8859-10
 DejaVuSerifCondensed-Italic.ttf -misc-dejavu serif condensed-medium-i-semicondensed--0-0-0-0-p-0-iso8859-13
-DejaVuSerifCondensed-Italic.ttf -misc-dejavu serif condensed-medium-i-semicondensed--0-0-0-0-p-0-iso8859-14
 DejaVuSerifCondensed-Italic.ttf -misc-dejavu serif condensed-medium-i-semicondensed--0-0-0-0-p-0-iso8859-15
 DejaVuSerifCondensed-Italic.ttf -misc-dejavu serif condensed-medium-i-semicondensed--0-0-0-0-p-0-iso8859-16
 DejaVuSerifCondensed-Italic.ttf -misc-dejavu serif condensed-medium-i-semicondensed--0-0-0-0-p-0-iso8859-2
@@ -536,7 +516,6 @@ DejaVuSerifCondensed.ttf -misc-dejavu serif condensed-medium-r-semicondensed--0-
 DejaVuSerifCondensed.ttf -misc-dejavu serif condensed-medium-r-semicondensed--0-0-0-0-p-0-iso8859-1
 DejaVuSerifCondensed.ttf -misc-dejavu serif condensed-medium-r-semicondensed--0-0-0-0-p-0-iso8859-10
 DejaVuSerifCondensed.ttf -misc-dejavu serif condensed-medium-r-semicondensed--0-0-0-0-p-0-iso8859-13
-DejaVuSerifCondensed.ttf -misc-dejavu serif condensed-medium-r-semicondensed--0-0-0-0-p-0-iso8859-14
 DejaVuSerifCondensed.ttf -misc-dejavu serif condensed-medium-r-semicondensed--0-0-0-0-p-0-iso8859-15
 DejaVuSerifCondensed.ttf -misc-dejavu serif condensed-medium-r-semicondensed--0-0-0-0-p-0-iso8859-16
 DejaVuSerifCondensed.ttf -misc-dejavu serif condensed-medium-r-semicondensed--0-0-0-0-p-0-iso8859-2
@@ -563,7 +542,6 @@ FreeMono.ttf -misc-freemono-medium-r-normal--0-0-0-0-m-0-iso10646-1
 FreeMono.ttf -misc-freemono-medium-r-normal--0-0-0-0-m-0-iso8859-1
 FreeMono.ttf -misc-freemono-medium-r-normal--0-0-0-0-m-0-iso8859-10
 FreeMono.ttf -misc-freemono-medium-r-normal--0-0-0-0-m-0-iso8859-13
-FreeMono.ttf -misc-freemono-medium-r-normal--0-0-0-0-m-0-iso8859-14
 FreeMono.ttf -misc-freemono-medium-r-normal--0-0-0-0-m-0-iso8859-15
 FreeMono.ttf -misc-freemono-medium-r-normal--0-0-0-0-m-0-iso8859-16
 FreeMono.ttf -misc-freemono-medium-r-normal--0-0-0-0-m-0-iso8859-2
@@ -592,7 +570,6 @@ FreeMonoBold.ttf -misc-freemono-bold-r-normal--0-0-0-0-m-0-iso10646-1
 FreeMonoBold.ttf -misc-freemono-bold-r-normal--0-0-0-0-m-0-iso8859-1
 FreeMonoBold.ttf -misc-freemono-bold-r-normal--0-0-0-0-m-0-iso8859-10
 FreeMonoBold.ttf -misc-freemono-bold-r-normal--0-0-0-0-m-0-iso8859-13
-FreeMonoBold.ttf -misc-freemono-bold-r-normal--0-0-0-0-m-0-iso8859-14
 FreeMonoBold.ttf -misc-freemono-bold-r-normal--0-0-0-0-m-0-iso8859-15
 FreeMonoBold.ttf -misc-freemono-bold-r-normal--0-0-0-0-m-0-iso8859-16
 FreeMonoBold.ttf -misc-freemono-bold-r-normal--0-0-0-0-m-0-iso8859-2
@@ -615,7 +592,6 @@ FreeMonoBoldOblique.ttf -misc-freemono-bold-o-normal--0-0-0-0-m-0-iso10646-1
 FreeMonoBoldOblique.ttf -misc-freemono-bold-o-normal--0-0-0-0-m-0-iso8859-1
 FreeMonoBoldOblique.ttf -misc-freemono-bold-o-normal--0-0-0-0-m-0-iso8859-10
 FreeMonoBoldOblique.ttf -misc-freemono-bold-o-normal--0-0-0-0-m-0-iso8859-13
-FreeMonoBoldOblique.ttf -misc-freemono-bold-o-normal--0-0-0-0-m-0-iso8859-14
 FreeMonoBoldOblique.ttf -misc-freemono-bold-o-normal--0-0-0-0-m-0-iso8859-15
 FreeMonoBoldOblique.ttf -misc-freemono-bold-o-normal--0-0-0-0-m-0-iso8859-16
 FreeMonoBoldOblique.ttf -misc-freemono-bold-o-normal--0-0-0-0-m-0-iso8859-2
@@ -638,7 +614,6 @@ FreeMonoOblique.ttf -misc-freemono-medium-o-normal--0-0-0-0-m-0-iso10646-1
 FreeMonoOblique.ttf -misc-freemono-medium-o-normal--0-0-0-0-m-0-iso8859-1
 FreeMonoOblique.ttf -misc-freemono-medium-o-normal--0-0-0-0-m-0-iso8859-10
 FreeMonoOblique.ttf -misc-freemono-medium-o-normal--0-0-0-0-m-0-iso8859-13
-FreeMonoOblique.ttf -misc-freemono-medium-o-normal--0-0-0-0-m-0-iso8859-14
 FreeMonoOblique.ttf -misc-freemono-medium-o-normal--0-0-0-0-m-0-iso8859-15
 FreeMonoOblique.ttf -misc-freemono-medium-o-normal--0-0-0-0-m-0-iso8859-16
 FreeMonoOblique.ttf -misc-freemono-medium-o-normal--0-0-0-0-m-0-iso8859-2
@@ -666,7 +641,6 @@ FreeSans.ttf -misc-freesans-medium-r-normal--0-0-0-0-p-0-iso10646-1
 FreeSans.ttf -misc-freesans-medium-r-normal--0-0-0-0-p-0-iso8859-1
 FreeSans.ttf -misc-freesans-medium-r-normal--0-0-0-0-p-0-iso8859-10
 FreeSans.ttf -misc-freesans-medium-r-normal--0-0-0-0-p-0-iso8859-13
-FreeSans.ttf -misc-freesans-medium-r-normal--0-0-0-0-p-0-iso8859-14
 FreeSans.ttf -misc-freesans-medium-r-normal--0-0-0-0-p-0-iso8859-15
 FreeSans.ttf -misc-freesans-medium-r-normal--0-0-0-0-p-0-iso8859-16
 FreeSans.ttf -misc-freesans-medium-r-normal--0-0-0-0-p-0-iso8859-2
@@ -689,7 +663,6 @@ FreeSansBold.ttf -misc-freesans-semibold-r-normal--0-0-0-0-p-0-iso10646-1
 FreeSansBold.ttf -misc-freesans-semibold-r-normal--0-0-0-0-p-0-iso8859-1
 FreeSansBold.ttf -misc-freesans-semibold-r-normal--0-0-0-0-p-0-iso8859-10
 FreeSansBold.ttf -misc-freesans-semibold-r-normal--0-0-0-0-p-0-iso8859-13
-FreeSansBold.ttf -misc-freesans-semibold-r-normal--0-0-0-0-p-0-iso8859-14
 FreeSansBold.ttf -misc-freesans-semibold-r-normal--0-0-0-0-p-0-iso8859-15
 FreeSansBold.ttf -misc-freesans-semibold-r-normal--0-0-0-0-p-0-iso8859-16
 FreeSansBold.ttf -misc-freesans-semibold-r-normal--0-0-0-0-p-0-iso8859-2
@@ -712,7 +685,6 @@ FreeSansBoldOblique.ttf -misc-freesans-semibold-o-normal--0-0-0-0-p-0-iso10646-1
 FreeSansBoldOblique.ttf -misc-freesans-semibold-o-normal--0-0-0-0-p-0-iso8859-1
 FreeSansBoldOblique.ttf -misc-freesans-semibold-o-normal--0-0-0-0-p-0-iso8859-10
 FreeSansBoldOblique.ttf -misc-freesans-semibold-o-normal--0-0-0-0-p-0-iso8859-13
-FreeSansBoldOblique.ttf -misc-freesans-semibold-o-normal--0-0-0-0-p-0-iso8859-14
 FreeSansBoldOblique.ttf -misc-freesans-semibold-o-normal--0-0-0-0-p-0-iso8859-15
 FreeSansBoldOblique.ttf -misc-freesans-semibold-o-normal--0-0-0-0-p-0-iso8859-16
 FreeSansBoldOblique.ttf -misc-freesans-semibold-o-normal--0-0-0-0-p-0-iso8859-2
@@ -735,7 +707,6 @@ FreeSansOblique.ttf -misc-freesans-medium-o-normal--0-0-0-0-p-0-iso10646-1
 FreeSansOblique.ttf -misc-freesans-medium-o-normal--0-0-0-0-p-0-iso8859-1
 FreeSansOblique.ttf -misc-freesans-medium-o-normal--0-0-0-0-p-0-iso8859-10
 FreeSansOblique.ttf -misc-freesans-medium-o-normal--0-0-0-0-p-0-iso8859-13
-FreeSansOblique.ttf -misc-freesans-medium-o-normal--0-0-0-0-p-0-iso8859-14
 FreeSansOblique.ttf -misc-freesans-medium-o-normal--0-0-0-0-p-0-iso8859-15
 FreeSansOblique.ttf -misc-freesans-medium-o-normal--0-0-0-0-p-0-iso8859-16
 FreeSansOblique.ttf -misc-freesans-medium-o-normal--0-0-0-0-p-0-iso8859-2
@@ -764,7 +735,6 @@ FreeSerif.ttf -misc-freeserif-medium-r-normal--0-0-0-0-p-0-iso8859-1
 FreeSerif.ttf -misc-freeserif-medium-r-normal--0-0-0-0-p-0-iso8859-10
 FreeSerif.ttf -misc-freeserif-medium-r-normal--0-0-0-0-p-0-iso8859-11
 FreeSerif.ttf -misc-freeserif-medium-r-normal--0-0-0-0-p-0-iso8859-13
-FreeSerif.ttf -misc-freeserif-medium-r-normal--0-0-0-0-p-0-iso8859-14
 FreeSerif.ttf -misc-freeserif-medium-r-normal--0-0-0-0-p-0-iso8859-15
 FreeSerif.ttf -misc-freeserif-medium-r-normal--0-0-0-0-p-0-iso8859-16
 FreeSerif.ttf -misc-freeserif-medium-r-normal--0-0-0-0-p-0-iso8859-2
@@ -794,7 +764,6 @@ FreeSerifBold.ttf -misc-freeserif-bold-r-normal--0-0-0-0-p-0-iso8859-1
 FreeSerifBold.ttf -misc-freeserif-bold-r-normal--0-0-0-0-p-0-iso8859-10
 FreeSerifBold.ttf -misc-freeserif-bold-r-normal--0-0-0-0-p-0-iso8859-11
 FreeSerifBold.ttf -misc-freeserif-bold-r-normal--0-0-0-0-p-0-iso8859-13
-FreeSerifBold.ttf -misc-freeserif-bold-r-normal--0-0-0-0-p-0-iso8859-14
 FreeSerifBold.ttf -misc-freeserif-bold-r-normal--0-0-0-0-p-0-iso8859-15
 FreeSerifBold.ttf -misc-freeserif-bold-r-normal--0-0-0-0-p-0-iso8859-16
 FreeSerifBold.ttf -misc-freeserif-bold-r-normal--0-0-0-0-p-0-iso8859-2
@@ -821,7 +790,6 @@ FreeSerifBoldItalic.ttf -misc-freeserif-bold-i-normal--0-0-0-0-p-0-iso8859-1
 FreeSerifBoldItalic.ttf -misc-freeserif-bold-i-normal--0-0-0-0-p-0-iso8859-10
 FreeSerifBoldItalic.ttf -misc-freeserif-bold-i-normal--0-0-0-0-p-0-iso8859-11
 FreeSerifBoldItalic.ttf -misc-freeserif-bold-i-normal--0-0-0-0-p-0-iso8859-13
-FreeSerifBoldItalic.ttf -misc-freeserif-bold-i-normal--0-0-0-0-p-0-iso8859-14
 FreeSerifBoldItalic.ttf -misc-freeserif-bold-i-normal--0-0-0-0-p-0-iso8859-15
 FreeSerifBoldItalic.ttf -misc-freeserif-bold-i-normal--0-0-0-0-p-0-iso8859-16
 FreeSerifBoldItalic.ttf -misc-freeserif-bold-i-normal--0-0-0-0-p-0-iso8859-2
@@ -845,7 +813,6 @@ FreeSerifItalic.ttf -misc-freeserif-medium-i-normal--0-0-0-0-p-0-iso8859-1
 FreeSerifItalic.ttf -misc-freeserif-medium-i-normal--0-0-0-0-p-0-iso8859-10
 FreeSerifItalic.ttf -misc-freeserif-medium-i-normal--0-0-0-0-p-0-iso8859-11
 FreeSerifItalic.ttf -misc-freeserif-medium-i-normal--0-0-0-0-p-0-iso8859-13
-FreeSerifItalic.ttf -misc-freeserif-medium-i-normal--0-0-0-0-p-0-iso8859-14
 FreeSerifItalic.ttf -misc-freeserif-medium-i-normal--0-0-0-0-p-0-iso8859-15
 FreeSerifItalic.ttf -misc-freeserif-medium-i-normal--0-0-0-0-p-0-iso8859-16
 FreeSerifItalic.ttf -misc-freeserif-medium-i-normal--0-0-0-0-p-0-iso8859-2
@@ -868,7 +835,6 @@ Roboto-Black.ttf -misc-roboto-black-r-normal--0-0-0-0-p-0-iso10646-1
 Roboto-Black.ttf -misc-roboto-black-r-normal--0-0-0-0-p-0-iso8859-1
 Roboto-Black.ttf -misc-roboto-black-r-normal--0-0-0-0-p-0-iso8859-10
 Roboto-Black.ttf -misc-roboto-black-r-normal--0-0-0-0-p-0-iso8859-13
-Roboto-Black.ttf -misc-roboto-black-r-normal--0-0-0-0-p-0-iso8859-14
 Roboto-Black.ttf -misc-roboto-black-r-normal--0-0-0-0-p-0-iso8859-15
 Roboto-Black.ttf -misc-roboto-black-r-normal--0-0-0-0-p-0-iso8859-16
 Roboto-Black.ttf -misc-roboto-black-r-normal--0-0-0-0-p-0-iso8859-2
@@ -890,7 +856,6 @@ Roboto-BlackItalic.ttf -misc-roboto-black-i-normal--0-0-0-0-p-0-iso10646-1
 Roboto-BlackItalic.ttf -misc-roboto-black-i-normal--0-0-0-0-p-0-iso8859-1
 Roboto-BlackItalic.ttf -misc-roboto-black-i-normal--0-0-0-0-p-0-iso8859-10
 Roboto-BlackItalic.ttf -misc-roboto-black-i-normal--0-0-0-0-p-0-iso8859-13
-Roboto-BlackItalic.ttf -misc-roboto-black-i-normal--0-0-0-0-p-0-iso8859-14
 Roboto-BlackItalic.ttf -misc-roboto-black-i-normal--0-0-0-0-p-0-iso8859-15
 Roboto-BlackItalic.ttf -misc-roboto-black-i-normal--0-0-0-0-p-0-iso8859-16
 Roboto-BlackItalic.ttf -misc-roboto-black-i-normal--0-0-0-0-p-0-iso8859-2
@@ -912,7 +877,6 @@ Roboto-Bold.ttf -misc-roboto-bold-r-normal--0-0-0-0-p-0-iso10646-1
 Roboto-Bold.ttf -misc-roboto-bold-r-normal--0-0-0-0-p-0-iso8859-1
 Roboto-Bold.ttf -misc-roboto-bold-r-normal--0-0-0-0-p-0-iso8859-10
 Roboto-Bold.ttf -misc-roboto-bold-r-normal--0-0-0-0-p-0-iso8859-13
-Roboto-Bold.ttf -misc-roboto-bold-r-normal--0-0-0-0-p-0-iso8859-14
 Roboto-Bold.ttf -misc-roboto-bold-r-normal--0-0-0-0-p-0-iso8859-15
 Roboto-Bold.ttf -misc-roboto-bold-r-normal--0-0-0-0-p-0-iso8859-16
 Roboto-Bold.ttf -misc-roboto-bold-r-normal--0-0-0-0-p-0-iso8859-2
@@ -934,7 +898,6 @@ Roboto-BoldItalic.ttf -misc-roboto-bold-i-normal--0-0-0-0-p-0-iso10646-1
 Roboto-BoldItalic.ttf -misc-roboto-bold-i-normal--0-0-0-0-p-0-iso8859-1
 Roboto-BoldItalic.ttf -misc-roboto-bold-i-normal--0-0-0-0-p-0-iso8859-10
 Roboto-BoldItalic.ttf -misc-roboto-bold-i-normal--0-0-0-0-p-0-iso8859-13
-Roboto-BoldItalic.ttf -misc-roboto-bold-i-normal--0-0-0-0-p-0-iso8859-14
 Roboto-BoldItalic.ttf -misc-roboto-bold-i-normal--0-0-0-0-p-0-iso8859-15
 Roboto-BoldItalic.ttf -misc-roboto-bold-i-normal--0-0-0-0-p-0-iso8859-16
 Roboto-BoldItalic.ttf -misc-roboto-bold-i-normal--0-0-0-0-p-0-iso8859-2
@@ -956,7 +919,6 @@ Roboto-MediumItalic.ttf -misc-roboto-medium-i-normal--0-0-0-0-p-0-iso10646-1
 Roboto-MediumItalic.ttf -misc-roboto-medium-i-normal--0-0-0-0-p-0-iso8859-1
 Roboto-MediumItalic.ttf -misc-roboto-medium-i-normal--0-0-0-0-p-0-iso8859-10
 Roboto-MediumItalic.ttf -misc-roboto-medium-i-normal--0-0-0-0-p-0-iso8859-13
-Roboto-MediumItalic.ttf -misc-roboto-medium-i-normal--0-0-0-0-p-0-iso8859-14
 Roboto-MediumItalic.ttf -misc-roboto-medium-i-normal--0-0-0-0-p-0-iso8859-15
 Roboto-MediumItalic.ttf -misc-roboto-medium-i-normal--0-0-0-0-p-0-iso8859-16
 Roboto-MediumItalic.ttf -misc-roboto-medium-i-normal--0-0-0-0-p-0-iso8859-2
@@ -978,7 +940,6 @@ Roboto-Regular.ttf -misc-roboto-medium-r-normal--0-0-0-0-p-0-iso10646-1
 Roboto-Regular.ttf -misc-roboto-medium-r-normal--0-0-0-0-p-0-iso8859-1
 Roboto-Regular.ttf -misc-roboto-medium-r-normal--0-0-0-0-p-0-iso8859-10
 Roboto-Regular.ttf -misc-roboto-medium-r-normal--0-0-0-0-p-0-iso8859-13
-Roboto-Regular.ttf -misc-roboto-medium-r-normal--0-0-0-0-p-0-iso8859-14
 Roboto-Regular.ttf -misc-roboto-medium-r-normal--0-0-0-0-p-0-iso8859-15
 Roboto-Regular.ttf -misc-roboto-medium-r-normal--0-0-0-0-p-0-iso8859-16
 Roboto-Regular.ttf -misc-roboto-medium-r-normal--0-0-0-0-p-0-iso8859-2
@@ -1000,7 +961,6 @@ Roboto-Thin.ttf -misc-roboto-light-r-normal--0-0-0-0-p-0-iso10646-1
 Roboto-Thin.ttf -misc-roboto-light-r-normal--0-0-0-0-p-0-iso8859-1
 Roboto-Thin.ttf -misc-roboto-light-r-normal--0-0-0-0-p-0-iso8859-10
 Roboto-Thin.ttf -misc-roboto-light-r-normal--0-0-0-0-p-0-iso8859-13
-Roboto-Thin.ttf -misc-roboto-light-r-normal--0-0-0-0-p-0-iso8859-14
 Roboto-Thin.ttf -misc-roboto-light-r-normal--0-0-0-0-p-0-iso8859-15
 Roboto-Thin.ttf -misc-roboto-light-r-normal--0-0-0-0-p-0-iso8859-16
 Roboto-Thin.ttf -misc-roboto-light-r-normal--0-0-0-0-p-0-iso8859-2
@@ -1022,7 +982,6 @@ Roboto-ThinItalic.ttf -misc-roboto-light-i-normal--0-0-0-0-p-0-iso10646-1
 Roboto-ThinItalic.ttf -misc-roboto-light-i-normal--0-0-0-0-p-0-iso8859-1
 Roboto-ThinItalic.ttf -misc-roboto-light-i-normal--0-0-0-0-p-0-iso8859-10
 Roboto-ThinItalic.ttf -misc-roboto-light-i-normal--0-0-0-0-p-0-iso8859-13
-Roboto-ThinItalic.ttf -misc-roboto-light-i-normal--0-0-0-0-p-0-iso8859-14
 Roboto-ThinItalic.ttf -misc-roboto-light-i-normal--0-0-0-0-p-0-iso8859-15
 Roboto-ThinItalic.ttf -misc-roboto-light-i-normal--0-0-0-0-p-0-iso8859-16
 Roboto-ThinItalic.ttf -misc-roboto-light-i-normal--0-0-0-0-p-0-iso8859-2
@@ -1044,7 +1003,6 @@ RobotoCondensed-Bold.ttf -misc-roboto condensed-bold-r-normal--0-0-0-0-p-0-iso10
 RobotoCondensed-Bold.ttf -misc-roboto condensed-bold-r-normal--0-0-0-0-p-0-iso8859-1
 RobotoCondensed-Bold.ttf -misc-roboto condensed-bold-r-normal--0-0-0-0-p-0-iso8859-10
 RobotoCondensed-Bold.ttf -misc-roboto condensed-bold-r-normal--0-0-0-0-p-0-iso8859-13
-RobotoCondensed-Bold.ttf -misc-roboto condensed-bold-r-normal--0-0-0-0-p-0-iso8859-14
 RobotoCondensed-Bold.ttf -misc-roboto condensed-bold-r-normal--0-0-0-0-p-0-iso8859-15
 RobotoCondensed-Bold.ttf -misc-roboto condensed-bold-r-normal--0-0-0-0-p-0-iso8859-16
 RobotoCondensed-Bold.ttf -misc-roboto condensed-bold-r-normal--0-0-0-0-p-0-iso8859-2
@@ -1066,7 +1024,6 @@ RobotoCondensed-BoldItalic.ttf -misc-roboto condensed-bold-i-normal--0-0-0-0-p-0
 RobotoCondensed-BoldItalic.ttf -misc-roboto condensed-bold-i-normal--0-0-0-0-p-0-iso8859-1
 RobotoCondensed-BoldItalic.ttf -misc-roboto condensed-bold-i-normal--0-0-0-0-p-0-iso8859-10
 RobotoCondensed-BoldItalic.ttf -misc-roboto condensed-bold-i-normal--0-0-0-0-p-0-iso8859-13
-RobotoCondensed-BoldItalic.ttf -misc-roboto condensed-bold-i-normal--0-0-0-0-p-0-iso8859-14
 RobotoCondensed-BoldItalic.ttf -misc-roboto condensed-bold-i-normal--0-0-0-0-p-0-iso8859-15
 RobotoCondensed-BoldItalic.ttf -misc-roboto condensed-bold-i-normal--0-0-0-0-p-0-iso8859-16
 RobotoCondensed-BoldItalic.ttf -misc-roboto condensed-bold-i-normal--0-0-0-0-p-0-iso8859-2
@@ -1088,7 +1045,6 @@ RobotoCondensed-Italic.ttf -misc-roboto condensed-medium-i-normal--0-0-0-0-p-0-i
 RobotoCondensed-Italic.ttf -misc-roboto condensed-medium-i-normal--0-0-0-0-p-0-iso8859-1
 RobotoCondensed-Italic.ttf -misc-roboto condensed-medium-i-normal--0-0-0-0-p-0-iso8859-10
 RobotoCondensed-Italic.ttf -misc-roboto condensed-medium-i-normal--0-0-0-0-p-0-iso8859-13
-RobotoCondensed-Italic.ttf -misc-roboto condensed-medium-i-normal--0-0-0-0-p-0-iso8859-14
 RobotoCondensed-Italic.ttf -misc-roboto condensed-medium-i-normal--0-0-0-0-p-0-iso8859-15
 RobotoCondensed-Italic.ttf -misc-roboto condensed-medium-i-normal--0-0-0-0-p-0-iso8859-16
 RobotoCondensed-Italic.ttf -misc-roboto condensed-medium-i-normal--0-0-0-0-p-0-iso8859-2
@@ -1110,7 +1066,6 @@ RobotoCondensed-Light.ttf -misc-roboto condensed-light-r-normal--0-0-0-0-p-0-iso
 RobotoCondensed-Light.ttf -misc-roboto condensed-light-r-normal--0-0-0-0-p-0-iso8859-1
 RobotoCondensed-Light.ttf -misc-roboto condensed-light-r-normal--0-0-0-0-p-0-iso8859-10
 RobotoCondensed-Light.ttf -misc-roboto condensed-light-r-normal--0-0-0-0-p-0-iso8859-13
-RobotoCondensed-Light.ttf -misc-roboto condensed-light-r-normal--0-0-0-0-p-0-iso8859-14
 RobotoCondensed-Light.ttf -misc-roboto condensed-light-r-normal--0-0-0-0-p-0-iso8859-15
 RobotoCondensed-Light.ttf -misc-roboto condensed-light-r-normal--0-0-0-0-p-0-iso8859-16
 RobotoCondensed-Light.ttf -misc-roboto condensed-light-r-normal--0-0-0-0-p-0-iso8859-2
@@ -1132,7 +1087,6 @@ RobotoCondensed-LightItalic.ttf -misc-roboto condensed-light-i-normal--0-0-0-0-p
 RobotoCondensed-LightItalic.ttf -misc-roboto condensed-light-i-normal--0-0-0-0-p-0-iso8859-1
 RobotoCondensed-LightItalic.ttf -misc-roboto condensed-light-i-normal--0-0-0-0-p-0-iso8859-10
 RobotoCondensed-LightItalic.ttf -misc-roboto condensed-light-i-normal--0-0-0-0-p-0-iso8859-13
-RobotoCondensed-LightItalic.ttf -misc-roboto condensed-light-i-normal--0-0-0-0-p-0-iso8859-14
 RobotoCondensed-LightItalic.ttf -misc-roboto condensed-light-i-normal--0-0-0-0-p-0-iso8859-15
 RobotoCondensed-LightItalic.ttf -misc-roboto condensed-light-i-normal--0-0-0-0-p-0-iso8859-16
 RobotoCondensed-LightItalic.ttf -misc-roboto condensed-light-i-normal--0-0-0-0-p-0-iso8859-2
@@ -1154,7 +1108,6 @@ RobotoCondensed-Regular.ttf -misc-roboto condensed-medium-r-normal--0-0-0-0-p-0-
 RobotoCondensed-Regular.ttf -misc-roboto condensed-medium-r-normal--0-0-0-0-p-0-iso8859-1
 RobotoCondensed-Regular.ttf -misc-roboto condensed-medium-r-normal--0-0-0-0-p-0-iso8859-10
 RobotoCondensed-Regular.ttf -misc-roboto condensed-medium-r-normal--0-0-0-0-p-0-iso8859-13
-RobotoCondensed-Regular.ttf -misc-roboto condensed-medium-r-normal--0-0-0-0-p-0-iso8859-14
 RobotoCondensed-Regular.ttf -misc-roboto condensed-medium-r-normal--0-0-0-0-p-0-iso8859-15
 RobotoCondensed-Regular.ttf -misc-roboto condensed-medium-r-normal--0-0-0-0-p-0-iso8859-16
 RobotoCondensed-Regular.ttf -misc-roboto condensed-medium-r-normal--0-0-0-0-p-0-iso8859-2

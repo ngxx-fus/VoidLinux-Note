@@ -42,71 +42,83 @@ My recommend:
 Back-up tree:
 
 ```
-etc
-├── acpi
-│   └── handler.sh
-├── dunst
-│   └── dunstrc
-└── sv
-    ├── MyService0
-    │   ├── MyService0
-    │   ├── run
-    │   └── supervise
-    └── MyService1
-        ├── MyService1
-        ├── run
-        └── supervise
-home
-└── fus
-    ├── .backup.sh
-    ├── .config
-    │   ├── fcitx
-    │   ├── fcitx5
-    │   └── nvim
-    ├── .display
-    │   ├── dmenu
-    │   ├── dwm
-    │   └── dwmblocks
-    ├── .fus
-    │   ├── .BG
-    │   ├── .data_exchange
-    │   ├── .fus
-    │   ├── alias
-    │   ├── brightness_control.sh
-    │   ├── capture-dbus-all.sh
-    │   ├── disable_built_in_keyboard.sh
-    │   ├── dwm-status.sh
-    │   ├── get_battery_level.sh
-    │   ├── get_wifi.sh
-    │   ├── init_display.sh
-    │   ├── internet_check.sh
-    │   ├── monitor_mode
-    │   ├── mount_external_ssd.sh
-    │   ├── mount_sdcard.sh
-    │   ├── prt_sc.sh
-    │   ├── rofi_filebrowser.sh
-    │   ├── screenjoin.sh
-    │   ├── setup_background.sh
-    │   ├── setup_wifi.sh
-    │   ├── shell_utils.sh
-    │   ├── toggle_display.sh
-    │   ├── update_dwm.sh
-    │   └── volume_control.sh
-    ├── .ngxxfus.init.system.sh
-    ├── .oh-my-zsh
-    │   └── themes
-    ├── .xinitrc
-    ├── .zprofile
-    └── .zshrc
-usr
-└── share
-    └── fonts
-        ├── NerdFonts
-        ├── TTF
-        ├── X11
-        ├── fus
-        ├── noto
-        └── noto-emoji
+├── etc
+│   ├── acpi
+│   │   └── handler.sh
+│   ├── dunst
+│   │   └── dunstrc
+│   └── sv
+│       ├── MyService0
+│       │   ├── MyService0
+│       │   ├── run
+│       │   └── supervise
+│       └── MyService1
+│           ├── MyService1
+│           ├── run
+│           └── supervise
+├── home
+│   └── fus
+│       ├── .backup.sh
+│       ├── .config
+│       │   ├── fcitx
+│       │   ├── fcitx5
+│       │   └── nvim
+│       ├── .display
+│       │   ├── dmenu
+│       │   ├── dwm
+│       │   └── dwmblocks
+│       ├── .fus
+│       │   ├── .BG
+│       │   ├── .data_exchange
+│       │   ├── .fus
+│       │   ├── alias
+│       │   ├── brightness_control.sh
+│       │   ├── capture-dbus-all.sh
+│       │   ├── disable_built_in_keyboard.sh
+│       │   ├── dwm-status.sh
+│       │   ├── get_battery_level.sh
+│       │   ├── get_wifi.sh
+│       │   ├── init_display.sh
+│       │   ├── internet_check.sh
+│       │   ├── monitor_mode
+│       │   ├── mount_external_ssd.sh
+│       │   ├── mount_sdcard.sh
+│       │   ├── prt_sc.sh
+│       │   ├── rofi_filebrowser.sh
+│       │   ├── screenjoin.sh
+│       │   ├── setup_background.sh
+│       │   ├── setup_wifi.sh
+│       │   ├── shell_utils.sh
+│       │   ├── toggle_display.sh
+│       │   ├── update_dwm.sh
+│       │   └── volume_control.sh
+│       ├── .ngxxfus.init.system.sh
+│       ├── .oh-my-zsh
+│       │   └── themes
+│       ├── .xinitrc
+│       ├── .zprofile
+│       └── .zshrc
+├── readme.md
+└── usr
+    └── share
+        ├── fonts
+        │   ├── Adwaita
+        │   ├── NerdFonts
+        │   ├── TTF
+        │   ├── X11
+        │   ├── cMap
+        │   ├── cmap
+        │   ├── fonts.tar.gz
+        │   ├── fus
+        │   ├── noto
+        │   ├── noto-emoji
+        │   ├── opentype
+        │   ├── truetype
+        │   └── type1
+        └── icons
+            ├── Adwaita
+            ├── gnome
+            └── hicolor
 ```
 
 # VoidLinux NOTE - Right after the first boot

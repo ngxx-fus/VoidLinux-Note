@@ -17,6 +17,7 @@ DIRNAME=/usr/bin/dirname
 BACKUP=(
     "home/fus/.fus"
     "home/fus/.zshrc"
+    "usr/share/icons"
     "usr/share/fonts"
     "etc/sv/MyService0"
     "etc/sv/MyService1"
@@ -30,7 +31,7 @@ BACKUP=(
     "home/fus/.config/fcitx"
     "home/fus/.config/fcitx5"
     "home/fus/.ngxxfus.init.system.sh"
-    "home/fus/.oh-my-zsh/themes/mine.zsh-theme"
+    "home/fus/.oh-my-zsh/themes/ngxxfus.zsh-theme"
 )
 
 EXCLUDE=(

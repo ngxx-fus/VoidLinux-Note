@@ -1,27 +1,25 @@
 #!/bin/sh
+# MOD BY NGXXFUS - DATE: 13 August 2025 
 # Default acpi script that takes an entry for all actions
-
 # NOTE: This is a 2.6-centric script.  If you use 2.4.x, you'll have to
 #       modify it to not use /sys
 
-# This function will write text into xsetroot of DWM (mod by FUS)
-write_noti() {
-    local msg="$*"
-    su - fus -c "DISPLAY=:0 xsetroot -name '$msg'" &
-}
-
-PACTL=/usr/bin/pactl
-AMIXER=/usr/bin/amixer
-
+export USER_FUS_SOCKET=$(sudo lsof -U -p $(pgrep -u fus -n dunst) 2>/dev/null | awk '/\/tmp\/dbus-/{print $9; exit}')
+export PACTL="/usr/bin/pactl"
 export DEF_SINK=$(sudo -u fus \
   XDG_RUNTIME_DIR="/run/user/$(id -u fus)" \
   DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/$(id -u fus)/bus" \
   "$PACTL" get-default-sink)
-
 export SVOLUME_VALUE=$(sudo -u fus \
   XDG_RUNTIME_DIR="/run/user/$(id -u fus)" \
   DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/$(id -u fus)/bus" \
   "$PACTL" get-sink-volume "$DEF_SINK" | awk -F'/' '/Volume:/ {gsub(/ /, "", $2); print $2}' | tr -d '%')
+
+# This function will write text into xsetroot of DWM (mod by FUS)
+write_noti() {
+    sudo -u fus DBUS_SESSION_BUS_ADDRESS=unix:path=$USER_FUS_SOCKET notify-send -t 1000 "$1" "$2" $3 $4
+    # su - fus -c "DISPLAY=:0 xsetroot -name '$*'" &
+}
 
 set_volume(){
     sudo -u fus XDG_RUNTIME_DIR="/run/user/$(id -u fus)" \
@@ -30,35 +28,23 @@ set_volume(){
 }
 
 volume_up() {
-    if [ -e $PACTL ]; then 
-        if [ $SVOLUME_VALUE -lt 100 ]; then
-            SVOLUME_VALUE=$((SVOLUME_VALUE+1))
-            set_volume "${SVOLUME_VALUE}%"
-        fi
-    else 
-        amixer set Master 1+
+    if [ $SVOLUME_VALUE -lt 100 ]; then
+        SVOLUME_VALUE=$((SVOLUME_VALUE+1))
+        set_volume "${SVOLUME_VALUE}%"
     fi
 }
 
 volume_down() {
-    if [ -e $PACTL ]; then 
-        if [ $SVOLUME_VALUE -gt 0 ]; then
-            SVOLUME_VALUE=$((SVOLUME_VALUE-1))
-            set_volume "${SVOLUME_VALUE}%"
-        fi
-    else 
-        amixer set Master 1-
+    if [ $SVOLUME_VALUE -gt 0 ]; then
+        SVOLUME_VALUE=$((SVOLUME_VALUE-1))
+        set_volume "${SVOLUME_VALUE}%"
     fi
 }
 
 volume_mute_toggle() {
-    if [ -e $PACTL ]; then 
-        sudo -u fus XDG_RUNTIME_DIR="/run/user/$(id -u fus)" \
-            DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/$(id -u fus)/bus" \
-            "$PACTL" set-sink-mute "$DEF_SINK" toggle
-    else 
-        amixer set Master toggle
-    fi
+    sudo -u fus XDG_RUNTIME_DIR="/run/user/$(id -u fus)" \
+                DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/$(id -u fus)/bus" \
+                "$PACTL" set-sink-mute "$DEF_SINK" toggle
 }
 
 get_brightness() {
@@ -73,6 +59,7 @@ get_brightness() {
     echo "N/A"
     return 1
 }
+
 
 # $1 should be + or - to step up or down the brightness.
 step_backlight() {
@@ -112,12 +99,14 @@ case "$1" in
     ac_adapter)
         pkill -RTMIN+16 dwmblocks
         case "$2" in
-            AC|ACAD|ADP0)
+            AC|ACAD|ADP0|ACPI0003:00)
                 case "$4" in
                     00000000)
+                        write_noti "[AC_ADAPTER]"  "unplugged" -u low
                         cat "$minspeed" >"$setspeed"
                     ;;
                     00000001)
+                        write_noti "[AC_ADAPTER] plugged"
                         cat "$maxspeed" >"$setspeed"
                     ;;
                 esac
@@ -155,33 +144,51 @@ case "$1" in
         ;;
     video/brightnessdown)
         step_backlight -
-        # write_noti "󰃞  [-] [$(get_brightness)]"
+        write_noti "[ACPI-NOTIFICATION]" "󰃞  [$(get_brightness)]"
         pkill -RTMIN+17 dwmblocks
         ;;
     video/brightnessup)
         step_backlight +
         pkill -RTMIN+17 dwmblocks
-        # write_noti "󰃠  [+] [$(get_brightness)]"
+        write_noti "[ACPI-NOTIFICATION]" "󰃠  [$(get_brightness)]"
         ;;
 
     button/volumedown)
         volume_down
         pkill -RTMIN+15 dwmblocks
-        # write_noti "  [$SVOLUME_VALUE]"
+        write_noti "[ACPI-NOTIFICATION]" "  [$SVOLUME_VALUE]"
         ;;
     button/volumeup)
         volume_up
         pkill -RTMIN+15 dwmblocks
-        # write_noti "  [$SVOLUME_VALUE]"
+        write_noti "[ACPI-NOTIFICATION]" "  [$SVOLUME_VALUE]"
         ;;
     button/mute)
         volume_mute_toggle
-        # write_noti "  [$SVOLUME_VALUE]"
+        write_noti "[ACPI-NOTIFICATION]" "  [$SVOLUME_VALUE]"
         ;;
-
+    cd/pause|cd/play|cd/next|cd/prev)
+        case "$2" in
+            CDPAUSE)
+                write_noti "[MEDIA]" "PAUSE" "--icon=multimedia-player"
+                sudo -u fus DBUS_SESSION_BUS_ADDRESS=unix:path=$USER_FUS_SOCKET  playerctl play-pause
+                ;;
+            CDPLAY)
+                write_noti "[MEDIA]" "PLAY" "--icon=multimedia-player"
+                sudo -u fus DBUS_SESSION_BUS_ADDRESS=unix:path=$USER_FUS_SOCKET  playerctl play-pause
+                ;;
+            CDNEXT)
+                write_noti "[MEDIA]" "NEXT" "--icon=multimedia-player"
+                sudo -u fus DBUS_SESSION_BUS_ADDRESS=unix:path=$USER_FUS_SOCKET  playerctl next
+                ;;
+            CDPREV)
+                write_noti "[MEDIA]" "PREVIOUS" "--icon=multimedia-player"
+                sudo -u fus DBUS_SESSION_BUS_ADDRESS=unix:path=$USER_FUS_SOCKET  playerctl previous
+                ;;
+        esac
+        ;;
     *)
         logger "ACPI group/action undefined: $1 / $2"
         ;;
-
 
 esac

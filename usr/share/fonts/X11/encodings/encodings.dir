@@ -1,4 +1,4 @@
-62
+61
 adobe-dingbats ./adobe-dingbats.enc.gz
 adobe-standard ./adobe-standard.enc.gz
 adobe-symbol ./adobe-symbol.enc.gz
@@ -23,7 +23,6 @@ ibm-cp852 ./ibm-cp852.enc.gz
 ibm-cp866 ./ibm-cp866.enc.gz
 iso8859-11 ./iso8859-11.enc.gz
 iso8859-13 ./iso8859-13.enc.gz
-iso8859-14 ./iso8859-14.enc.gz
 iso8859-16 ./iso8859-16.enc.gz
 iso8859-6.16 ./iso8859-6.16.enc.gz
 iso8859-6.8x ./iso8859-6.8x.enc.gz
