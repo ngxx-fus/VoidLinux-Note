@@ -2,15 +2,8 @@
 
 export _fus="/home/fus/.fus"
 
+state_file="$_fus/monitor_mode"
 join_mode="$_fus/screenjoin.sh"
-# state_file="$_fus/monitor_mode"
-state_file="/tmp/.fus/monitor_mode"
-
-if ! [ -e $state_file ]; then
-    echo "Not found $state_file"
-    mkdir -p /tmp/.fus
-    echo "1" > $state_file
-fi 
 
 APP_NAME="DisplaySwitcher"
 DEFAULT_NOTI_TIME=5000  # 2 seconds

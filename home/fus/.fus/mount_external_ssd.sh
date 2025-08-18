@@ -1,6 +1,5 @@
 #!/bin/zsh 
 
-
 PWD=$(pwd)
 LOG_FILEPATH=$PWD/mount_sdcard.log
 MOUNT_EXTERNAL_SSD_LOG=y
@@ -53,18 +52,18 @@ if [ -d "$MOUNTPOINT" ]; then
         exit 1
     fi
     print_msg "${LYELLOW}---> Remove current $MOUNTPOINT${NORM}" 
-    sudo rm -rf $MOUNTPOINT
+    sshpass -p 3568 sudo rm -rf $MOUNTPOINT
     if [ $? -eq 0 ]; then
         print_msg "${LGREEN}OK${NORM}"
     fi
 fi
 print_msg "${LYELLOW}---> Create $MOUNTPOINT${NORM}" 
-sudo mkdir -p $MOUNTPOINT
+sshpass -p 3568 sudo mkdir -p $MOUNTPOINT
 if [ $? -eq 0 ]; then
     print_msg "${LGREEN}OK!${NORM}"
 fi
 print_msg "Mount ${LYELLOW}${DEV}${NORM} --> ${LYELLOW}${MOUNTPOINT}${NORM}"
-sudo mount ${DEV} ${MOUNTPOINT}
+sshpass -p 3568 sudo mount ${DEV} ${MOUNTPOINT}
 if [ $? -eq 0 ]; then
     print_msg "${LGREEN}OK!${NORM}"
 fi

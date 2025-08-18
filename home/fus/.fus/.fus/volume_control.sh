@@ -1,3 +1,71 @@
+#  #!/bin/zsh
+#  
+#  export PACTL="/usr/bin/pactl"
+#  
+#  # Get default sink for user 'fus'
+#  export DEF_SINK=$(sudo -u fus \
+#    XDG_RUNTIME_DIR="/run/user/$(id -u fus)" \
+#    DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/$(id -u fus)/bus" \
+#    "$PACTL" get-default-sink)
+#  
+#  # Get current volume (first channel)
+#  export SVOLUME_VALUE=$(sudo -u fus \
+#    XDG_RUNTIME_DIR="/run/user/$(id -u fus)" \
+#    DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/$(id -u fus)/bus" \
+#    "$PACTL" get-sink-volume "$DEF_SINK" | awk -F'/' '/Volume:/ {gsub(/ /, "", $2); print $2}' | tr -d '%')
+#  
+#  # Set volume to a specific value
+#  set_volume() {
+#      sudo -u fus XDG_RUNTIME_DIR="/run/user/$(id -u fus)" \
+#                  DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/$(id -u fus)/bus" \
+#                  "$PACTL" set-sink-volume "$DEF_SINK" $1
+#  }
+#  
+#  # Volume up (max 100%)
+#  volume_up() {
+#      if [ $SVOLUME_VALUE -lt 100 ]; then
+#          SVOLUME_VALUE=$((SVOLUME_VALUE + 1))
+#          set_volume "${SVOLUME_VALUE}%"
+#      fi
+#  }
+#  
+#  # Volume down (min 0%)
+#  volume_down() {
+#      if [ $SVOLUME_VALUE -gt 0 ]; then
+#          SVOLUME_VALUE=$((SVOLUME_VALUE - 1))
+#          set_volume "${SVOLUME_VALUE}%"
+#      fi
+#  }
+#  
+#  # Toggle mute
+#  volume_mute_toggle() {
+#      sudo -u fus XDG_RUNTIME_DIR="/run/user/$(id -u fus)" \
+#                  DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/$(id -u fus)/bus" \
+#                  "$PACTL" set-sink-mute "$DEF_SINK" toggle
+#  }
+#  
+#  # ======= Argument Parsing =======
+#  
+#  case "$1" in
+#      --up)
+#          volume_up
+#          ;;
+#      --down)
+#          volume_down
+#          ;;
+#      --toggle)
+#          volume_mute_toggle
+#          ;;
+#      --get-volume)
+#          echo "$SVOLUME_VALUE"
+#          ;;
+#      *)
+#          echo "Usage: $0 [--up | --down | --toggle | --get-volume ]"
+#          exit 1
+#          ;;
+#  esac
+#
+
 #!/bin/zsh
 
 export PACTL="/usr/bin/pactl"
@@ -13,14 +81,10 @@ export DEF_SINK=$(sudo -u $USERNAME \
   "$PACTL" get-default-sink)
 
 # Get current volume (first channel)
-if [ -e $PACTL ]; then
-    export SVOLUME_VALUE=$(sudo -u $USERNAME \
-      XDG_RUNTIME_DIR=$XDG_RUNTIME_DIR \
-      DBUS_SESSION_BUS_ADDRESS=$DBUS_SESSION_BUS_ADDRESS \
-      "$PACTL" get-sink-volume "$DEF_SINK" | awk -F'/' '/Volume:/ {gsub(/ /, "", $2); print $2}' | tr -d '%')
-else
-    export SVOLUME_VALUE=$(amixer get Master | awk -F'[][]' '/dB/ { print $2; exit }')
-fi
+export SVOLUME_VALUE=$(sudo -u $USERNAME \
+  XDG_RUNTIME_DIR=$XDG_RUNTIME_DIR \
+  DBUS_SESSION_BUS_ADDRESS=$DBUS_SESSION_BUS_ADDRESS \
+  "$PACTL" get-sink-volume "$DEF_SINK" | awk -F'/' '/Volume:/ {gsub(/ /, "", $2); print $2}' | tr -d '%')
 
 # Get current mute state (yes/no)
 export IS_MUTED=$(sudo -u $USERNAME \

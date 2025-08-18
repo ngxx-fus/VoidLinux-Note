@@ -1,6 +1,5 @@
 #!/bin/zsh
 
 # /usr/bin/fcitx5 &
-# /home/fus/.fus/mount_external_ssd.sh
 
-while sleep 6000; do :; done
+while sleep 60; do :; done
