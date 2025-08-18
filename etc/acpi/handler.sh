@@ -4,6 +4,7 @@
 # NOTE: This is a 2.6-centric script.  If you use 2.4.x, you'll have to
 #       modify it to not use /sys
 
+export ACCELERATE_FILE_PATH=/tmp/.fus/acpi_accelerate
 export USER_FUS_SOCKET=$(sudo lsof -U -p $(pgrep -u fus -n dunst) 2>/dev/null | awk '/\/tmp\/dbus-/{print $9; exit}')
 export PACTL="/usr/bin/pactl"
 export DEF_SINK=$(sudo -u fus \
@@ -14,12 +15,41 @@ export SVOLUME_VALUE=$(sudo -u fus \
   XDG_RUNTIME_DIR="/run/user/$(id -u fus)" \
   DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/$(id -u fus)/bus" \
   "$PACTL" get-sink-volume "$DEF_SINK" | awk -F'/' '/Volume:/ {gsub(/ /, "", $2); print $2}' | tr -d '%')
+export delta_v=0
+export delta_t=0 
 
-# This function will write text into xsetroot of DWM (mod by FUS)
 write_noti() {
-    sudo -u fus DBUS_SESSION_BUS_ADDRESS=unix:path=$USER_FUS_SOCKET notify-send -t 1000 "$1" "$2" $3 $4
-    # su - fus -c "DISPLAY=:0 xsetroot -name '$*'" &
+    sudo -u fus DBUS_SESSION_BUS_ADDRESS=unix:path=$USER_FUS_SOCKET notify-send "$1" "$2" $3 $4 $5 $6
 }
+
+###################################################################################
+
+cur_time=$(date +%s%3N)
+if [ -e "$ACCELERATE_FILE_PATH" ]; then
+    last_time=$(cat "$ACCELERATE_FILE_PATH")
+    export delta_t=$((cur_time - last_time))
+else
+    export delta_v=1  
+fi
+
+echo "$cur_time" > "$ACCELERATE_FILE_PATH"
+
+if [ $delta_t -gt 300 ]; then 
+    export delta_v=1 
+else
+    if [ $delta_t -gt 129 ]; then 
+        export delta_v=2
+    else 
+        if [ $delta_t -gt 125]; then 
+            export delta_v=3 
+        else
+            write_noti "[Warning]" "Volume is changing too fast!!!" "--urgency=critical" "--expire-time=2000"
+            export delta_v=5
+        fi
+    fi
+fi
+
+###################################################################################
 
 set_volume(){
     sudo -u fus XDG_RUNTIME_DIR="/run/user/$(id -u fus)" \
@@ -29,14 +59,14 @@ set_volume(){
 
 volume_up() {
     if [ $SVOLUME_VALUE -lt 100 ]; then
-        SVOLUME_VALUE=$((SVOLUME_VALUE+1))
+        SVOLUME_VALUE=$((SVOLUME_VALUE+delta_v))
         set_volume "${SVOLUME_VALUE}%"
     fi
 }
 
 volume_down() {
     if [ $SVOLUME_VALUE -gt 0 ]; then
-        SVOLUME_VALUE=$((SVOLUME_VALUE-1))
+        SVOLUME_VALUE=$((SVOLUME_VALUE-delta_v))
         set_volume "${SVOLUME_VALUE}%"
     fi
 }
@@ -75,7 +105,6 @@ minspeed="/sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_min_freq"
 maxspeed="/sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_max_freq"
 setspeed="/sys/devices/system/cpu/cpu0/cpufreq/scaling_setspeed"
 
-
 case "$1" in
     button/power)
         case "$2" in
@@ -102,11 +131,11 @@ case "$1" in
             AC|ACAD|ADP0|ACPI0003:00)
                 case "$4" in
                     00000000)
-                        write_noti "[AC_ADAPTER]"  "unplugged" -u low
+                        write_noti "[AC_ADAPTER]"  "unplugged" "--urgency=low" "--expire-time=5000"
                         cat "$minspeed" >"$setspeed"
                     ;;
                     00000001)
-                        write_noti "[AC_ADAPTER] plugged"
+                        write_noti "[AC_ADAPTER] plugged" "--urgency=low" "--expire-time=5000"
                         cat "$maxspeed" >"$setspeed"
                     ;;
                 esac
@@ -144,38 +173,38 @@ case "$1" in
         ;;
     video/brightnessdown)
         step_backlight -
-        write_noti "[ACPI-NOTIFICATION]" "󰃞  [$(get_brightness)]"
+        write_noti "[ACPI-NOTIFICATION]" "󰃞  [$(get_brightness)]" "--urgency=normal" "--expire-time=1000"
         pkill -RTMIN+17 dwmblocks
         ;;
     video/brightnessup)
         step_backlight +
         pkill -RTMIN+17 dwmblocks
-        write_noti "[ACPI-NOTIFICATION]" "󰃠  [$(get_brightness)]"
+        write_noti "[ACPI-NOTIFICATION]" "󰃠  [$(get_brightness)]" "--urgency=normal" "--expire-time=1000"
         ;;
 
     button/volumedown)
         volume_down
         pkill -RTMIN+15 dwmblocks
-        write_noti "[ACPI-NOTIFICATION]" "  [$SVOLUME_VALUE]"
+        write_noti "[ACPI-NOTIFICATION]" "  [$SVOLUME_VALUE]" "--urgency=normal" "--expire-time=1000"
         ;;
     button/volumeup)
         volume_up
         pkill -RTMIN+15 dwmblocks
-        write_noti "[ACPI-NOTIFICATION]" "  [$SVOLUME_VALUE]"
+        write_noti "[ACPI-NOTIFICATION]" "  [$SVOLUME_VALUE]" "--urgency=normal" "--expire-time=1000"
         ;;
     button/mute)
         volume_mute_toggle
-        write_noti "[ACPI-NOTIFICATION]" "  [$SVOLUME_VALUE]"
+        write_noti "[ACPI-NOTIFICATION]" "  [$SVOLUME_VALUE]" "--urgency=normal" "--expire-time=1000"
         ;;
-    cd/pause|cd/play|cd/next|cd/prev)
+    cd/pause|cd/play2|cd/next|cd/prev)
         case "$2" in
             CDPAUSE)
                 write_noti "[MEDIA]" "PAUSE" "--icon=multimedia-player"
-                sudo -u fus DBUS_SESSION_BUS_ADDRESS=unix:path=$USER_FUS_SOCKET  playerctl play-pause
+                sudo -u fus DBUS_SESSION_BUS_ADDRESS=unix:path=$USER_FUS_SOCKET  playerctl pause
                 ;;
-            CDPLAY)
+            CDPLAY2)
                 write_noti "[MEDIA]" "PLAY" "--icon=multimedia-player"
-                sudo -u fus DBUS_SESSION_BUS_ADDRESS=unix:path=$USER_FUS_SOCKET  playerctl play-pause
+                sudo -u fus DBUS_SESSION_BUS_ADDRESS=unix:path=$USER_FUS_SOCKET  playerctl play
                 ;;
             CDNEXT)
                 write_noti "[MEDIA]" "NEXT" "--icon=multimedia-player"

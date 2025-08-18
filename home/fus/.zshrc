@@ -7,3 +7,4 @@ source $ZSH/oh-my-zsh.sh
 source /home/fus/.fus/shell_utils.sh
 source /home/fus/.fus/alias
 
+export PATH=$PATH:/home/fus/.fus/
