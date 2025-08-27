@@ -43,7 +43,7 @@ else
         if [ $delta_t -gt 125]; then 
             export delta_v=3 
         else
-            write_noti "[Warning]" "Volume is changing too fast!!!" "--urgency=critical" "--expire-time=2000"
+            # write_noti "[Warning]" "Volume is changing too fast!!!" "--urgency=critical" "--expire-time=2000"
             export delta_v=5
         fi
     fi
@@ -173,38 +173,38 @@ case "$1" in
         ;;
     video/brightnessdown)
         step_backlight -
-        write_noti "[ACPI-NOTIFICATION]" "󰃞  [$(get_brightness)]" "--urgency=normal" "--expire-time=1000"
+        # write_noti "[ACPI-NOTIFICATION]" "󰃞  [$(get_brightness)]" "--urgency=normal" "--expire-time=1000"
         pkill -RTMIN+17 dwmblocks
         ;;
     video/brightnessup)
         step_backlight +
         pkill -RTMIN+17 dwmblocks
-        write_noti "[ACPI-NOTIFICATION]" "󰃠  [$(get_brightness)]" "--urgency=normal" "--expire-time=1000"
+        # write_noti "[ACPI-NOTIFICATION]" "󰃠  [$(get_brightness)]" "--urgency=normal" "--expire-time=1000"
         ;;
 
     button/volumedown)
         volume_down
         pkill -RTMIN+15 dwmblocks
-        write_noti "[ACPI-NOTIFICATION]" "  [$SVOLUME_VALUE]" "--urgency=normal" "--expire-time=1000"
+        # write_noti "[ACPI-NOTIFICATION]" "  [$SVOLUME_VALUE]" "--urgency=normal" "--expire-time=1000"
         ;;
     button/volumeup)
         volume_up
         pkill -RTMIN+15 dwmblocks
-        write_noti "[ACPI-NOTIFICATION]" "  [$SVOLUME_VALUE]" "--urgency=normal" "--expire-time=1000"
+        # write_noti "[ACPI-NOTIFICATION]" "  [$SVOLUME_VALUE]" "--urgency=normal" "--expire-time=1000"
         ;;
     button/mute)
         volume_mute_toggle
-        write_noti "[ACPI-NOTIFICATION]" "  [$SVOLUME_VALUE]" "--urgency=normal" "--expire-time=1000"
+        # write_noti "[ACPI-NOTIFICATION]" "  [$SVOLUME_VALUE]" "--urgency=normal" "--expire-time=1000"
         ;;
     cd/pause|cd/play2|cd/next|cd/prev)
         case "$2" in
             CDPAUSE)
                 write_noti "[MEDIA]" "PAUSE" "--icon=multimedia-player"
-                sudo -u fus DBUS_SESSION_BUS_ADDRESS=unix:path=$USER_FUS_SOCKET  playerctl pause
+                sudo -u fus DBUS_SESSION_BUS_ADDRESS=unix:path=$USER_FUS_SOCKET  playerctl play-pause
                 ;;
             CDPLAY2)
                 write_noti "[MEDIA]" "PLAY" "--icon=multimedia-player"
-                sudo -u fus DBUS_SESSION_BUS_ADDRESS=unix:path=$USER_FUS_SOCKET  playerctl play
+                sudo -u fus DBUS_SESSION_BUS_ADDRESS=unix:path=$USER_FUS_SOCKET  playerctl play-pause
                 ;;
             CDNEXT)
                 write_noti "[MEDIA]" "NEXT" "--icon=multimedia-player"

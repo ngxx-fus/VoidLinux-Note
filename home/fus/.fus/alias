@@ -1,5 +1,5 @@
 
-alias ll="ls -lt -a"
+alias ll="ls -lath"
 alias la="ls -at"
 
 alias s="sudo xbps-install -S"

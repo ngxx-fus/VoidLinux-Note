@@ -7,4 +7,6 @@ source $ZSH/oh-my-zsh.sh
 source /home/fus/.fus/shell_utils.sh
 source /home/fus/.fus/alias
 
+export IDF_PATH=/home/fus/.fus/esp-idf/ 
 export PATH=$PATH:/home/fus/.fus/
+export PATH=$PATH:/home/fus/.fus/esp-idf/

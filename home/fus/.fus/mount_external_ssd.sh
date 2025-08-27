@@ -69,4 +69,4 @@ if [ $? -eq 0 ]; then
 fi
 lsblk
 print_msg "DONE --> EXIT :> ${NORM}"
-
+return 0

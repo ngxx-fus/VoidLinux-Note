@@ -115,6 +115,8 @@ static const Key keys[] = {
     { WINKEY|ShiftMask,             XK_w,       spawn,          SHCMD("/home/fus/.fus/prt_sc.sh --window") },
     { WINKEY|ShiftMask,             XK_s,       spawn,          SHCMD("/home/fus/.fus/prt_sc.sh --area") },
     { WINKEY,                       XK_p,       spawn,          SHCMD("/home/fus/.fus/toggle_display.sh") },
+    { WINKEY,                       XK_e,       spawn,          SHCMD("/usr/bin/thunar") },
+    { WINKEY,                       XK_l,       spawn,          SHCMD("/usr/local/bin/slock") },
     { WINKEY,                       XK_r,       spawn,          {.v = termcmd }},
     { Mod1Mask,                     XK_space,   spawn,          SHCMD("rofi -show combi") },
 	{ MODKEY,                       XK_Escape,  focusstack,     {.i = +1 } },

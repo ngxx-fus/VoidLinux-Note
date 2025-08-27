@@ -10,6 +10,9 @@ sleep 1
 
 /usr/bin/notify-send "[START-UP]" "run: mount_external_ssd"
 exec /home/fus/.fus/mount_external_ssd.sh &
+if [ $? -gt 0 ] ; then 
+    /usr/bin/notify-send "[START-UP]" "mount_external_ssd: failed" --urgency=low
+fi
 
 /usr/bin/notify-send "[START-UP]" "run: fcitx5-unikey"
 kill $(pgrep fcitx5)
