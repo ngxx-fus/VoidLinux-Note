@@ -457,9 +457,32 @@ nameserver 8.8.8.8
 # /etc/resolv.conf.tail can replace this line
 ```
 
+## Touchpad oneclick
+
+Create a new rule at `/etc/X11/xorg.conf.d/90-touchpad.conf`
+
+```conf
+	Section "InputClass"
+	    Identifier "libinput touchpad catchall"
+	    MatchIsTouchpad "on"
+	    MatchDevicePath "/dev/input/event*"
+	    Driver "libinput"
+	    # Enable tapping (tap-to-click)
+	    Option "Tapping" "True"
+	    # Enable edge scrolling (one-finger edge scroll)
+	    Option "ScrollMethod" "twofinger"
+	    # Option "ScrollMethod" "edge"
+	    # or for two-finger use: Option "ScrollMethod" "twofinger"
+	    # Natural scrolling (optional)
+	    Option "NaturalScrolling" "False"
+	    # Disable palm detection if unwanted:
+	    # Option "PalmDetection" "True"
+	EndSection
+```
+
 ## Swap L/R-Mouse
 
-Make rule at `/etc/X11/xorg.conf.d/90-mouse-swap.conf`
+Create a new rule at `/etc/X11/xorg.conf.d/90-mouse-swap.conf`
 
 ```conf
 Section "InputClass"
