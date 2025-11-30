@@ -5,5 +5,5 @@
 	path = home/fus/.fus/esp-idf
 	url = https://github.com/espressif/esp-idf.git
 [submodule "home/fus/.config/home/fus/.config/nvim"]
-	path = home/fus/.config/home/fus/.config/neovim-conf
+	path = home/fus/.config/home/fus/.config/nvim
 	url = https://github.com/ngxx-fus/neovim-conf.git
