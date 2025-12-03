@@ -1,29 +1,31 @@
 [Hotkey]
 # Enumerate when press trigger key repeatedly
 EnumerateWithTriggerKeys=True
-# Enumerate Input Method Forward
-EnumerateForwardKeys=
+# Temporally switch between first and current Input Method
+AltTriggerKeys=
 # Enumerate Input Method Backward
 EnumerateBackwardKeys=
 # Skip first input method while enumerating
 EnumerateSkipFirst=False
-# Enumerate Input Method Group Forward
-EnumerateGroupForwardKeys=
 # Enumerate Input Method Group Backward
 EnumerateGroupBackwardKeys=
-# Deactivate Input Method
-DeactivateKeys=
 # Time limit in milliseconds for triggering modifier key shortcuts
 ModifierOnlyKeyTimeout=250
 
 [Hotkey/TriggerKeys]
 0=Alt+Super+space
 
-[Hotkey/AltTriggerKeys]
+[Hotkey/EnumerateForwardKeys]
+0=Alt+Super+space
+
+[Hotkey/EnumerateGroupForwardKeys]
 0=Alt+Super+space
 
 [Hotkey/ActivateKeys]
-0=Alt+Super+space
+0=Hangul_Hanja
+
+[Hotkey/DeactivateKeys]
+0=Hangul_Romaja
 
 [Hotkey/PrevPage]
 0=Up

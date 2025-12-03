@@ -1,6 +1,6 @@
 #!/bin/sh 
 
-########### COLORS ###########################################
+########### COLORS #########################################################
 export BOLD="\033[1m"
 export FAINT="\033[2m"
 export ITALIC="\033[3m"
@@ -39,14 +39,39 @@ export BG_LCYAN="\033[106m"
 export BG_WHITE="\033[107m"
 export NORM="\033[0m"
 
-#############################################################
+# VAR ######################################################################
 
 install="sudo xbps-install -Sy"
 update="sudo xbps-install -Suy"
 
-echo "${BOLD}${LYELLOW}# ============================================================================= #${NORM}"
-echo "${BOLD}${LYELLOW}#                            HELLO FROM NGXXFUS                                 #${NORM}" 
-echo "${BOLD}${LYELLOW}# ============================================================================= #${NORM}"
+# HELPERS ##################################################################
+
+printTitle() {
+    local term_width=80
+    local text="$*"
+    local text_len=${#text}
+    local border="#"
+    local fill=" "
+    local inner_width=$((term_width - 4))
+    if [ $text_len -gt $inner_width ]; then
+        text="${text:0:$inner_width}"
+        text_len=$inner_width
+    fi
+    local left=$(( (inner_width - text_len) / 2 ))
+    local right=$(( inner_width - text_len - left ))
+    echo "${BOLD}${LYELLOW}# ############################################################################ #${NORM}"
+    printf "${BOLD}${LYELLOW}# %${left}s%s%${right}s #${NORM}\n" "" "$text" ""
+    echo "${BOLD}${LYELLOW}# ############################################################################ #${NORM}"
+}
+
+installPkg() {
+    printf "\n${LBOLD}${LGREEN}INSTALL [$@]${NORM}\n";
+    $install $@
+}
+
+############################################################################
+
+printTitle "Hello from NgxxFus!"
 
 echo "${WHITE}
 Hi there,
@@ -93,30 +118,24 @@ do_you_want_to_continue(){
 do_you_want_to_continue
 if [ $? -eq 1 ]; then exit 1; fi 
 
-echo "${LYELLOW}=============================================================================${NORM}"
-echo "${LYELLOW}Update ${BOLD}${UNDERLINED}xbps${NORM}"
-echo "${LYELLOW}=============================================================================${NORM}"
+printTitle "Update xbps"
 
-$install xbps
+installPkg xbps
 
-echo "${LYELLOW}=============================================================================${NORM}"
-echo "${LYELLOW}Update system${NORM}"
-echo "${LYELLOW}=============================================================================${NORM}"
+printTitle "Update system"
 
 $update
 
-echo "${LYELLOW}=============================================================================${NORM}"
-echo "${LYELLOW}Make some necessary dirs${NORM}"
-echo "${LYELLOW}=============================================================================${NORM}"
+printTitle "Make some necessary dirs"
 
 echo "${LYELLOW}tree:${NORM}
-~
-├── .config
-├── Desktop
-├── Documents
-├── Downloads
-├── Pictures
-└── Videos
+    ~
+    ├── .config
+    ├── Desktop
+    ├── Documents
+    ├── Downloads
+    ├── Pictures
+    └── Videos
 "
 
 cd ~
@@ -127,108 +146,61 @@ mkdir Downloads
 mkdir Pictures
 mkdir Videos
 
-echo "${LYELLOW}=============================================================================${NORM}"
-echo "${LYELLOW}Install utils${NORM}"
-echo "${LYELLOW}=============================================================================${NORM}"
+printTitle "Install utils"
 
-echo "${LYELLOW}btop: modern resource monitor with mouse support and beautiful TUI (like htop but better)${NORM}"
-$install btop
+installPkg btop
+installPkg upower
+installPkg dbus
+installPkg elogind
+installPkg udisks2
+installPkg acpid
+installPkg xclip
+installPkg xdotool
+installPkg maim scrot
+installPkg NetworkManager
+installPkg dunst
+installPkg feh
+installPkg picom
+installPkg fastfetch
+installPkg xdg-utils
+installPkg rofi
+installPkg gcc make autoconf
+installPkg ripgrep
+installPkg git
+installPkg gh-cli
+installPkg curl
+installPkg firefox chromium
+installPkg alacritty
+installPkg zsh 
+installPkg tree
 
-echo "${LYELLOW}upower: provides battery and power statistics for laptops; used by status bars like dwmblocks${NORM}"
-$install upower
-
-echo "${LYELLOW}dbus: essential message bus system for communication between desktop apps and services${NORM}"
-$install dbus
-
-echo "${LYELLOW}elogind: manages user sessions and permissions (needed for shutdown, suspend, logout in DWM)${NORM}"
-$install elogind
-
-echo "${LYELLOW}udisks2: allows safe mounting/unmounting of USB drives and disks; needed by GUI file managers${NORM}"
-$install udisks2
-
-echo "${LYELLOW}acpid: listens to ACPI events (lid close, power button); used for laptop power handling${NORM}"
-$install acpid
-
-echo "${LYELLOW}xclip: access X11 clipboard from terminal (used in screenshot scripts, copy-paste from CLI)${NORM}"
-$install xclip
-
-echo "${LYELLOW}xdotool: simulate keyboard and mouse input, window movement, and other X11 actions${NORM}"
-$install xdotool
-
-echo "${LYELLOW}maim: fast screenshot tool (like \`scrot\`, supports selection and automation with \`xdotool\`)${NORM}"
-echo "${LYELLOW}scrot: simple screenshot tool (less modern but widely supported and scriptable)${NORM}"
-$install maim scrot
-
-echo "${LYELLOW}NetworkManager: universal network configuration daemon; works with \`nmtui\`, \`nmcli\`, and GUIs${NORM}"
-$install NetworkManager
-
-echo "${LYELLOW}=============================================================================${NORM}"
-echo "${LYELLOW}UI & appearance tools${NORM}"
-echo "${LYELLOW}=============================================================================${NORM}"
-
-echo "${LYELLOW}dunst: lightweight and configurable notification daemon (used by \`notify-send\`)${NORM}"
-$install dunst
-
-echo "${LYELLOW}feh: fast image viewer and wallpaper setter (used to set backgrounds in \`.xinitrc\`)${NORM}"
-$install feh
-
-echo "${LYELLOW}picom: compositor for X11 to enable transparency, shadows, fading, and VSync (essential for eye-candy)${NORM}"
-$install picom
-
-echo "${LYELLOW}fastfetch: minimal and blazing-fast system info fetcher (alternative to neofetch)${NORM}"
-$install fastfetch
-
-echo "${LYELLOW}xdg-utils: desktop integration tools like \`xdg-open\` (used to open files/URLs with default apps)${NORM}"
-$install xdg-utils
-
-echo "${LYELLOW}ro-fi: luncher${NORM}"
-$install rofi
-
-echo "${LYELLOW}=============================================================================${NORM}"
-echo "${LYELLOW}Development tools${NORM}"
-echo "${LYELLOW}=============================================================================${NORM}"
-
-echo "${LYELLOW}gcc, make, autoconf: core tools for compiling C/C++ programs and building most open-source projects${NORM}"
-$install gcc make autoconf
-
-echo "${LYELLOW}ripgrep (rg): blazing-fast search tool (like grep, but recursive, respects .gitignore, and faster)${NORM}"
-$install ripgrep
-
-echo "${LYELLOW}git: distributed version control system; essential for downloading source code (like suckless)${NORM}"
-$install git
-
-echo "${LYELLOW}gh-cli: GitHub CLI to interact with GitHub repositories, issues, pull requests directly from terminal${NORM}"
-$install gh-cli
-
-echo "${LYELLOW}=============================================================================${NORM}"
-echo "${LYELLOW}Internet tools${NORM}"
-echo "${LYELLOW}=============================================================================${NORM}"
-
-echo "${LYELLOW}curl: flexible tool to make HTTP requests, download files, or interact with APIs (used everywhere)${NORM}"
-$install curl
-
-echo "${LYELLOW}firefox: full-featured web browser; replace with chromium or other if preferred${NORM}"
-$install firefox
-
-echo "${LYELLOW}=============================================================================${NORM}"
-echo "${LYELLOW}terminal emulator${NORM}"
-echo "${LYELLOW}=============================================================================${NORM}"
-
-echo "${LYELLOW}alacritty: GPU-accelerated terminal emulator (fast, minimal, with modern rendering)${NORM}"
-$install alacritty
+installPkg Imlib2-devel
+installPkg SDL2_image-devel
+installPkg SDL2_mixer-devel
+installPkg SDL2_ttf-devel
+installPkg base-devel
+installPkg clang-tools-extra
+installPkg dconf-editor
+installPkg libX11-devel
+installPkg libXau-devel
+installPkg libXdmcp-devel
+installPkg libXext-devel
+installPkg libXft-devel
+installPkg libXinerama-devel
+installPkg libXrandr-devel
+installPkg libinput
+installPkg pam-devel
+installPkg xf86-input-libinput
+installPkg dhclient
+installPkg lm_sensors
 
 echo "${LYELLOW}Nerd fornts (It'll take 1.5G free space on your disk)${NORM}"
 do_you_want_to_continue
 if [ $? -eq 0 ]; then
-    $install liberation-fonts-ttf nerd-fonts-ttf
+    installPkg liberation-fonts-ttf nerd-fonts-ttf
 fi
 
-echo "${LYELLOW}=============================================================================${NORM}"
-echo "${LYELLOW} Zsh shell/Oh-my-zsh${NORM}"
-echo "${LYELLOW}=============================================================================${NORM}"
-
-echo "${LYELLOW}zsh${NORM}"
-$install zsh 
+printTitle "Zsh shell/Oh-my-zsh"
 
 echo "${LYELLOW}Change root/${whoami}'s shell to ZSH${NORM}"
 
@@ -278,31 +250,53 @@ echo "${LYELLOW}Make symlink for root user${NORM}"
 current_user=$(whoami)
 sudo ln -s /home/$current_user/.oh-my-zsh /root/.oh-my-zsh
 
-echo "${LYELLOW}=============================================================================${NORM}"
-echo "${LYELLOW} Neovim${NORM}"
-echo "${LYELLOW}=============================================================================${NORM}"
+printTitle "Install fav editor - neovim"
 
 if [ -e /bin/nvim ]; then
     echo "${LYELLOW}Not found /bin/nvim! --> Install nvim${NORM}"
-    $install neovim 
+    installPkg neovim 
 fi 
 
 echo "${LYELLOW}Clone ngxxfus's config on git${NORM}"
 mkdir -p /home/fus/$current_user/.config/
 git clone https://github.com/ngxx-fus/neovim-conf.git /home/fus/$current_user/.config/nvim
 
-echo "${LYELLOW}=============================================================================${NORM}"
-echo "${LYELLOW} Set-up desktop environment${NORM}"
-echo "${LYELLOW}=============================================================================${NORM}"
+printTitle "Set-up desktop environment"
 
 echo "${LYELLOW}Install ralated packages${NORM}"
-$install xorg xinit xrandr xf86-video-intel git make gcc pkg-config libX11-devel libXft-devel libXinerama-devel
+installPkg xorg
+installPkg pkg-config 
+installPkg xinit
+installPkg xrandr
+installPkg xf86-video-intel
+installPkg make
+installPkg gcc
+installPkg git
+installPkg libX11-devel 
+installPkg libXft-devel 
+installPkg libXinerama-devel
+installPkg base-devel
+installPkg libX11-devel
+installPkg libXext-devel 
+installPkg libXrandr-devel 
+installPkg libXinerama-devel 
+installPkg libXdmcp-devel 
+installPkg libXau-devel 
+installPkg libXft-devel 
+installPkg pam-devel 
+installPkg SDL2_image-devel 
+installPkg SDL2_mixer-devel 
+installPkg SDL2_ttf-devel
 
 echo "${LYELLOW}Clone DWM, DWMBLOCKS, DMENU into ~/.display${NORM}"
 mkdir -p ~/.display 
 if [ -e  ~/.display ]; then 
     echo "${LYELLOW} ~/.display/ existed!!!$NORM"
 else
+    mkdir -p ~/.display/dwm 
+    mkdir -p ~/.display/dmenu 
+    mkdir -p ~/.display/dwmblocks
+    
     git clone https://github.com/Digital-Chaos/dwm.git              ~/.display/dwm 
     git clone https://github.com/torrinfail/dwmblocks.git           ~/.display/dwmblocks 
     git clone https://github.com/Digital-Chaos/dmenu.git            ~/.display/dmenu 
@@ -339,13 +333,12 @@ else
     " | tee ~/.xinitrc
 fi
 
-echo "${LYELLOW}=============================================================================${NORM}"
-echo "${LYELLOW} Install NetworkManager${NORM}"
-echo "${LYELLOW}=============================================================================${NORM}"
+printTitle "Install NetworkManager"
+
 
 echo "${LYELLOW}Install nmcli${NORM}"
 
-$install NetworkManager
+installPkg NetworkManager
 
 echo "${LYELLOW}Add to runit startup${NORM}"
 sudo ln -s /etc/sv/NetworkManager /var/service 
@@ -361,9 +354,7 @@ nameserver 9.9.9.9
 # nameserver 1.0.0.1
 " | sudo tee /etc/resolv.conf
 
-echo "${LYELLOW}=============================================================================${NORM}"
-echo "${LYELLOW} Swap LEFT/RIGHT-mouse (via rule udev)${NORM}"
-echo "${LYELLOW}=============================================================================${NORM}"
+printTitle "Swap LEFT/RIGHT-mouse (via rule udev)"
 
 do_you_want_to_continue
 if [ $? -eq 0 ]; then
@@ -376,12 +367,16 @@ EndSection
 " | sudo tee /etc/X11/xorg.conf.d/90-mouse-swap.conf
 fi
 
-echo "${LYELLOW}=============================================================================${NORM}"
-echo "${LYELLOW} UNIKEY (Vietnamese)${NORM}"
-echo "${LYELLOW}=============================================================================${NORM}"
+printTitle "UNIKEY (Vietnamese)"
 
-echo "${LYELLOW}Install fcitx5 fcitx5-qt fcitx5-gtk fcitx5-configtool fcitx5-unikey fcitx5-gtk4 fcitx5-gtk+2 fcitx5-gtk+3${NORM}"
-$install fcitx5 fcitx5-qt fcitx5-gtk fcitx5-configtool fcitx5-unikey fcitx5-gtk4 fcitx5-gtk+2 fcitx5-gtk+3
+installPkg fcitx5
+installPkg fcitx5-qt
+installPkg fcitx5-gtk
+installPkg fcitx5-configtool
+installPkg fcitx5-unikey
+installPkg fcitx5-gtk4
+installPkg fcitx5-gtk+2
+installPkg fcitx5-gtk+3
 
 echo "
 #\!/bin/bash
@@ -399,3 +394,10 @@ else
     exit 1
 fi
 " | tee ~/.fus/disable_built_in_keyboard.sh
+
+printTitle "Install RESTORE FROM LOCAL"
+
+printf "\n${LGREEN}Enter path (from root /) to VoidLinux-Note dir${NORM}\n"
+
+export VoidLinux_Note_Dir='/home/fus/Downloads/VoidLinux-Note'
+

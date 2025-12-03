@@ -1,0 +1,797 @@
+796
+C059-BdIta.t1 -urw-c059-bold-i-normal--0-0-0-0-p-0-adobe-standard
+C059-BdIta.t1 -urw-c059-bold-i-normal--0-0-0-0-p-0-ascii-0
+C059-BdIta.t1 -urw-c059-bold-i-normal--0-0-0-0-p-0-ibm-cp437
+C059-BdIta.t1 -urw-c059-bold-i-normal--0-0-0-0-p-0-ibm-cp850
+C059-BdIta.t1 -urw-c059-bold-i-normal--0-0-0-0-p-0-ibm-cp852
+C059-BdIta.t1 -urw-c059-bold-i-normal--0-0-0-0-p-0-ibm-cp866
+C059-BdIta.t1 -urw-c059-bold-i-normal--0-0-0-0-p-0-iso10646-1
+C059-BdIta.t1 -urw-c059-bold-i-normal--0-0-0-0-p-0-iso8859-1
+C059-BdIta.t1 -urw-c059-bold-i-normal--0-0-0-0-p-0-iso8859-10
+C059-BdIta.t1 -urw-c059-bold-i-normal--0-0-0-0-p-0-iso8859-13
+C059-BdIta.t1 -urw-c059-bold-i-normal--0-0-0-0-p-0-iso8859-15
+C059-BdIta.t1 -urw-c059-bold-i-normal--0-0-0-0-p-0-iso8859-16
+C059-BdIta.t1 -urw-c059-bold-i-normal--0-0-0-0-p-0-iso8859-2
+C059-BdIta.t1 -urw-c059-bold-i-normal--0-0-0-0-p-0-iso8859-3
+C059-BdIta.t1 -urw-c059-bold-i-normal--0-0-0-0-p-0-iso8859-4
+C059-BdIta.t1 -urw-c059-bold-i-normal--0-0-0-0-p-0-iso8859-5
+C059-BdIta.t1 -urw-c059-bold-i-normal--0-0-0-0-p-0-iso8859-7
+C059-BdIta.t1 -urw-c059-bold-i-normal--0-0-0-0-p-0-iso8859-9
+C059-BdIta.t1 -urw-c059-bold-i-normal--0-0-0-0-p-0-koi8-e
+C059-BdIta.t1 -urw-c059-bold-i-normal--0-0-0-0-p-0-koi8-r
+C059-BdIta.t1 -urw-c059-bold-i-normal--0-0-0-0-p-0-koi8-ru
+C059-BdIta.t1 -urw-c059-bold-i-normal--0-0-0-0-p-0-koi8-u
+C059-BdIta.t1 -urw-c059-bold-i-normal--0-0-0-0-p-0-koi8-uni
+C059-BdIta.t1 -urw-c059-bold-i-normal--0-0-0-0-p-0-microsoft-cp1252
+C059-Bold.t1 -urw-c059-bold-r-normal--0-0-0-0-p-0-adobe-standard
+C059-Bold.t1 -urw-c059-bold-r-normal--0-0-0-0-p-0-ascii-0
+C059-Bold.t1 -urw-c059-bold-r-normal--0-0-0-0-p-0-ibm-cp437
+C059-Bold.t1 -urw-c059-bold-r-normal--0-0-0-0-p-0-ibm-cp850
+C059-Bold.t1 -urw-c059-bold-r-normal--0-0-0-0-p-0-ibm-cp852
+C059-Bold.t1 -urw-c059-bold-r-normal--0-0-0-0-p-0-ibm-cp866
+C059-Bold.t1 -urw-c059-bold-r-normal--0-0-0-0-p-0-iso10646-1
+C059-Bold.t1 -urw-c059-bold-r-normal--0-0-0-0-p-0-iso8859-1
+C059-Bold.t1 -urw-c059-bold-r-normal--0-0-0-0-p-0-iso8859-10
+C059-Bold.t1 -urw-c059-bold-r-normal--0-0-0-0-p-0-iso8859-13
+C059-Bold.t1 -urw-c059-bold-r-normal--0-0-0-0-p-0-iso8859-15
+C059-Bold.t1 -urw-c059-bold-r-normal--0-0-0-0-p-0-iso8859-16
+C059-Bold.t1 -urw-c059-bold-r-normal--0-0-0-0-p-0-iso8859-2
+C059-Bold.t1 -urw-c059-bold-r-normal--0-0-0-0-p-0-iso8859-3
+C059-Bold.t1 -urw-c059-bold-r-normal--0-0-0-0-p-0-iso8859-4
+C059-Bold.t1 -urw-c059-bold-r-normal--0-0-0-0-p-0-iso8859-5
+C059-Bold.t1 -urw-c059-bold-r-normal--0-0-0-0-p-0-iso8859-7
+C059-Bold.t1 -urw-c059-bold-r-normal--0-0-0-0-p-0-iso8859-9
+C059-Bold.t1 -urw-c059-bold-r-normal--0-0-0-0-p-0-koi8-e
+C059-Bold.t1 -urw-c059-bold-r-normal--0-0-0-0-p-0-koi8-r
+C059-Bold.t1 -urw-c059-bold-r-normal--0-0-0-0-p-0-koi8-ru
+C059-Bold.t1 -urw-c059-bold-r-normal--0-0-0-0-p-0-koi8-u
+C059-Bold.t1 -urw-c059-bold-r-normal--0-0-0-0-p-0-koi8-uni
+C059-Bold.t1 -urw-c059-bold-r-normal--0-0-0-0-p-0-microsoft-cp1252
+C059-Italic.t1 -urw-c059-medium-i-normal--0-0-0-0-p-0-adobe-standard
+C059-Italic.t1 -urw-c059-medium-i-normal--0-0-0-0-p-0-ascii-0
+C059-Italic.t1 -urw-c059-medium-i-normal--0-0-0-0-p-0-ibm-cp437
+C059-Italic.t1 -urw-c059-medium-i-normal--0-0-0-0-p-0-ibm-cp850
+C059-Italic.t1 -urw-c059-medium-i-normal--0-0-0-0-p-0-ibm-cp852
+C059-Italic.t1 -urw-c059-medium-i-normal--0-0-0-0-p-0-ibm-cp866
+C059-Italic.t1 -urw-c059-medium-i-normal--0-0-0-0-p-0-iso10646-1
+C059-Italic.t1 -urw-c059-medium-i-normal--0-0-0-0-p-0-iso8859-1
+C059-Italic.t1 -urw-c059-medium-i-normal--0-0-0-0-p-0-iso8859-10
+C059-Italic.t1 -urw-c059-medium-i-normal--0-0-0-0-p-0-iso8859-13
+C059-Italic.t1 -urw-c059-medium-i-normal--0-0-0-0-p-0-iso8859-15
+C059-Italic.t1 -urw-c059-medium-i-normal--0-0-0-0-p-0-iso8859-16
+C059-Italic.t1 -urw-c059-medium-i-normal--0-0-0-0-p-0-iso8859-2
+C059-Italic.t1 -urw-c059-medium-i-normal--0-0-0-0-p-0-iso8859-3
+C059-Italic.t1 -urw-c059-medium-i-normal--0-0-0-0-p-0-iso8859-4
+C059-Italic.t1 -urw-c059-medium-i-normal--0-0-0-0-p-0-iso8859-5
+C059-Italic.t1 -urw-c059-medium-i-normal--0-0-0-0-p-0-iso8859-7
+C059-Italic.t1 -urw-c059-medium-i-normal--0-0-0-0-p-0-iso8859-9
+C059-Italic.t1 -urw-c059-medium-i-normal--0-0-0-0-p-0-koi8-e
+C059-Italic.t1 -urw-c059-medium-i-normal--0-0-0-0-p-0-koi8-r
+C059-Italic.t1 -urw-c059-medium-i-normal--0-0-0-0-p-0-koi8-ru
+C059-Italic.t1 -urw-c059-medium-i-normal--0-0-0-0-p-0-koi8-u
+C059-Italic.t1 -urw-c059-medium-i-normal--0-0-0-0-p-0-koi8-uni
+C059-Italic.t1 -urw-c059-medium-i-normal--0-0-0-0-p-0-microsoft-cp1252
+C059-Roman.t1 -urw-c059-medium-r-normal--0-0-0-0-p-0-adobe-standard
+C059-Roman.t1 -urw-c059-medium-r-normal--0-0-0-0-p-0-ascii-0
+C059-Roman.t1 -urw-c059-medium-r-normal--0-0-0-0-p-0-ibm-cp437
+C059-Roman.t1 -urw-c059-medium-r-normal--0-0-0-0-p-0-ibm-cp850
+C059-Roman.t1 -urw-c059-medium-r-normal--0-0-0-0-p-0-ibm-cp852
+C059-Roman.t1 -urw-c059-medium-r-normal--0-0-0-0-p-0-ibm-cp866
+C059-Roman.t1 -urw-c059-medium-r-normal--0-0-0-0-p-0-iso10646-1
+C059-Roman.t1 -urw-c059-medium-r-normal--0-0-0-0-p-0-iso8859-1
+C059-Roman.t1 -urw-c059-medium-r-normal--0-0-0-0-p-0-iso8859-10
+C059-Roman.t1 -urw-c059-medium-r-normal--0-0-0-0-p-0-iso8859-13
+C059-Roman.t1 -urw-c059-medium-r-normal--0-0-0-0-p-0-iso8859-15
+C059-Roman.t1 -urw-c059-medium-r-normal--0-0-0-0-p-0-iso8859-16
+C059-Roman.t1 -urw-c059-medium-r-normal--0-0-0-0-p-0-iso8859-2
+C059-Roman.t1 -urw-c059-medium-r-normal--0-0-0-0-p-0-iso8859-3
+C059-Roman.t1 -urw-c059-medium-r-normal--0-0-0-0-p-0-iso8859-4
+C059-Roman.t1 -urw-c059-medium-r-normal--0-0-0-0-p-0-iso8859-5
+C059-Roman.t1 -urw-c059-medium-r-normal--0-0-0-0-p-0-iso8859-7
+C059-Roman.t1 -urw-c059-medium-r-normal--0-0-0-0-p-0-iso8859-9
+C059-Roman.t1 -urw-c059-medium-r-normal--0-0-0-0-p-0-koi8-e
+C059-Roman.t1 -urw-c059-medium-r-normal--0-0-0-0-p-0-koi8-r
+C059-Roman.t1 -urw-c059-medium-r-normal--0-0-0-0-p-0-koi8-ru
+C059-Roman.t1 -urw-c059-medium-r-normal--0-0-0-0-p-0-koi8-u
+C059-Roman.t1 -urw-c059-medium-r-normal--0-0-0-0-p-0-koi8-uni
+C059-Roman.t1 -urw-c059-medium-r-normal--0-0-0-0-p-0-microsoft-cp1252
+D050000L.t1 -urw-d050000l-medium-r-normal--0-0-0-0-p-0-adobe-fontspecific
+D050000L.t1 -urw-d050000l-medium-r-normal--0-0-0-0-p-0-iso10646-1
+NimbusMonoPS-Bold.t1 -urw-nimbus mono ps-bold-r-normal--0-0-0-0-m-0-adobe-standard
+NimbusMonoPS-Bold.t1 -urw-nimbus mono ps-bold-r-normal--0-0-0-0-m-0-ascii-0
+NimbusMonoPS-Bold.t1 -urw-nimbus mono ps-bold-r-normal--0-0-0-0-m-0-ibm-cp437
+NimbusMonoPS-Bold.t1 -urw-nimbus mono ps-bold-r-normal--0-0-0-0-m-0-ibm-cp850
+NimbusMonoPS-Bold.t1 -urw-nimbus mono ps-bold-r-normal--0-0-0-0-m-0-ibm-cp852
+NimbusMonoPS-Bold.t1 -urw-nimbus mono ps-bold-r-normal--0-0-0-0-m-0-ibm-cp866
+NimbusMonoPS-Bold.t1 -urw-nimbus mono ps-bold-r-normal--0-0-0-0-m-0-iso10646-1
+NimbusMonoPS-Bold.t1 -urw-nimbus mono ps-bold-r-normal--0-0-0-0-m-0-iso8859-1
+NimbusMonoPS-Bold.t1 -urw-nimbus mono ps-bold-r-normal--0-0-0-0-m-0-iso8859-10
+NimbusMonoPS-Bold.t1 -urw-nimbus mono ps-bold-r-normal--0-0-0-0-m-0-iso8859-13
+NimbusMonoPS-Bold.t1 -urw-nimbus mono ps-bold-r-normal--0-0-0-0-m-0-iso8859-15
+NimbusMonoPS-Bold.t1 -urw-nimbus mono ps-bold-r-normal--0-0-0-0-m-0-iso8859-16
+NimbusMonoPS-Bold.t1 -urw-nimbus mono ps-bold-r-normal--0-0-0-0-m-0-iso8859-2
+NimbusMonoPS-Bold.t1 -urw-nimbus mono ps-bold-r-normal--0-0-0-0-m-0-iso8859-3
+NimbusMonoPS-Bold.t1 -urw-nimbus mono ps-bold-r-normal--0-0-0-0-m-0-iso8859-4
+NimbusMonoPS-Bold.t1 -urw-nimbus mono ps-bold-r-normal--0-0-0-0-m-0-iso8859-5
+NimbusMonoPS-Bold.t1 -urw-nimbus mono ps-bold-r-normal--0-0-0-0-m-0-iso8859-7
+NimbusMonoPS-Bold.t1 -urw-nimbus mono ps-bold-r-normal--0-0-0-0-m-0-iso8859-9
+NimbusMonoPS-Bold.t1 -urw-nimbus mono ps-bold-r-normal--0-0-0-0-m-0-koi8-e
+NimbusMonoPS-Bold.t1 -urw-nimbus mono ps-bold-r-normal--0-0-0-0-m-0-koi8-r
+NimbusMonoPS-Bold.t1 -urw-nimbus mono ps-bold-r-normal--0-0-0-0-m-0-koi8-ru
+NimbusMonoPS-Bold.t1 -urw-nimbus mono ps-bold-r-normal--0-0-0-0-m-0-koi8-u
+NimbusMonoPS-Bold.t1 -urw-nimbus mono ps-bold-r-normal--0-0-0-0-m-0-koi8-uni
+NimbusMonoPS-Bold.t1 -urw-nimbus mono ps-bold-r-normal--0-0-0-0-m-0-microsoft-cp1252
+NimbusMonoPS-BoldItalic.t1 -urw-nimbus mono ps-bold-i-normal--0-0-0-0-m-0-adobe-standard
+NimbusMonoPS-BoldItalic.t1 -urw-nimbus mono ps-bold-i-normal--0-0-0-0-m-0-ascii-0
+NimbusMonoPS-BoldItalic.t1 -urw-nimbus mono ps-bold-i-normal--0-0-0-0-m-0-ibm-cp437
+NimbusMonoPS-BoldItalic.t1 -urw-nimbus mono ps-bold-i-normal--0-0-0-0-m-0-ibm-cp850
+NimbusMonoPS-BoldItalic.t1 -urw-nimbus mono ps-bold-i-normal--0-0-0-0-m-0-ibm-cp852
+NimbusMonoPS-BoldItalic.t1 -urw-nimbus mono ps-bold-i-normal--0-0-0-0-m-0-ibm-cp866
+NimbusMonoPS-BoldItalic.t1 -urw-nimbus mono ps-bold-i-normal--0-0-0-0-m-0-iso10646-1
+NimbusMonoPS-BoldItalic.t1 -urw-nimbus mono ps-bold-i-normal--0-0-0-0-m-0-iso8859-1
+NimbusMonoPS-BoldItalic.t1 -urw-nimbus mono ps-bold-i-normal--0-0-0-0-m-0-iso8859-10
+NimbusMonoPS-BoldItalic.t1 -urw-nimbus mono ps-bold-i-normal--0-0-0-0-m-0-iso8859-13
+NimbusMonoPS-BoldItalic.t1 -urw-nimbus mono ps-bold-i-normal--0-0-0-0-m-0-iso8859-15
+NimbusMonoPS-BoldItalic.t1 -urw-nimbus mono ps-bold-i-normal--0-0-0-0-m-0-iso8859-16
+NimbusMonoPS-BoldItalic.t1 -urw-nimbus mono ps-bold-i-normal--0-0-0-0-m-0-iso8859-2
+NimbusMonoPS-BoldItalic.t1 -urw-nimbus mono ps-bold-i-normal--0-0-0-0-m-0-iso8859-3
+NimbusMonoPS-BoldItalic.t1 -urw-nimbus mono ps-bold-i-normal--0-0-0-0-m-0-iso8859-4
+NimbusMonoPS-BoldItalic.t1 -urw-nimbus mono ps-bold-i-normal--0-0-0-0-m-0-iso8859-5
+NimbusMonoPS-BoldItalic.t1 -urw-nimbus mono ps-bold-i-normal--0-0-0-0-m-0-iso8859-7
+NimbusMonoPS-BoldItalic.t1 -urw-nimbus mono ps-bold-i-normal--0-0-0-0-m-0-iso8859-9
+NimbusMonoPS-BoldItalic.t1 -urw-nimbus mono ps-bold-i-normal--0-0-0-0-m-0-koi8-e
+NimbusMonoPS-BoldItalic.t1 -urw-nimbus mono ps-bold-i-normal--0-0-0-0-m-0-koi8-r
+NimbusMonoPS-BoldItalic.t1 -urw-nimbus mono ps-bold-i-normal--0-0-0-0-m-0-koi8-ru
+NimbusMonoPS-BoldItalic.t1 -urw-nimbus mono ps-bold-i-normal--0-0-0-0-m-0-koi8-u
+NimbusMonoPS-BoldItalic.t1 -urw-nimbus mono ps-bold-i-normal--0-0-0-0-m-0-koi8-uni
+NimbusMonoPS-BoldItalic.t1 -urw-nimbus mono ps-bold-i-normal--0-0-0-0-m-0-microsoft-cp1252
+NimbusMonoPS-Italic.t1 -urw-nimbus mono ps-medium-i-normal--0-0-0-0-m-0-adobe-standard
+NimbusMonoPS-Italic.t1 -urw-nimbus mono ps-medium-i-normal--0-0-0-0-m-0-ascii-0
+NimbusMonoPS-Italic.t1 -urw-nimbus mono ps-medium-i-normal--0-0-0-0-m-0-ibm-cp437
+NimbusMonoPS-Italic.t1 -urw-nimbus mono ps-medium-i-normal--0-0-0-0-m-0-ibm-cp850
+NimbusMonoPS-Italic.t1 -urw-nimbus mono ps-medium-i-normal--0-0-0-0-m-0-ibm-cp852
+NimbusMonoPS-Italic.t1 -urw-nimbus mono ps-medium-i-normal--0-0-0-0-m-0-ibm-cp866
+NimbusMonoPS-Italic.t1 -urw-nimbus mono ps-medium-i-normal--0-0-0-0-m-0-iso10646-1
+NimbusMonoPS-Italic.t1 -urw-nimbus mono ps-medium-i-normal--0-0-0-0-m-0-iso8859-1
+NimbusMonoPS-Italic.t1 -urw-nimbus mono ps-medium-i-normal--0-0-0-0-m-0-iso8859-10
+NimbusMonoPS-Italic.t1 -urw-nimbus mono ps-medium-i-normal--0-0-0-0-m-0-iso8859-13
+NimbusMonoPS-Italic.t1 -urw-nimbus mono ps-medium-i-normal--0-0-0-0-m-0-iso8859-15
+NimbusMonoPS-Italic.t1 -urw-nimbus mono ps-medium-i-normal--0-0-0-0-m-0-iso8859-16
+NimbusMonoPS-Italic.t1 -urw-nimbus mono ps-medium-i-normal--0-0-0-0-m-0-iso8859-2
+NimbusMonoPS-Italic.t1 -urw-nimbus mono ps-medium-i-normal--0-0-0-0-m-0-iso8859-3
+NimbusMonoPS-Italic.t1 -urw-nimbus mono ps-medium-i-normal--0-0-0-0-m-0-iso8859-4
+NimbusMonoPS-Italic.t1 -urw-nimbus mono ps-medium-i-normal--0-0-0-0-m-0-iso8859-5
+NimbusMonoPS-Italic.t1 -urw-nimbus mono ps-medium-i-normal--0-0-0-0-m-0-iso8859-7
+NimbusMonoPS-Italic.t1 -urw-nimbus mono ps-medium-i-normal--0-0-0-0-m-0-iso8859-9
+NimbusMonoPS-Italic.t1 -urw-nimbus mono ps-medium-i-normal--0-0-0-0-m-0-koi8-e
+NimbusMonoPS-Italic.t1 -urw-nimbus mono ps-medium-i-normal--0-0-0-0-m-0-koi8-r
+NimbusMonoPS-Italic.t1 -urw-nimbus mono ps-medium-i-normal--0-0-0-0-m-0-koi8-ru
+NimbusMonoPS-Italic.t1 -urw-nimbus mono ps-medium-i-normal--0-0-0-0-m-0-koi8-u
+NimbusMonoPS-Italic.t1 -urw-nimbus mono ps-medium-i-normal--0-0-0-0-m-0-koi8-uni
+NimbusMonoPS-Italic.t1 -urw-nimbus mono ps-medium-i-normal--0-0-0-0-m-0-microsoft-cp1252
+NimbusMonoPS-Regular.t1 -urw-nimbus mono ps-medium-r-normal--0-0-0-0-m-0-adobe-standard
+NimbusMonoPS-Regular.t1 -urw-nimbus mono ps-medium-r-normal--0-0-0-0-m-0-ascii-0
+NimbusMonoPS-Regular.t1 -urw-nimbus mono ps-medium-r-normal--0-0-0-0-m-0-ibm-cp437
+NimbusMonoPS-Regular.t1 -urw-nimbus mono ps-medium-r-normal--0-0-0-0-m-0-ibm-cp850
+NimbusMonoPS-Regular.t1 -urw-nimbus mono ps-medium-r-normal--0-0-0-0-m-0-ibm-cp852
+NimbusMonoPS-Regular.t1 -urw-nimbus mono ps-medium-r-normal--0-0-0-0-m-0-ibm-cp866
+NimbusMonoPS-Regular.t1 -urw-nimbus mono ps-medium-r-normal--0-0-0-0-m-0-iso10646-1
+NimbusMonoPS-Regular.t1 -urw-nimbus mono ps-medium-r-normal--0-0-0-0-m-0-iso8859-1
+NimbusMonoPS-Regular.t1 -urw-nimbus mono ps-medium-r-normal--0-0-0-0-m-0-iso8859-10
+NimbusMonoPS-Regular.t1 -urw-nimbus mono ps-medium-r-normal--0-0-0-0-m-0-iso8859-13
+NimbusMonoPS-Regular.t1 -urw-nimbus mono ps-medium-r-normal--0-0-0-0-m-0-iso8859-15
+NimbusMonoPS-Regular.t1 -urw-nimbus mono ps-medium-r-normal--0-0-0-0-m-0-iso8859-16
+NimbusMonoPS-Regular.t1 -urw-nimbus mono ps-medium-r-normal--0-0-0-0-m-0-iso8859-2
+NimbusMonoPS-Regular.t1 -urw-nimbus mono ps-medium-r-normal--0-0-0-0-m-0-iso8859-3
+NimbusMonoPS-Regular.t1 -urw-nimbus mono ps-medium-r-normal--0-0-0-0-m-0-iso8859-4
+NimbusMonoPS-Regular.t1 -urw-nimbus mono ps-medium-r-normal--0-0-0-0-m-0-iso8859-5
+NimbusMonoPS-Regular.t1 -urw-nimbus mono ps-medium-r-normal--0-0-0-0-m-0-iso8859-7
+NimbusMonoPS-Regular.t1 -urw-nimbus mono ps-medium-r-normal--0-0-0-0-m-0-iso8859-9
+NimbusMonoPS-Regular.t1 -urw-nimbus mono ps-medium-r-normal--0-0-0-0-m-0-koi8-e
+NimbusMonoPS-Regular.t1 -urw-nimbus mono ps-medium-r-normal--0-0-0-0-m-0-koi8-r
+NimbusMonoPS-Regular.t1 -urw-nimbus mono ps-medium-r-normal--0-0-0-0-m-0-koi8-ru
+NimbusMonoPS-Regular.t1 -urw-nimbus mono ps-medium-r-normal--0-0-0-0-m-0-koi8-u
+NimbusMonoPS-Regular.t1 -urw-nimbus mono ps-medium-r-normal--0-0-0-0-m-0-koi8-uni
+NimbusMonoPS-Regular.t1 -urw-nimbus mono ps-medium-r-normal--0-0-0-0-m-0-microsoft-cp1252
+NimbusRoman-Bold.t1 -urw-nimbus roman-bold-r-normal--0-0-0-0-p-0-adobe-standard
+NimbusRoman-Bold.t1 -urw-nimbus roman-bold-r-normal--0-0-0-0-p-0-ascii-0
+NimbusRoman-Bold.t1 -urw-nimbus roman-bold-r-normal--0-0-0-0-p-0-ibm-cp437
+NimbusRoman-Bold.t1 -urw-nimbus roman-bold-r-normal--0-0-0-0-p-0-ibm-cp850
+NimbusRoman-Bold.t1 -urw-nimbus roman-bold-r-normal--0-0-0-0-p-0-ibm-cp852
+NimbusRoman-Bold.t1 -urw-nimbus roman-bold-r-normal--0-0-0-0-p-0-ibm-cp866
+NimbusRoman-Bold.t1 -urw-nimbus roman-bold-r-normal--0-0-0-0-p-0-iso10646-1
+NimbusRoman-Bold.t1 -urw-nimbus roman-bold-r-normal--0-0-0-0-p-0-iso8859-1
+NimbusRoman-Bold.t1 -urw-nimbus roman-bold-r-normal--0-0-0-0-p-0-iso8859-10
+NimbusRoman-Bold.t1 -urw-nimbus roman-bold-r-normal--0-0-0-0-p-0-iso8859-13
+NimbusRoman-Bold.t1 -urw-nimbus roman-bold-r-normal--0-0-0-0-p-0-iso8859-15
+NimbusRoman-Bold.t1 -urw-nimbus roman-bold-r-normal--0-0-0-0-p-0-iso8859-16
+NimbusRoman-Bold.t1 -urw-nimbus roman-bold-r-normal--0-0-0-0-p-0-iso8859-2
+NimbusRoman-Bold.t1 -urw-nimbus roman-bold-r-normal--0-0-0-0-p-0-iso8859-3
+NimbusRoman-Bold.t1 -urw-nimbus roman-bold-r-normal--0-0-0-0-p-0-iso8859-4
+NimbusRoman-Bold.t1 -urw-nimbus roman-bold-r-normal--0-0-0-0-p-0-iso8859-5
+NimbusRoman-Bold.t1 -urw-nimbus roman-bold-r-normal--0-0-0-0-p-0-iso8859-7
+NimbusRoman-Bold.t1 -urw-nimbus roman-bold-r-normal--0-0-0-0-p-0-iso8859-9
+NimbusRoman-Bold.t1 -urw-nimbus roman-bold-r-normal--0-0-0-0-p-0-koi8-e
+NimbusRoman-Bold.t1 -urw-nimbus roman-bold-r-normal--0-0-0-0-p-0-koi8-r
+NimbusRoman-Bold.t1 -urw-nimbus roman-bold-r-normal--0-0-0-0-p-0-koi8-ru
+NimbusRoman-Bold.t1 -urw-nimbus roman-bold-r-normal--0-0-0-0-p-0-koi8-u
+NimbusRoman-Bold.t1 -urw-nimbus roman-bold-r-normal--0-0-0-0-p-0-koi8-uni
+NimbusRoman-Bold.t1 -urw-nimbus roman-bold-r-normal--0-0-0-0-p-0-microsoft-cp1252
+NimbusRoman-BoldItalic.t1 -urw-nimbus roman-bold-i-normal--0-0-0-0-p-0-adobe-standard
+NimbusRoman-BoldItalic.t1 -urw-nimbus roman-bold-i-normal--0-0-0-0-p-0-ascii-0
+NimbusRoman-BoldItalic.t1 -urw-nimbus roman-bold-i-normal--0-0-0-0-p-0-ibm-cp437
+NimbusRoman-BoldItalic.t1 -urw-nimbus roman-bold-i-normal--0-0-0-0-p-0-ibm-cp850
+NimbusRoman-BoldItalic.t1 -urw-nimbus roman-bold-i-normal--0-0-0-0-p-0-ibm-cp852
+NimbusRoman-BoldItalic.t1 -urw-nimbus roman-bold-i-normal--0-0-0-0-p-0-ibm-cp866
+NimbusRoman-BoldItalic.t1 -urw-nimbus roman-bold-i-normal--0-0-0-0-p-0-iso10646-1
+NimbusRoman-BoldItalic.t1 -urw-nimbus roman-bold-i-normal--0-0-0-0-p-0-iso8859-1
+NimbusRoman-BoldItalic.t1 -urw-nimbus roman-bold-i-normal--0-0-0-0-p-0-iso8859-10
+NimbusRoman-BoldItalic.t1 -urw-nimbus roman-bold-i-normal--0-0-0-0-p-0-iso8859-13
+NimbusRoman-BoldItalic.t1 -urw-nimbus roman-bold-i-normal--0-0-0-0-p-0-iso8859-15
+NimbusRoman-BoldItalic.t1 -urw-nimbus roman-bold-i-normal--0-0-0-0-p-0-iso8859-16
+NimbusRoman-BoldItalic.t1 -urw-nimbus roman-bold-i-normal--0-0-0-0-p-0-iso8859-2
+NimbusRoman-BoldItalic.t1 -urw-nimbus roman-bold-i-normal--0-0-0-0-p-0-iso8859-3
+NimbusRoman-BoldItalic.t1 -urw-nimbus roman-bold-i-normal--0-0-0-0-p-0-iso8859-4
+NimbusRoman-BoldItalic.t1 -urw-nimbus roman-bold-i-normal--0-0-0-0-p-0-iso8859-5
+NimbusRoman-BoldItalic.t1 -urw-nimbus roman-bold-i-normal--0-0-0-0-p-0-iso8859-7
+NimbusRoman-BoldItalic.t1 -urw-nimbus roman-bold-i-normal--0-0-0-0-p-0-iso8859-9
+NimbusRoman-BoldItalic.t1 -urw-nimbus roman-bold-i-normal--0-0-0-0-p-0-koi8-e
+NimbusRoman-BoldItalic.t1 -urw-nimbus roman-bold-i-normal--0-0-0-0-p-0-koi8-r
+NimbusRoman-BoldItalic.t1 -urw-nimbus roman-bold-i-normal--0-0-0-0-p-0-koi8-ru
+NimbusRoman-BoldItalic.t1 -urw-nimbus roman-bold-i-normal--0-0-0-0-p-0-koi8-u
+NimbusRoman-BoldItalic.t1 -urw-nimbus roman-bold-i-normal--0-0-0-0-p-0-koi8-uni
+NimbusRoman-BoldItalic.t1 -urw-nimbus roman-bold-i-normal--0-0-0-0-p-0-microsoft-cp1252
+NimbusRoman-Italic.t1 -urw-nimbus roman-medium-i-normal--0-0-0-0-p-0-adobe-standard
+NimbusRoman-Italic.t1 -urw-nimbus roman-medium-i-normal--0-0-0-0-p-0-ascii-0
+NimbusRoman-Italic.t1 -urw-nimbus roman-medium-i-normal--0-0-0-0-p-0-ibm-cp437
+NimbusRoman-Italic.t1 -urw-nimbus roman-medium-i-normal--0-0-0-0-p-0-ibm-cp850
+NimbusRoman-Italic.t1 -urw-nimbus roman-medium-i-normal--0-0-0-0-p-0-ibm-cp852
+NimbusRoman-Italic.t1 -urw-nimbus roman-medium-i-normal--0-0-0-0-p-0-ibm-cp866
+NimbusRoman-Italic.t1 -urw-nimbus roman-medium-i-normal--0-0-0-0-p-0-iso10646-1
+NimbusRoman-Italic.t1 -urw-nimbus roman-medium-i-normal--0-0-0-0-p-0-iso8859-1
+NimbusRoman-Italic.t1 -urw-nimbus roman-medium-i-normal--0-0-0-0-p-0-iso8859-10
+NimbusRoman-Italic.t1 -urw-nimbus roman-medium-i-normal--0-0-0-0-p-0-iso8859-13
+NimbusRoman-Italic.t1 -urw-nimbus roman-medium-i-normal--0-0-0-0-p-0-iso8859-15
+NimbusRoman-Italic.t1 -urw-nimbus roman-medium-i-normal--0-0-0-0-p-0-iso8859-16
+NimbusRoman-Italic.t1 -urw-nimbus roman-medium-i-normal--0-0-0-0-p-0-iso8859-2
+NimbusRoman-Italic.t1 -urw-nimbus roman-medium-i-normal--0-0-0-0-p-0-iso8859-3
+NimbusRoman-Italic.t1 -urw-nimbus roman-medium-i-normal--0-0-0-0-p-0-iso8859-4
+NimbusRoman-Italic.t1 -urw-nimbus roman-medium-i-normal--0-0-0-0-p-0-iso8859-5
+NimbusRoman-Italic.t1 -urw-nimbus roman-medium-i-normal--0-0-0-0-p-0-iso8859-7
+NimbusRoman-Italic.t1 -urw-nimbus roman-medium-i-normal--0-0-0-0-p-0-iso8859-9
+NimbusRoman-Italic.t1 -urw-nimbus roman-medium-i-normal--0-0-0-0-p-0-koi8-e
+NimbusRoman-Italic.t1 -urw-nimbus roman-medium-i-normal--0-0-0-0-p-0-koi8-r
+NimbusRoman-Italic.t1 -urw-nimbus roman-medium-i-normal--0-0-0-0-p-0-koi8-ru
+NimbusRoman-Italic.t1 -urw-nimbus roman-medium-i-normal--0-0-0-0-p-0-koi8-u
+NimbusRoman-Italic.t1 -urw-nimbus roman-medium-i-normal--0-0-0-0-p-0-koi8-uni
+NimbusRoman-Italic.t1 -urw-nimbus roman-medium-i-normal--0-0-0-0-p-0-microsoft-cp1252
+NimbusRoman-Regular.t1 -urw-nimbus roman-medium-r-normal--0-0-0-0-p-0-adobe-standard
+NimbusRoman-Regular.t1 -urw-nimbus roman-medium-r-normal--0-0-0-0-p-0-ascii-0
+NimbusRoman-Regular.t1 -urw-nimbus roman-medium-r-normal--0-0-0-0-p-0-ibm-cp437
+NimbusRoman-Regular.t1 -urw-nimbus roman-medium-r-normal--0-0-0-0-p-0-ibm-cp850
+NimbusRoman-Regular.t1 -urw-nimbus roman-medium-r-normal--0-0-0-0-p-0-ibm-cp852
+NimbusRoman-Regular.t1 -urw-nimbus roman-medium-r-normal--0-0-0-0-p-0-ibm-cp866
+NimbusRoman-Regular.t1 -urw-nimbus roman-medium-r-normal--0-0-0-0-p-0-iso10646-1
+NimbusRoman-Regular.t1 -urw-nimbus roman-medium-r-normal--0-0-0-0-p-0-iso8859-1
+NimbusRoman-Regular.t1 -urw-nimbus roman-medium-r-normal--0-0-0-0-p-0-iso8859-10
+NimbusRoman-Regular.t1 -urw-nimbus roman-medium-r-normal--0-0-0-0-p-0-iso8859-13
+NimbusRoman-Regular.t1 -urw-nimbus roman-medium-r-normal--0-0-0-0-p-0-iso8859-15
+NimbusRoman-Regular.t1 -urw-nimbus roman-medium-r-normal--0-0-0-0-p-0-iso8859-16
+NimbusRoman-Regular.t1 -urw-nimbus roman-medium-r-normal--0-0-0-0-p-0-iso8859-2
+NimbusRoman-Regular.t1 -urw-nimbus roman-medium-r-normal--0-0-0-0-p-0-iso8859-3
+NimbusRoman-Regular.t1 -urw-nimbus roman-medium-r-normal--0-0-0-0-p-0-iso8859-4
+NimbusRoman-Regular.t1 -urw-nimbus roman-medium-r-normal--0-0-0-0-p-0-iso8859-5
+NimbusRoman-Regular.t1 -urw-nimbus roman-medium-r-normal--0-0-0-0-p-0-iso8859-7
+NimbusRoman-Regular.t1 -urw-nimbus roman-medium-r-normal--0-0-0-0-p-0-iso8859-9
+NimbusRoman-Regular.t1 -urw-nimbus roman-medium-r-normal--0-0-0-0-p-0-koi8-e
+NimbusRoman-Regular.t1 -urw-nimbus roman-medium-r-normal--0-0-0-0-p-0-koi8-r
+NimbusRoman-Regular.t1 -urw-nimbus roman-medium-r-normal--0-0-0-0-p-0-koi8-ru
+NimbusRoman-Regular.t1 -urw-nimbus roman-medium-r-normal--0-0-0-0-p-0-koi8-u
+NimbusRoman-Regular.t1 -urw-nimbus roman-medium-r-normal--0-0-0-0-p-0-koi8-uni
+NimbusRoman-Regular.t1 -urw-nimbus roman-medium-r-normal--0-0-0-0-p-0-microsoft-cp1252
+NimbusSans-Bold.t1 -urw-nimbus sans-bold-r-normal--0-0-0-0-p-0-adobe-standard
+NimbusSans-Bold.t1 -urw-nimbus sans-bold-r-normal--0-0-0-0-p-0-ascii-0
+NimbusSans-Bold.t1 -urw-nimbus sans-bold-r-normal--0-0-0-0-p-0-ibm-cp437
+NimbusSans-Bold.t1 -urw-nimbus sans-bold-r-normal--0-0-0-0-p-0-ibm-cp850
+NimbusSans-Bold.t1 -urw-nimbus sans-bold-r-normal--0-0-0-0-p-0-ibm-cp852
+NimbusSans-Bold.t1 -urw-nimbus sans-bold-r-normal--0-0-0-0-p-0-ibm-cp866
+NimbusSans-Bold.t1 -urw-nimbus sans-bold-r-normal--0-0-0-0-p-0-iso10646-1
+NimbusSans-Bold.t1 -urw-nimbus sans-bold-r-normal--0-0-0-0-p-0-iso8859-1
+NimbusSans-Bold.t1 -urw-nimbus sans-bold-r-normal--0-0-0-0-p-0-iso8859-10
+NimbusSans-Bold.t1 -urw-nimbus sans-bold-r-normal--0-0-0-0-p-0-iso8859-13
+NimbusSans-Bold.t1 -urw-nimbus sans-bold-r-normal--0-0-0-0-p-0-iso8859-15
+NimbusSans-Bold.t1 -urw-nimbus sans-bold-r-normal--0-0-0-0-p-0-iso8859-16
+NimbusSans-Bold.t1 -urw-nimbus sans-bold-r-normal--0-0-0-0-p-0-iso8859-2
+NimbusSans-Bold.t1 -urw-nimbus sans-bold-r-normal--0-0-0-0-p-0-iso8859-3
+NimbusSans-Bold.t1 -urw-nimbus sans-bold-r-normal--0-0-0-0-p-0-iso8859-4
+NimbusSans-Bold.t1 -urw-nimbus sans-bold-r-normal--0-0-0-0-p-0-iso8859-5
+NimbusSans-Bold.t1 -urw-nimbus sans-bold-r-normal--0-0-0-0-p-0-iso8859-7
+NimbusSans-Bold.t1 -urw-nimbus sans-bold-r-normal--0-0-0-0-p-0-iso8859-9
+NimbusSans-Bold.t1 -urw-nimbus sans-bold-r-normal--0-0-0-0-p-0-koi8-e
+NimbusSans-Bold.t1 -urw-nimbus sans-bold-r-normal--0-0-0-0-p-0-koi8-r
+NimbusSans-Bold.t1 -urw-nimbus sans-bold-r-normal--0-0-0-0-p-0-koi8-ru
+NimbusSans-Bold.t1 -urw-nimbus sans-bold-r-normal--0-0-0-0-p-0-koi8-u
+NimbusSans-Bold.t1 -urw-nimbus sans-bold-r-normal--0-0-0-0-p-0-koi8-uni
+NimbusSans-Bold.t1 -urw-nimbus sans-bold-r-normal--0-0-0-0-p-0-microsoft-cp1252
+NimbusSans-BoldItalic.t1 -urw-nimbus sans-bold-i-normal--0-0-0-0-p-0-adobe-standard
+NimbusSans-BoldItalic.t1 -urw-nimbus sans-bold-i-normal--0-0-0-0-p-0-ascii-0
+NimbusSans-BoldItalic.t1 -urw-nimbus sans-bold-i-normal--0-0-0-0-p-0-ibm-cp437
+NimbusSans-BoldItalic.t1 -urw-nimbus sans-bold-i-normal--0-0-0-0-p-0-ibm-cp850
+NimbusSans-BoldItalic.t1 -urw-nimbus sans-bold-i-normal--0-0-0-0-p-0-ibm-cp852
+NimbusSans-BoldItalic.t1 -urw-nimbus sans-bold-i-normal--0-0-0-0-p-0-ibm-cp866
+NimbusSans-BoldItalic.t1 -urw-nimbus sans-bold-i-normal--0-0-0-0-p-0-iso10646-1
+NimbusSans-BoldItalic.t1 -urw-nimbus sans-bold-i-normal--0-0-0-0-p-0-iso8859-1
+NimbusSans-BoldItalic.t1 -urw-nimbus sans-bold-i-normal--0-0-0-0-p-0-iso8859-10
+NimbusSans-BoldItalic.t1 -urw-nimbus sans-bold-i-normal--0-0-0-0-p-0-iso8859-13
+NimbusSans-BoldItalic.t1 -urw-nimbus sans-bold-i-normal--0-0-0-0-p-0-iso8859-15
+NimbusSans-BoldItalic.t1 -urw-nimbus sans-bold-i-normal--0-0-0-0-p-0-iso8859-16
+NimbusSans-BoldItalic.t1 -urw-nimbus sans-bold-i-normal--0-0-0-0-p-0-iso8859-2
+NimbusSans-BoldItalic.t1 -urw-nimbus sans-bold-i-normal--0-0-0-0-p-0-iso8859-3
+NimbusSans-BoldItalic.t1 -urw-nimbus sans-bold-i-normal--0-0-0-0-p-0-iso8859-4
+NimbusSans-BoldItalic.t1 -urw-nimbus sans-bold-i-normal--0-0-0-0-p-0-iso8859-5
+NimbusSans-BoldItalic.t1 -urw-nimbus sans-bold-i-normal--0-0-0-0-p-0-iso8859-7
+NimbusSans-BoldItalic.t1 -urw-nimbus sans-bold-i-normal--0-0-0-0-p-0-iso8859-9
+NimbusSans-BoldItalic.t1 -urw-nimbus sans-bold-i-normal--0-0-0-0-p-0-koi8-e
+NimbusSans-BoldItalic.t1 -urw-nimbus sans-bold-i-normal--0-0-0-0-p-0-koi8-r
+NimbusSans-BoldItalic.t1 -urw-nimbus sans-bold-i-normal--0-0-0-0-p-0-koi8-ru
+NimbusSans-BoldItalic.t1 -urw-nimbus sans-bold-i-normal--0-0-0-0-p-0-koi8-u
+NimbusSans-BoldItalic.t1 -urw-nimbus sans-bold-i-normal--0-0-0-0-p-0-koi8-uni
+NimbusSans-BoldItalic.t1 -urw-nimbus sans-bold-i-normal--0-0-0-0-p-0-microsoft-cp1252
+NimbusSans-Italic.t1 -urw-nimbus sans-medium-i-normal--0-0-0-0-p-0-adobe-standard
+NimbusSans-Italic.t1 -urw-nimbus sans-medium-i-normal--0-0-0-0-p-0-ascii-0
+NimbusSans-Italic.t1 -urw-nimbus sans-medium-i-normal--0-0-0-0-p-0-ibm-cp437
+NimbusSans-Italic.t1 -urw-nimbus sans-medium-i-normal--0-0-0-0-p-0-ibm-cp850
+NimbusSans-Italic.t1 -urw-nimbus sans-medium-i-normal--0-0-0-0-p-0-ibm-cp852
+NimbusSans-Italic.t1 -urw-nimbus sans-medium-i-normal--0-0-0-0-p-0-ibm-cp866
+NimbusSans-Italic.t1 -urw-nimbus sans-medium-i-normal--0-0-0-0-p-0-iso10646-1
+NimbusSans-Italic.t1 -urw-nimbus sans-medium-i-normal--0-0-0-0-p-0-iso8859-1
+NimbusSans-Italic.t1 -urw-nimbus sans-medium-i-normal--0-0-0-0-p-0-iso8859-10
+NimbusSans-Italic.t1 -urw-nimbus sans-medium-i-normal--0-0-0-0-p-0-iso8859-13
+NimbusSans-Italic.t1 -urw-nimbus sans-medium-i-normal--0-0-0-0-p-0-iso8859-15
+NimbusSans-Italic.t1 -urw-nimbus sans-medium-i-normal--0-0-0-0-p-0-iso8859-16
+NimbusSans-Italic.t1 -urw-nimbus sans-medium-i-normal--0-0-0-0-p-0-iso8859-2
+NimbusSans-Italic.t1 -urw-nimbus sans-medium-i-normal--0-0-0-0-p-0-iso8859-3
+NimbusSans-Italic.t1 -urw-nimbus sans-medium-i-normal--0-0-0-0-p-0-iso8859-4
+NimbusSans-Italic.t1 -urw-nimbus sans-medium-i-normal--0-0-0-0-p-0-iso8859-5
+NimbusSans-Italic.t1 -urw-nimbus sans-medium-i-normal--0-0-0-0-p-0-iso8859-7
+NimbusSans-Italic.t1 -urw-nimbus sans-medium-i-normal--0-0-0-0-p-0-iso8859-9
+NimbusSans-Italic.t1 -urw-nimbus sans-medium-i-normal--0-0-0-0-p-0-koi8-e
+NimbusSans-Italic.t1 -urw-nimbus sans-medium-i-normal--0-0-0-0-p-0-koi8-r
+NimbusSans-Italic.t1 -urw-nimbus sans-medium-i-normal--0-0-0-0-p-0-koi8-ru
+NimbusSans-Italic.t1 -urw-nimbus sans-medium-i-normal--0-0-0-0-p-0-koi8-u
+NimbusSans-Italic.t1 -urw-nimbus sans-medium-i-normal--0-0-0-0-p-0-koi8-uni
+NimbusSans-Italic.t1 -urw-nimbus sans-medium-i-normal--0-0-0-0-p-0-microsoft-cp1252
+NimbusSans-Regular.t1 -urw-nimbus sans-medium-r-normal--0-0-0-0-p-0-adobe-standard
+NimbusSans-Regular.t1 -urw-nimbus sans-medium-r-normal--0-0-0-0-p-0-ascii-0
+NimbusSans-Regular.t1 -urw-nimbus sans-medium-r-normal--0-0-0-0-p-0-ibm-cp437
+NimbusSans-Regular.t1 -urw-nimbus sans-medium-r-normal--0-0-0-0-p-0-ibm-cp850
+NimbusSans-Regular.t1 -urw-nimbus sans-medium-r-normal--0-0-0-0-p-0-ibm-cp852
+NimbusSans-Regular.t1 -urw-nimbus sans-medium-r-normal--0-0-0-0-p-0-ibm-cp866
+NimbusSans-Regular.t1 -urw-nimbus sans-medium-r-normal--0-0-0-0-p-0-iso10646-1
+NimbusSans-Regular.t1 -urw-nimbus sans-medium-r-normal--0-0-0-0-p-0-iso8859-1
+NimbusSans-Regular.t1 -urw-nimbus sans-medium-r-normal--0-0-0-0-p-0-iso8859-10
+NimbusSans-Regular.t1 -urw-nimbus sans-medium-r-normal--0-0-0-0-p-0-iso8859-13
+NimbusSans-Regular.t1 -urw-nimbus sans-medium-r-normal--0-0-0-0-p-0-iso8859-15
+NimbusSans-Regular.t1 -urw-nimbus sans-medium-r-normal--0-0-0-0-p-0-iso8859-16
+NimbusSans-Regular.t1 -urw-nimbus sans-medium-r-normal--0-0-0-0-p-0-iso8859-2
+NimbusSans-Regular.t1 -urw-nimbus sans-medium-r-normal--0-0-0-0-p-0-iso8859-3
+NimbusSans-Regular.t1 -urw-nimbus sans-medium-r-normal--0-0-0-0-p-0-iso8859-4
+NimbusSans-Regular.t1 -urw-nimbus sans-medium-r-normal--0-0-0-0-p-0-iso8859-5
+NimbusSans-Regular.t1 -urw-nimbus sans-medium-r-normal--0-0-0-0-p-0-iso8859-7
+NimbusSans-Regular.t1 -urw-nimbus sans-medium-r-normal--0-0-0-0-p-0-iso8859-9
+NimbusSans-Regular.t1 -urw-nimbus sans-medium-r-normal--0-0-0-0-p-0-koi8-e
+NimbusSans-Regular.t1 -urw-nimbus sans-medium-r-normal--0-0-0-0-p-0-koi8-r
+NimbusSans-Regular.t1 -urw-nimbus sans-medium-r-normal--0-0-0-0-p-0-koi8-ru
+NimbusSans-Regular.t1 -urw-nimbus sans-medium-r-normal--0-0-0-0-p-0-koi8-u
+NimbusSans-Regular.t1 -urw-nimbus sans-medium-r-normal--0-0-0-0-p-0-koi8-uni
+NimbusSans-Regular.t1 -urw-nimbus sans-medium-r-normal--0-0-0-0-p-0-microsoft-cp1252
+NimbusSansNarrow-Bold.t1 -urw-nimbus sans narrow-bold-r-normal--0-0-0-0-p-0-adobe-standard
+NimbusSansNarrow-Bold.t1 -urw-nimbus sans narrow-bold-r-normal--0-0-0-0-p-0-ascii-0
+NimbusSansNarrow-Bold.t1 -urw-nimbus sans narrow-bold-r-normal--0-0-0-0-p-0-ibm-cp437
+NimbusSansNarrow-Bold.t1 -urw-nimbus sans narrow-bold-r-normal--0-0-0-0-p-0-ibm-cp850
+NimbusSansNarrow-Bold.t1 -urw-nimbus sans narrow-bold-r-normal--0-0-0-0-p-0-ibm-cp852
+NimbusSansNarrow-Bold.t1 -urw-nimbus sans narrow-bold-r-normal--0-0-0-0-p-0-ibm-cp866
+NimbusSansNarrow-Bold.t1 -urw-nimbus sans narrow-bold-r-normal--0-0-0-0-p-0-iso10646-1
+NimbusSansNarrow-Bold.t1 -urw-nimbus sans narrow-bold-r-normal--0-0-0-0-p-0-iso8859-1
+NimbusSansNarrow-Bold.t1 -urw-nimbus sans narrow-bold-r-normal--0-0-0-0-p-0-iso8859-10
+NimbusSansNarrow-Bold.t1 -urw-nimbus sans narrow-bold-r-normal--0-0-0-0-p-0-iso8859-13
+NimbusSansNarrow-Bold.t1 -urw-nimbus sans narrow-bold-r-normal--0-0-0-0-p-0-iso8859-15
+NimbusSansNarrow-Bold.t1 -urw-nimbus sans narrow-bold-r-normal--0-0-0-0-p-0-iso8859-16
+NimbusSansNarrow-Bold.t1 -urw-nimbus sans narrow-bold-r-normal--0-0-0-0-p-0-iso8859-2
+NimbusSansNarrow-Bold.t1 -urw-nimbus sans narrow-bold-r-normal--0-0-0-0-p-0-iso8859-3
+NimbusSansNarrow-Bold.t1 -urw-nimbus sans narrow-bold-r-normal--0-0-0-0-p-0-iso8859-4
+NimbusSansNarrow-Bold.t1 -urw-nimbus sans narrow-bold-r-normal--0-0-0-0-p-0-iso8859-5
+NimbusSansNarrow-Bold.t1 -urw-nimbus sans narrow-bold-r-normal--0-0-0-0-p-0-iso8859-7
+NimbusSansNarrow-Bold.t1 -urw-nimbus sans narrow-bold-r-normal--0-0-0-0-p-0-iso8859-9
+NimbusSansNarrow-Bold.t1 -urw-nimbus sans narrow-bold-r-normal--0-0-0-0-p-0-koi8-e
+NimbusSansNarrow-Bold.t1 -urw-nimbus sans narrow-bold-r-normal--0-0-0-0-p-0-koi8-r
+NimbusSansNarrow-Bold.t1 -urw-nimbus sans narrow-bold-r-normal--0-0-0-0-p-0-koi8-ru
+NimbusSansNarrow-Bold.t1 -urw-nimbus sans narrow-bold-r-normal--0-0-0-0-p-0-koi8-u
+NimbusSansNarrow-Bold.t1 -urw-nimbus sans narrow-bold-r-normal--0-0-0-0-p-0-koi8-uni
+NimbusSansNarrow-Bold.t1 -urw-nimbus sans narrow-bold-r-normal--0-0-0-0-p-0-microsoft-cp1252
+NimbusSansNarrow-BoldOblique.t1 -urw-nimbus sans narrow-bold-o-normal--0-0-0-0-p-0-adobe-standard
+NimbusSansNarrow-BoldOblique.t1 -urw-nimbus sans narrow-bold-o-normal--0-0-0-0-p-0-ascii-0
+NimbusSansNarrow-BoldOblique.t1 -urw-nimbus sans narrow-bold-o-normal--0-0-0-0-p-0-ibm-cp437
+NimbusSansNarrow-BoldOblique.t1 -urw-nimbus sans narrow-bold-o-normal--0-0-0-0-p-0-ibm-cp850
+NimbusSansNarrow-BoldOblique.t1 -urw-nimbus sans narrow-bold-o-normal--0-0-0-0-p-0-ibm-cp852
+NimbusSansNarrow-BoldOblique.t1 -urw-nimbus sans narrow-bold-o-normal--0-0-0-0-p-0-ibm-cp866
+NimbusSansNarrow-BoldOblique.t1 -urw-nimbus sans narrow-bold-o-normal--0-0-0-0-p-0-iso10646-1
+NimbusSansNarrow-BoldOblique.t1 -urw-nimbus sans narrow-bold-o-normal--0-0-0-0-p-0-iso8859-1
+NimbusSansNarrow-BoldOblique.t1 -urw-nimbus sans narrow-bold-o-normal--0-0-0-0-p-0-iso8859-10
+NimbusSansNarrow-BoldOblique.t1 -urw-nimbus sans narrow-bold-o-normal--0-0-0-0-p-0-iso8859-13
+NimbusSansNarrow-BoldOblique.t1 -urw-nimbus sans narrow-bold-o-normal--0-0-0-0-p-0-iso8859-15
+NimbusSansNarrow-BoldOblique.t1 -urw-nimbus sans narrow-bold-o-normal--0-0-0-0-p-0-iso8859-16
+NimbusSansNarrow-BoldOblique.t1 -urw-nimbus sans narrow-bold-o-normal--0-0-0-0-p-0-iso8859-2
+NimbusSansNarrow-BoldOblique.t1 -urw-nimbus sans narrow-bold-o-normal--0-0-0-0-p-0-iso8859-3
+NimbusSansNarrow-BoldOblique.t1 -urw-nimbus sans narrow-bold-o-normal--0-0-0-0-p-0-iso8859-4
+NimbusSansNarrow-BoldOblique.t1 -urw-nimbus sans narrow-bold-o-normal--0-0-0-0-p-0-iso8859-5
+NimbusSansNarrow-BoldOblique.t1 -urw-nimbus sans narrow-bold-o-normal--0-0-0-0-p-0-iso8859-7
+NimbusSansNarrow-BoldOblique.t1 -urw-nimbus sans narrow-bold-o-normal--0-0-0-0-p-0-iso8859-9
+NimbusSansNarrow-BoldOblique.t1 -urw-nimbus sans narrow-bold-o-normal--0-0-0-0-p-0-koi8-e
+NimbusSansNarrow-BoldOblique.t1 -urw-nimbus sans narrow-bold-o-normal--0-0-0-0-p-0-koi8-r
+NimbusSansNarrow-BoldOblique.t1 -urw-nimbus sans narrow-bold-o-normal--0-0-0-0-p-0-koi8-ru
+NimbusSansNarrow-BoldOblique.t1 -urw-nimbus sans narrow-bold-o-normal--0-0-0-0-p-0-koi8-u
+NimbusSansNarrow-BoldOblique.t1 -urw-nimbus sans narrow-bold-o-normal--0-0-0-0-p-0-koi8-uni
+NimbusSansNarrow-BoldOblique.t1 -urw-nimbus sans narrow-bold-o-normal--0-0-0-0-p-0-microsoft-cp1252
+NimbusSansNarrow-Oblique.t1 -urw-nimbus sans narrow-medium-o-normal--0-0-0-0-p-0-adobe-standard
+NimbusSansNarrow-Oblique.t1 -urw-nimbus sans narrow-medium-o-normal--0-0-0-0-p-0-ascii-0
+NimbusSansNarrow-Oblique.t1 -urw-nimbus sans narrow-medium-o-normal--0-0-0-0-p-0-ibm-cp437
+NimbusSansNarrow-Oblique.t1 -urw-nimbus sans narrow-medium-o-normal--0-0-0-0-p-0-ibm-cp850
+NimbusSansNarrow-Oblique.t1 -urw-nimbus sans narrow-medium-o-normal--0-0-0-0-p-0-ibm-cp852
+NimbusSansNarrow-Oblique.t1 -urw-nimbus sans narrow-medium-o-normal--0-0-0-0-p-0-ibm-cp866
+NimbusSansNarrow-Oblique.t1 -urw-nimbus sans narrow-medium-o-normal--0-0-0-0-p-0-iso10646-1
+NimbusSansNarrow-Oblique.t1 -urw-nimbus sans narrow-medium-o-normal--0-0-0-0-p-0-iso8859-1
+NimbusSansNarrow-Oblique.t1 -urw-nimbus sans narrow-medium-o-normal--0-0-0-0-p-0-iso8859-10
+NimbusSansNarrow-Oblique.t1 -urw-nimbus sans narrow-medium-o-normal--0-0-0-0-p-0-iso8859-13
+NimbusSansNarrow-Oblique.t1 -urw-nimbus sans narrow-medium-o-normal--0-0-0-0-p-0-iso8859-15
+NimbusSansNarrow-Oblique.t1 -urw-nimbus sans narrow-medium-o-normal--0-0-0-0-p-0-iso8859-16
+NimbusSansNarrow-Oblique.t1 -urw-nimbus sans narrow-medium-o-normal--0-0-0-0-p-0-iso8859-2
+NimbusSansNarrow-Oblique.t1 -urw-nimbus sans narrow-medium-o-normal--0-0-0-0-p-0-iso8859-3
+NimbusSansNarrow-Oblique.t1 -urw-nimbus sans narrow-medium-o-normal--0-0-0-0-p-0-iso8859-4
+NimbusSansNarrow-Oblique.t1 -urw-nimbus sans narrow-medium-o-normal--0-0-0-0-p-0-iso8859-5
+NimbusSansNarrow-Oblique.t1 -urw-nimbus sans narrow-medium-o-normal--0-0-0-0-p-0-iso8859-7
+NimbusSansNarrow-Oblique.t1 -urw-nimbus sans narrow-medium-o-normal--0-0-0-0-p-0-iso8859-9
+NimbusSansNarrow-Oblique.t1 -urw-nimbus sans narrow-medium-o-normal--0-0-0-0-p-0-koi8-e
+NimbusSansNarrow-Oblique.t1 -urw-nimbus sans narrow-medium-o-normal--0-0-0-0-p-0-koi8-r
+NimbusSansNarrow-Oblique.t1 -urw-nimbus sans narrow-medium-o-normal--0-0-0-0-p-0-koi8-ru
+NimbusSansNarrow-Oblique.t1 -urw-nimbus sans narrow-medium-o-normal--0-0-0-0-p-0-koi8-u
+NimbusSansNarrow-Oblique.t1 -urw-nimbus sans narrow-medium-o-normal--0-0-0-0-p-0-koi8-uni
+NimbusSansNarrow-Oblique.t1 -urw-nimbus sans narrow-medium-o-normal--0-0-0-0-p-0-microsoft-cp1252
+NimbusSansNarrow-Regular.t1 -urw-nimbus sans narrow-medium-r-normal--0-0-0-0-p-0-adobe-standard
+NimbusSansNarrow-Regular.t1 -urw-nimbus sans narrow-medium-r-normal--0-0-0-0-p-0-ascii-0
+NimbusSansNarrow-Regular.t1 -urw-nimbus sans narrow-medium-r-normal--0-0-0-0-p-0-ibm-cp437
+NimbusSansNarrow-Regular.t1 -urw-nimbus sans narrow-medium-r-normal--0-0-0-0-p-0-ibm-cp850
+NimbusSansNarrow-Regular.t1 -urw-nimbus sans narrow-medium-r-normal--0-0-0-0-p-0-ibm-cp852
+NimbusSansNarrow-Regular.t1 -urw-nimbus sans narrow-medium-r-normal--0-0-0-0-p-0-ibm-cp866
+NimbusSansNarrow-Regular.t1 -urw-nimbus sans narrow-medium-r-normal--0-0-0-0-p-0-iso10646-1
+NimbusSansNarrow-Regular.t1 -urw-nimbus sans narrow-medium-r-normal--0-0-0-0-p-0-iso8859-1
+NimbusSansNarrow-Regular.t1 -urw-nimbus sans narrow-medium-r-normal--0-0-0-0-p-0-iso8859-10
+NimbusSansNarrow-Regular.t1 -urw-nimbus sans narrow-medium-r-normal--0-0-0-0-p-0-iso8859-13
+NimbusSansNarrow-Regular.t1 -urw-nimbus sans narrow-medium-r-normal--0-0-0-0-p-0-iso8859-15
+NimbusSansNarrow-Regular.t1 -urw-nimbus sans narrow-medium-r-normal--0-0-0-0-p-0-iso8859-16
+NimbusSansNarrow-Regular.t1 -urw-nimbus sans narrow-medium-r-normal--0-0-0-0-p-0-iso8859-2
+NimbusSansNarrow-Regular.t1 -urw-nimbus sans narrow-medium-r-normal--0-0-0-0-p-0-iso8859-3
+NimbusSansNarrow-Regular.t1 -urw-nimbus sans narrow-medium-r-normal--0-0-0-0-p-0-iso8859-4
+NimbusSansNarrow-Regular.t1 -urw-nimbus sans narrow-medium-r-normal--0-0-0-0-p-0-iso8859-5
+NimbusSansNarrow-Regular.t1 -urw-nimbus sans narrow-medium-r-normal--0-0-0-0-p-0-iso8859-7
+NimbusSansNarrow-Regular.t1 -urw-nimbus sans narrow-medium-r-normal--0-0-0-0-p-0-iso8859-9
+NimbusSansNarrow-Regular.t1 -urw-nimbus sans narrow-medium-r-normal--0-0-0-0-p-0-koi8-e
+NimbusSansNarrow-Regular.t1 -urw-nimbus sans narrow-medium-r-normal--0-0-0-0-p-0-koi8-r
+NimbusSansNarrow-Regular.t1 -urw-nimbus sans narrow-medium-r-normal--0-0-0-0-p-0-koi8-ru
+NimbusSansNarrow-Regular.t1 -urw-nimbus sans narrow-medium-r-normal--0-0-0-0-p-0-koi8-u
+NimbusSansNarrow-Regular.t1 -urw-nimbus sans narrow-medium-r-normal--0-0-0-0-p-0-koi8-uni
+NimbusSansNarrow-Regular.t1 -urw-nimbus sans narrow-medium-r-normal--0-0-0-0-p-0-microsoft-cp1252
+P052-Bold.t1 -urw-p052-bold-r-normal--0-0-0-0-p-0-adobe-standard
+P052-Bold.t1 -urw-p052-bold-r-normal--0-0-0-0-p-0-ascii-0
+P052-Bold.t1 -urw-p052-bold-r-normal--0-0-0-0-p-0-ibm-cp437
+P052-Bold.t1 -urw-p052-bold-r-normal--0-0-0-0-p-0-ibm-cp850
+P052-Bold.t1 -urw-p052-bold-r-normal--0-0-0-0-p-0-ibm-cp852
+P052-Bold.t1 -urw-p052-bold-r-normal--0-0-0-0-p-0-ibm-cp866
+P052-Bold.t1 -urw-p052-bold-r-normal--0-0-0-0-p-0-iso10646-1
+P052-Bold.t1 -urw-p052-bold-r-normal--0-0-0-0-p-0-iso8859-1
+P052-Bold.t1 -urw-p052-bold-r-normal--0-0-0-0-p-0-iso8859-10
+P052-Bold.t1 -urw-p052-bold-r-normal--0-0-0-0-p-0-iso8859-13
+P052-Bold.t1 -urw-p052-bold-r-normal--0-0-0-0-p-0-iso8859-15
+P052-Bold.t1 -urw-p052-bold-r-normal--0-0-0-0-p-0-iso8859-16
+P052-Bold.t1 -urw-p052-bold-r-normal--0-0-0-0-p-0-iso8859-2
+P052-Bold.t1 -urw-p052-bold-r-normal--0-0-0-0-p-0-iso8859-3
+P052-Bold.t1 -urw-p052-bold-r-normal--0-0-0-0-p-0-iso8859-4
+P052-Bold.t1 -urw-p052-bold-r-normal--0-0-0-0-p-0-iso8859-5
+P052-Bold.t1 -urw-p052-bold-r-normal--0-0-0-0-p-0-iso8859-7
+P052-Bold.t1 -urw-p052-bold-r-normal--0-0-0-0-p-0-iso8859-9
+P052-Bold.t1 -urw-p052-bold-r-normal--0-0-0-0-p-0-koi8-e
+P052-Bold.t1 -urw-p052-bold-r-normal--0-0-0-0-p-0-koi8-r
+P052-Bold.t1 -urw-p052-bold-r-normal--0-0-0-0-p-0-koi8-ru
+P052-Bold.t1 -urw-p052-bold-r-normal--0-0-0-0-p-0-koi8-u
+P052-Bold.t1 -urw-p052-bold-r-normal--0-0-0-0-p-0-koi8-uni
+P052-Bold.t1 -urw-p052-bold-r-normal--0-0-0-0-p-0-microsoft-cp1252
+P052-BoldItalic.t1 -urw-p052-bold-i-normal--0-0-0-0-p-0-adobe-standard
+P052-BoldItalic.t1 -urw-p052-bold-i-normal--0-0-0-0-p-0-ascii-0
+P052-BoldItalic.t1 -urw-p052-bold-i-normal--0-0-0-0-p-0-ibm-cp437
+P052-BoldItalic.t1 -urw-p052-bold-i-normal--0-0-0-0-p-0-ibm-cp850
+P052-BoldItalic.t1 -urw-p052-bold-i-normal--0-0-0-0-p-0-ibm-cp852
+P052-BoldItalic.t1 -urw-p052-bold-i-normal--0-0-0-0-p-0-ibm-cp866
+P052-BoldItalic.t1 -urw-p052-bold-i-normal--0-0-0-0-p-0-iso10646-1
+P052-BoldItalic.t1 -urw-p052-bold-i-normal--0-0-0-0-p-0-iso8859-1
+P052-BoldItalic.t1 -urw-p052-bold-i-normal--0-0-0-0-p-0-iso8859-10
+P052-BoldItalic.t1 -urw-p052-bold-i-normal--0-0-0-0-p-0-iso8859-13
+P052-BoldItalic.t1 -urw-p052-bold-i-normal--0-0-0-0-p-0-iso8859-15
+P052-BoldItalic.t1 -urw-p052-bold-i-normal--0-0-0-0-p-0-iso8859-16
+P052-BoldItalic.t1 -urw-p052-bold-i-normal--0-0-0-0-p-0-iso8859-2
+P052-BoldItalic.t1 -urw-p052-bold-i-normal--0-0-0-0-p-0-iso8859-3
+P052-BoldItalic.t1 -urw-p052-bold-i-normal--0-0-0-0-p-0-iso8859-4
+P052-BoldItalic.t1 -urw-p052-bold-i-normal--0-0-0-0-p-0-iso8859-5
+P052-BoldItalic.t1 -urw-p052-bold-i-normal--0-0-0-0-p-0-iso8859-7
+P052-BoldItalic.t1 -urw-p052-bold-i-normal--0-0-0-0-p-0-iso8859-9
+P052-BoldItalic.t1 -urw-p052-bold-i-normal--0-0-0-0-p-0-koi8-e
+P052-BoldItalic.t1 -urw-p052-bold-i-normal--0-0-0-0-p-0-koi8-r
+P052-BoldItalic.t1 -urw-p052-bold-i-normal--0-0-0-0-p-0-koi8-ru
+P052-BoldItalic.t1 -urw-p052-bold-i-normal--0-0-0-0-p-0-koi8-u
+P052-BoldItalic.t1 -urw-p052-bold-i-normal--0-0-0-0-p-0-koi8-uni
+P052-BoldItalic.t1 -urw-p052-bold-i-normal--0-0-0-0-p-0-microsoft-cp1252
+P052-Italic.t1 -urw-p052-medium-i-normal--0-0-0-0-p-0-adobe-standard
+P052-Italic.t1 -urw-p052-medium-i-normal--0-0-0-0-p-0-ascii-0
+P052-Italic.t1 -urw-p052-medium-i-normal--0-0-0-0-p-0-ibm-cp437
+P052-Italic.t1 -urw-p052-medium-i-normal--0-0-0-0-p-0-ibm-cp850
+P052-Italic.t1 -urw-p052-medium-i-normal--0-0-0-0-p-0-ibm-cp852
+P052-Italic.t1 -urw-p052-medium-i-normal--0-0-0-0-p-0-ibm-cp866
+P052-Italic.t1 -urw-p052-medium-i-normal--0-0-0-0-p-0-iso10646-1
+P052-Italic.t1 -urw-p052-medium-i-normal--0-0-0-0-p-0-iso8859-1
+P052-Italic.t1 -urw-p052-medium-i-normal--0-0-0-0-p-0-iso8859-10
+P052-Italic.t1 -urw-p052-medium-i-normal--0-0-0-0-p-0-iso8859-13
+P052-Italic.t1 -urw-p052-medium-i-normal--0-0-0-0-p-0-iso8859-15
+P052-Italic.t1 -urw-p052-medium-i-normal--0-0-0-0-p-0-iso8859-16
+P052-Italic.t1 -urw-p052-medium-i-normal--0-0-0-0-p-0-iso8859-2
+P052-Italic.t1 -urw-p052-medium-i-normal--0-0-0-0-p-0-iso8859-3
+P052-Italic.t1 -urw-p052-medium-i-normal--0-0-0-0-p-0-iso8859-4
+P052-Italic.t1 -urw-p052-medium-i-normal--0-0-0-0-p-0-iso8859-5
+P052-Italic.t1 -urw-p052-medium-i-normal--0-0-0-0-p-0-iso8859-7
+P052-Italic.t1 -urw-p052-medium-i-normal--0-0-0-0-p-0-iso8859-9
+P052-Italic.t1 -urw-p052-medium-i-normal--0-0-0-0-p-0-koi8-e
+P052-Italic.t1 -urw-p052-medium-i-normal--0-0-0-0-p-0-koi8-r
+P052-Italic.t1 -urw-p052-medium-i-normal--0-0-0-0-p-0-koi8-ru
+P052-Italic.t1 -urw-p052-medium-i-normal--0-0-0-0-p-0-koi8-u
+P052-Italic.t1 -urw-p052-medium-i-normal--0-0-0-0-p-0-koi8-uni
+P052-Italic.t1 -urw-p052-medium-i-normal--0-0-0-0-p-0-microsoft-cp1252
+P052-Roman.t1 -urw-p052-medium-r-normal--0-0-0-0-p-0-adobe-standard
+P052-Roman.t1 -urw-p052-medium-r-normal--0-0-0-0-p-0-ascii-0
+P052-Roman.t1 -urw-p052-medium-r-normal--0-0-0-0-p-0-ibm-cp437
+P052-Roman.t1 -urw-p052-medium-r-normal--0-0-0-0-p-0-ibm-cp850
+P052-Roman.t1 -urw-p052-medium-r-normal--0-0-0-0-p-0-ibm-cp852
+P052-Roman.t1 -urw-p052-medium-r-normal--0-0-0-0-p-0-ibm-cp866
+P052-Roman.t1 -urw-p052-medium-r-normal--0-0-0-0-p-0-iso10646-1
+P052-Roman.t1 -urw-p052-medium-r-normal--0-0-0-0-p-0-iso8859-1
+P052-Roman.t1 -urw-p052-medium-r-normal--0-0-0-0-p-0-iso8859-10
+P052-Roman.t1 -urw-p052-medium-r-normal--0-0-0-0-p-0-iso8859-13
+P052-Roman.t1 -urw-p052-medium-r-normal--0-0-0-0-p-0-iso8859-15
+P052-Roman.t1 -urw-p052-medium-r-normal--0-0-0-0-p-0-iso8859-16
+P052-Roman.t1 -urw-p052-medium-r-normal--0-0-0-0-p-0-iso8859-2
+P052-Roman.t1 -urw-p052-medium-r-normal--0-0-0-0-p-0-iso8859-3
+P052-Roman.t1 -urw-p052-medium-r-normal--0-0-0-0-p-0-iso8859-4
+P052-Roman.t1 -urw-p052-medium-r-normal--0-0-0-0-p-0-iso8859-5
+P052-Roman.t1 -urw-p052-medium-r-normal--0-0-0-0-p-0-iso8859-7
+P052-Roman.t1 -urw-p052-medium-r-normal--0-0-0-0-p-0-iso8859-9
+P052-Roman.t1 -urw-p052-medium-r-normal--0-0-0-0-p-0-koi8-e
+P052-Roman.t1 -urw-p052-medium-r-normal--0-0-0-0-p-0-koi8-r
+P052-Roman.t1 -urw-p052-medium-r-normal--0-0-0-0-p-0-koi8-ru
+P052-Roman.t1 -urw-p052-medium-r-normal--0-0-0-0-p-0-koi8-u
+P052-Roman.t1 -urw-p052-medium-r-normal--0-0-0-0-p-0-koi8-uni
+P052-Roman.t1 -urw-p052-medium-r-normal--0-0-0-0-p-0-microsoft-cp1252
+StandardSymbolsPS.t1 -urw-standard symbols ps-medium-r-normal--0-0-0-0-p-0-adobe-symbol
+StandardSymbolsPS.t1 -urw-standard symbols ps-medium-r-normal--0-0-0-0-p-0-iso10646-1
+URWBookman-Demi.t1 -urw-urw bookman-semibold-r-normal--0-0-0-0-p-0-adobe-standard
+URWBookman-Demi.t1 -urw-urw bookman-semibold-r-normal--0-0-0-0-p-0-ascii-0
+URWBookman-Demi.t1 -urw-urw bookman-semibold-r-normal--0-0-0-0-p-0-ibm-cp437
+URWBookman-Demi.t1 -urw-urw bookman-semibold-r-normal--0-0-0-0-p-0-ibm-cp850
+URWBookman-Demi.t1 -urw-urw bookman-semibold-r-normal--0-0-0-0-p-0-ibm-cp852
+URWBookman-Demi.t1 -urw-urw bookman-semibold-r-normal--0-0-0-0-p-0-ibm-cp866
+URWBookman-Demi.t1 -urw-urw bookman-semibold-r-normal--0-0-0-0-p-0-iso10646-1
+URWBookman-Demi.t1 -urw-urw bookman-semibold-r-normal--0-0-0-0-p-0-iso8859-1
+URWBookman-Demi.t1 -urw-urw bookman-semibold-r-normal--0-0-0-0-p-0-iso8859-10
+URWBookman-Demi.t1 -urw-urw bookman-semibold-r-normal--0-0-0-0-p-0-iso8859-13
+URWBookman-Demi.t1 -urw-urw bookman-semibold-r-normal--0-0-0-0-p-0-iso8859-15
+URWBookman-Demi.t1 -urw-urw bookman-semibold-r-normal--0-0-0-0-p-0-iso8859-16
+URWBookman-Demi.t1 -urw-urw bookman-semibold-r-normal--0-0-0-0-p-0-iso8859-2
+URWBookman-Demi.t1 -urw-urw bookman-semibold-r-normal--0-0-0-0-p-0-iso8859-3
+URWBookman-Demi.t1 -urw-urw bookman-semibold-r-normal--0-0-0-0-p-0-iso8859-4
+URWBookman-Demi.t1 -urw-urw bookman-semibold-r-normal--0-0-0-0-p-0-iso8859-5
+URWBookman-Demi.t1 -urw-urw bookman-semibold-r-normal--0-0-0-0-p-0-iso8859-7
+URWBookman-Demi.t1 -urw-urw bookman-semibold-r-normal--0-0-0-0-p-0-iso8859-9
+URWBookman-Demi.t1 -urw-urw bookman-semibold-r-normal--0-0-0-0-p-0-koi8-e
+URWBookman-Demi.t1 -urw-urw bookman-semibold-r-normal--0-0-0-0-p-0-koi8-r
+URWBookman-Demi.t1 -urw-urw bookman-semibold-r-normal--0-0-0-0-p-0-koi8-ru
+URWBookman-Demi.t1 -urw-urw bookman-semibold-r-normal--0-0-0-0-p-0-koi8-u
+URWBookman-Demi.t1 -urw-urw bookman-semibold-r-normal--0-0-0-0-p-0-koi8-uni
+URWBookman-Demi.t1 -urw-urw bookman-semibold-r-normal--0-0-0-0-p-0-microsoft-cp1252
+URWBookman-DemiItalic.t1 -urw-urw bookman-semibold-i-normal--0-0-0-0-p-0-adobe-standard
+URWBookman-DemiItalic.t1 -urw-urw bookman-semibold-i-normal--0-0-0-0-p-0-ascii-0
+URWBookman-DemiItalic.t1 -urw-urw bookman-semibold-i-normal--0-0-0-0-p-0-ibm-cp437
+URWBookman-DemiItalic.t1 -urw-urw bookman-semibold-i-normal--0-0-0-0-p-0-ibm-cp850
+URWBookman-DemiItalic.t1 -urw-urw bookman-semibold-i-normal--0-0-0-0-p-0-ibm-cp852
+URWBookman-DemiItalic.t1 -urw-urw bookman-semibold-i-normal--0-0-0-0-p-0-ibm-cp866
+URWBookman-DemiItalic.t1 -urw-urw bookman-semibold-i-normal--0-0-0-0-p-0-iso10646-1
+URWBookman-DemiItalic.t1 -urw-urw bookman-semibold-i-normal--0-0-0-0-p-0-iso8859-1
+URWBookman-DemiItalic.t1 -urw-urw bookman-semibold-i-normal--0-0-0-0-p-0-iso8859-10
+URWBookman-DemiItalic.t1 -urw-urw bookman-semibold-i-normal--0-0-0-0-p-0-iso8859-13
+URWBookman-DemiItalic.t1 -urw-urw bookman-semibold-i-normal--0-0-0-0-p-0-iso8859-15
+URWBookman-DemiItalic.t1 -urw-urw bookman-semibold-i-normal--0-0-0-0-p-0-iso8859-16
+URWBookman-DemiItalic.t1 -urw-urw bookman-semibold-i-normal--0-0-0-0-p-0-iso8859-2
+URWBookman-DemiItalic.t1 -urw-urw bookman-semibold-i-normal--0-0-0-0-p-0-iso8859-3
+URWBookman-DemiItalic.t1 -urw-urw bookman-semibold-i-normal--0-0-0-0-p-0-iso8859-4
+URWBookman-DemiItalic.t1 -urw-urw bookman-semibold-i-normal--0-0-0-0-p-0-iso8859-5
+URWBookman-DemiItalic.t1 -urw-urw bookman-semibold-i-normal--0-0-0-0-p-0-iso8859-7
+URWBookman-DemiItalic.t1 -urw-urw bookman-semibold-i-normal--0-0-0-0-p-0-iso8859-9
+URWBookman-DemiItalic.t1 -urw-urw bookman-semibold-i-normal--0-0-0-0-p-0-koi8-e
+URWBookman-DemiItalic.t1 -urw-urw bookman-semibold-i-normal--0-0-0-0-p-0-koi8-r
+URWBookman-DemiItalic.t1 -urw-urw bookman-semibold-i-normal--0-0-0-0-p-0-koi8-ru
+URWBookman-DemiItalic.t1 -urw-urw bookman-semibold-i-normal--0-0-0-0-p-0-koi8-u
+URWBookman-DemiItalic.t1 -urw-urw bookman-semibold-i-normal--0-0-0-0-p-0-koi8-uni
+URWBookman-DemiItalic.t1 -urw-urw bookman-semibold-i-normal--0-0-0-0-p-0-microsoft-cp1252
+URWBookman-Light.t1 -urw-urw bookman-light-r-normal--0-0-0-0-p-0-adobe-standard
+URWBookman-Light.t1 -urw-urw bookman-light-r-normal--0-0-0-0-p-0-ascii-0
+URWBookman-Light.t1 -urw-urw bookman-light-r-normal--0-0-0-0-p-0-ibm-cp437
+URWBookman-Light.t1 -urw-urw bookman-light-r-normal--0-0-0-0-p-0-ibm-cp850
+URWBookman-Light.t1 -urw-urw bookman-light-r-normal--0-0-0-0-p-0-ibm-cp852
+URWBookman-Light.t1 -urw-urw bookman-light-r-normal--0-0-0-0-p-0-ibm-cp866
+URWBookman-Light.t1 -urw-urw bookman-light-r-normal--0-0-0-0-p-0-iso10646-1
+URWBookman-Light.t1 -urw-urw bookman-light-r-normal--0-0-0-0-p-0-iso8859-1
+URWBookman-Light.t1 -urw-urw bookman-light-r-normal--0-0-0-0-p-0-iso8859-10
+URWBookman-Light.t1 -urw-urw bookman-light-r-normal--0-0-0-0-p-0-iso8859-13
+URWBookman-Light.t1 -urw-urw bookman-light-r-normal--0-0-0-0-p-0-iso8859-15
+URWBookman-Light.t1 -urw-urw bookman-light-r-normal--0-0-0-0-p-0-iso8859-16
+URWBookman-Light.t1 -urw-urw bookman-light-r-normal--0-0-0-0-p-0-iso8859-2
+URWBookman-Light.t1 -urw-urw bookman-light-r-normal--0-0-0-0-p-0-iso8859-3
+URWBookman-Light.t1 -urw-urw bookman-light-r-normal--0-0-0-0-p-0-iso8859-4
+URWBookman-Light.t1 -urw-urw bookman-light-r-normal--0-0-0-0-p-0-iso8859-5
+URWBookman-Light.t1 -urw-urw bookman-light-r-normal--0-0-0-0-p-0-iso8859-7
+URWBookman-Light.t1 -urw-urw bookman-light-r-normal--0-0-0-0-p-0-iso8859-9
+URWBookman-Light.t1 -urw-urw bookman-light-r-normal--0-0-0-0-p-0-koi8-e
+URWBookman-Light.t1 -urw-urw bookman-light-r-normal--0-0-0-0-p-0-koi8-r
+URWBookman-Light.t1 -urw-urw bookman-light-r-normal--0-0-0-0-p-0-koi8-ru
+URWBookman-Light.t1 -urw-urw bookman-light-r-normal--0-0-0-0-p-0-koi8-u
+URWBookman-Light.t1 -urw-urw bookman-light-r-normal--0-0-0-0-p-0-koi8-uni
+URWBookman-Light.t1 -urw-urw bookman-light-r-normal--0-0-0-0-p-0-microsoft-cp1252
+URWBookman-LightItalic.t1 -urw-urw bookman-light-i-normal--0-0-0-0-p-0-adobe-standard
+URWBookman-LightItalic.t1 -urw-urw bookman-light-i-normal--0-0-0-0-p-0-ascii-0
+URWBookman-LightItalic.t1 -urw-urw bookman-light-i-normal--0-0-0-0-p-0-ibm-cp437
+URWBookman-LightItalic.t1 -urw-urw bookman-light-i-normal--0-0-0-0-p-0-ibm-cp850
+URWBookman-LightItalic.t1 -urw-urw bookman-light-i-normal--0-0-0-0-p-0-ibm-cp852
+URWBookman-LightItalic.t1 -urw-urw bookman-light-i-normal--0-0-0-0-p-0-ibm-cp866
+URWBookman-LightItalic.t1 -urw-urw bookman-light-i-normal--0-0-0-0-p-0-iso10646-1
+URWBookman-LightItalic.t1 -urw-urw bookman-light-i-normal--0-0-0-0-p-0-iso8859-1
+URWBookman-LightItalic.t1 -urw-urw bookman-light-i-normal--0-0-0-0-p-0-iso8859-10
+URWBookman-LightItalic.t1 -urw-urw bookman-light-i-normal--0-0-0-0-p-0-iso8859-13
+URWBookman-LightItalic.t1 -urw-urw bookman-light-i-normal--0-0-0-0-p-0-iso8859-15
+URWBookman-LightItalic.t1 -urw-urw bookman-light-i-normal--0-0-0-0-p-0-iso8859-16
+URWBookman-LightItalic.t1 -urw-urw bookman-light-i-normal--0-0-0-0-p-0-iso8859-2
+URWBookman-LightItalic.t1 -urw-urw bookman-light-i-normal--0-0-0-0-p-0-iso8859-3
+URWBookman-LightItalic.t1 -urw-urw bookman-light-i-normal--0-0-0-0-p-0-iso8859-4
+URWBookman-LightItalic.t1 -urw-urw bookman-light-i-normal--0-0-0-0-p-0-iso8859-5
+URWBookman-LightItalic.t1 -urw-urw bookman-light-i-normal--0-0-0-0-p-0-iso8859-7
+URWBookman-LightItalic.t1 -urw-urw bookman-light-i-normal--0-0-0-0-p-0-iso8859-9
+URWBookman-LightItalic.t1 -urw-urw bookman-light-i-normal--0-0-0-0-p-0-koi8-e
+URWBookman-LightItalic.t1 -urw-urw bookman-light-i-normal--0-0-0-0-p-0-koi8-r
+URWBookman-LightItalic.t1 -urw-urw bookman-light-i-normal--0-0-0-0-p-0-koi8-ru
+URWBookman-LightItalic.t1 -urw-urw bookman-light-i-normal--0-0-0-0-p-0-koi8-u
+URWBookman-LightItalic.t1 -urw-urw bookman-light-i-normal--0-0-0-0-p-0-koi8-uni
+URWBookman-LightItalic.t1 -urw-urw bookman-light-i-normal--0-0-0-0-p-0-microsoft-cp1252
+URWGothic-Book.t1 -urw-urw gothic-medium-r-normal--0-0-0-0-p-0-adobe-standard
+URWGothic-Book.t1 -urw-urw gothic-medium-r-normal--0-0-0-0-p-0-ascii-0
+URWGothic-Book.t1 -urw-urw gothic-medium-r-normal--0-0-0-0-p-0-ibm-cp437
+URWGothic-Book.t1 -urw-urw gothic-medium-r-normal--0-0-0-0-p-0-ibm-cp850
+URWGothic-Book.t1 -urw-urw gothic-medium-r-normal--0-0-0-0-p-0-ibm-cp852
+URWGothic-Book.t1 -urw-urw gothic-medium-r-normal--0-0-0-0-p-0-ibm-cp866
+URWGothic-Book.t1 -urw-urw gothic-medium-r-normal--0-0-0-0-p-0-iso10646-1
+URWGothic-Book.t1 -urw-urw gothic-medium-r-normal--0-0-0-0-p-0-iso8859-1
+URWGothic-Book.t1 -urw-urw gothic-medium-r-normal--0-0-0-0-p-0-iso8859-10
+URWGothic-Book.t1 -urw-urw gothic-medium-r-normal--0-0-0-0-p-0-iso8859-13
+URWGothic-Book.t1 -urw-urw gothic-medium-r-normal--0-0-0-0-p-0-iso8859-15
+URWGothic-Book.t1 -urw-urw gothic-medium-r-normal--0-0-0-0-p-0-iso8859-16
+URWGothic-Book.t1 -urw-urw gothic-medium-r-normal--0-0-0-0-p-0-iso8859-2
+URWGothic-Book.t1 -urw-urw gothic-medium-r-normal--0-0-0-0-p-0-iso8859-3
+URWGothic-Book.t1 -urw-urw gothic-medium-r-normal--0-0-0-0-p-0-iso8859-4
+URWGothic-Book.t1 -urw-urw gothic-medium-r-normal--0-0-0-0-p-0-iso8859-5
+URWGothic-Book.t1 -urw-urw gothic-medium-r-normal--0-0-0-0-p-0-iso8859-7
+URWGothic-Book.t1 -urw-urw gothic-medium-r-normal--0-0-0-0-p-0-iso8859-9
+URWGothic-Book.t1 -urw-urw gothic-medium-r-normal--0-0-0-0-p-0-koi8-e
+URWGothic-Book.t1 -urw-urw gothic-medium-r-normal--0-0-0-0-p-0-koi8-r
+URWGothic-Book.t1 -urw-urw gothic-medium-r-normal--0-0-0-0-p-0-koi8-ru
+URWGothic-Book.t1 -urw-urw gothic-medium-r-normal--0-0-0-0-p-0-koi8-u
+URWGothic-Book.t1 -urw-urw gothic-medium-r-normal--0-0-0-0-p-0-koi8-uni
+URWGothic-Book.t1 -urw-urw gothic-medium-r-normal--0-0-0-0-p-0-microsoft-cp1252
+URWGothic-BookOblique.t1 -urw-urw gothic-medium-o-normal--0-0-0-0-p-0-adobe-standard
+URWGothic-BookOblique.t1 -urw-urw gothic-medium-o-normal--0-0-0-0-p-0-ascii-0
+URWGothic-BookOblique.t1 -urw-urw gothic-medium-o-normal--0-0-0-0-p-0-ibm-cp437
+URWGothic-BookOblique.t1 -urw-urw gothic-medium-o-normal--0-0-0-0-p-0-ibm-cp850
+URWGothic-BookOblique.t1 -urw-urw gothic-medium-o-normal--0-0-0-0-p-0-ibm-cp852
+URWGothic-BookOblique.t1 -urw-urw gothic-medium-o-normal--0-0-0-0-p-0-ibm-cp866
+URWGothic-BookOblique.t1 -urw-urw gothic-medium-o-normal--0-0-0-0-p-0-iso10646-1
+URWGothic-BookOblique.t1 -urw-urw gothic-medium-o-normal--0-0-0-0-p-0-iso8859-1
+URWGothic-BookOblique.t1 -urw-urw gothic-medium-o-normal--0-0-0-0-p-0-iso8859-10
+URWGothic-BookOblique.t1 -urw-urw gothic-medium-o-normal--0-0-0-0-p-0-iso8859-13
+URWGothic-BookOblique.t1 -urw-urw gothic-medium-o-normal--0-0-0-0-p-0-iso8859-15
+URWGothic-BookOblique.t1 -urw-urw gothic-medium-o-normal--0-0-0-0-p-0-iso8859-16
+URWGothic-BookOblique.t1 -urw-urw gothic-medium-o-normal--0-0-0-0-p-0-iso8859-2
+URWGothic-BookOblique.t1 -urw-urw gothic-medium-o-normal--0-0-0-0-p-0-iso8859-3
+URWGothic-BookOblique.t1 -urw-urw gothic-medium-o-normal--0-0-0-0-p-0-iso8859-4
+URWGothic-BookOblique.t1 -urw-urw gothic-medium-o-normal--0-0-0-0-p-0-iso8859-5
+URWGothic-BookOblique.t1 -urw-urw gothic-medium-o-normal--0-0-0-0-p-0-iso8859-7
+URWGothic-BookOblique.t1 -urw-urw gothic-medium-o-normal--0-0-0-0-p-0-iso8859-9
+URWGothic-BookOblique.t1 -urw-urw gothic-medium-o-normal--0-0-0-0-p-0-koi8-e
+URWGothic-BookOblique.t1 -urw-urw gothic-medium-o-normal--0-0-0-0-p-0-koi8-r
+URWGothic-BookOblique.t1 -urw-urw gothic-medium-o-normal--0-0-0-0-p-0-koi8-ru
+URWGothic-BookOblique.t1 -urw-urw gothic-medium-o-normal--0-0-0-0-p-0-koi8-u
+URWGothic-BookOblique.t1 -urw-urw gothic-medium-o-normal--0-0-0-0-p-0-koi8-uni
+URWGothic-BookOblique.t1 -urw-urw gothic-medium-o-normal--0-0-0-0-p-0-microsoft-cp1252
+URWGothic-Demi.t1 -urw-urw gothic-semibold-r-normal--0-0-0-0-p-0-adobe-standard
+URWGothic-Demi.t1 -urw-urw gothic-semibold-r-normal--0-0-0-0-p-0-ascii-0
+URWGothic-Demi.t1 -urw-urw gothic-semibold-r-normal--0-0-0-0-p-0-ibm-cp437
+URWGothic-Demi.t1 -urw-urw gothic-semibold-r-normal--0-0-0-0-p-0-ibm-cp850
+URWGothic-Demi.t1 -urw-urw gothic-semibold-r-normal--0-0-0-0-p-0-ibm-cp852
+URWGothic-Demi.t1 -urw-urw gothic-semibold-r-normal--0-0-0-0-p-0-ibm-cp866
+URWGothic-Demi.t1 -urw-urw gothic-semibold-r-normal--0-0-0-0-p-0-iso10646-1
+URWGothic-Demi.t1 -urw-urw gothic-semibold-r-normal--0-0-0-0-p-0-iso8859-1
+URWGothic-Demi.t1 -urw-urw gothic-semibold-r-normal--0-0-0-0-p-0-iso8859-10
+URWGothic-Demi.t1 -urw-urw gothic-semibold-r-normal--0-0-0-0-p-0-iso8859-13
+URWGothic-Demi.t1 -urw-urw gothic-semibold-r-normal--0-0-0-0-p-0-iso8859-15
+URWGothic-Demi.t1 -urw-urw gothic-semibold-r-normal--0-0-0-0-p-0-iso8859-16
+URWGothic-Demi.t1 -urw-urw gothic-semibold-r-normal--0-0-0-0-p-0-iso8859-2
+URWGothic-Demi.t1 -urw-urw gothic-semibold-r-normal--0-0-0-0-p-0-iso8859-3
+URWGothic-Demi.t1 -urw-urw gothic-semibold-r-normal--0-0-0-0-p-0-iso8859-4
+URWGothic-Demi.t1 -urw-urw gothic-semibold-r-normal--0-0-0-0-p-0-iso8859-5
+URWGothic-Demi.t1 -urw-urw gothic-semibold-r-normal--0-0-0-0-p-0-iso8859-7
+URWGothic-Demi.t1 -urw-urw gothic-semibold-r-normal--0-0-0-0-p-0-iso8859-9
+URWGothic-Demi.t1 -urw-urw gothic-semibold-r-normal--0-0-0-0-p-0-koi8-e
+URWGothic-Demi.t1 -urw-urw gothic-semibold-r-normal--0-0-0-0-p-0-koi8-r
+URWGothic-Demi.t1 -urw-urw gothic-semibold-r-normal--0-0-0-0-p-0-koi8-ru
+URWGothic-Demi.t1 -urw-urw gothic-semibold-r-normal--0-0-0-0-p-0-koi8-u
+URWGothic-Demi.t1 -urw-urw gothic-semibold-r-normal--0-0-0-0-p-0-koi8-uni
+URWGothic-Demi.t1 -urw-urw gothic-semibold-r-normal--0-0-0-0-p-0-microsoft-cp1252
+URWGothic-DemiOblique.t1 -urw-urw gothic-semibold-o-normal--0-0-0-0-p-0-adobe-standard
+URWGothic-DemiOblique.t1 -urw-urw gothic-semibold-o-normal--0-0-0-0-p-0-ascii-0
+URWGothic-DemiOblique.t1 -urw-urw gothic-semibold-o-normal--0-0-0-0-p-0-ibm-cp437
+URWGothic-DemiOblique.t1 -urw-urw gothic-semibold-o-normal--0-0-0-0-p-0-ibm-cp850
+URWGothic-DemiOblique.t1 -urw-urw gothic-semibold-o-normal--0-0-0-0-p-0-ibm-cp852
+URWGothic-DemiOblique.t1 -urw-urw gothic-semibold-o-normal--0-0-0-0-p-0-ibm-cp866
+URWGothic-DemiOblique.t1 -urw-urw gothic-semibold-o-normal--0-0-0-0-p-0-iso10646-1
+URWGothic-DemiOblique.t1 -urw-urw gothic-semibold-o-normal--0-0-0-0-p-0-iso8859-1
+URWGothic-DemiOblique.t1 -urw-urw gothic-semibold-o-normal--0-0-0-0-p-0-iso8859-10
+URWGothic-DemiOblique.t1 -urw-urw gothic-semibold-o-normal--0-0-0-0-p-0-iso8859-13
+URWGothic-DemiOblique.t1 -urw-urw gothic-semibold-o-normal--0-0-0-0-p-0-iso8859-15
+URWGothic-DemiOblique.t1 -urw-urw gothic-semibold-o-normal--0-0-0-0-p-0-iso8859-16
+URWGothic-DemiOblique.t1 -urw-urw gothic-semibold-o-normal--0-0-0-0-p-0-iso8859-2
+URWGothic-DemiOblique.t1 -urw-urw gothic-semibold-o-normal--0-0-0-0-p-0-iso8859-3
+URWGothic-DemiOblique.t1 -urw-urw gothic-semibold-o-normal--0-0-0-0-p-0-iso8859-4
+URWGothic-DemiOblique.t1 -urw-urw gothic-semibold-o-normal--0-0-0-0-p-0-iso8859-5
+URWGothic-DemiOblique.t1 -urw-urw gothic-semibold-o-normal--0-0-0-0-p-0-iso8859-7
+URWGothic-DemiOblique.t1 -urw-urw gothic-semibold-o-normal--0-0-0-0-p-0-iso8859-9
+URWGothic-DemiOblique.t1 -urw-urw gothic-semibold-o-normal--0-0-0-0-p-0-koi8-e
+URWGothic-DemiOblique.t1 -urw-urw gothic-semibold-o-normal--0-0-0-0-p-0-koi8-r
+URWGothic-DemiOblique.t1 -urw-urw gothic-semibold-o-normal--0-0-0-0-p-0-koi8-ru
+URWGothic-DemiOblique.t1 -urw-urw gothic-semibold-o-normal--0-0-0-0-p-0-koi8-u
+URWGothic-DemiOblique.t1 -urw-urw gothic-semibold-o-normal--0-0-0-0-p-0-koi8-uni
+URWGothic-DemiOblique.t1 -urw-urw gothic-semibold-o-normal--0-0-0-0-p-0-microsoft-cp1252
+Z003-MediumItalic.t1 -urw-z003-medium-i-normal--0-0-0-0-p-0-adobe-standard
+Z003-MediumItalic.t1 -urw-z003-medium-i-normal--0-0-0-0-p-0-ascii-0
+Z003-MediumItalic.t1 -urw-z003-medium-i-normal--0-0-0-0-p-0-ibm-cp437
+Z003-MediumItalic.t1 -urw-z003-medium-i-normal--0-0-0-0-p-0-ibm-cp850
+Z003-MediumItalic.t1 -urw-z003-medium-i-normal--0-0-0-0-p-0-ibm-cp852
+Z003-MediumItalic.t1 -urw-z003-medium-i-normal--0-0-0-0-p-0-ibm-cp866
+Z003-MediumItalic.t1 -urw-z003-medium-i-normal--0-0-0-0-p-0-iso10646-1
+Z003-MediumItalic.t1 -urw-z003-medium-i-normal--0-0-0-0-p-0-iso8859-1
+Z003-MediumItalic.t1 -urw-z003-medium-i-normal--0-0-0-0-p-0-iso8859-10
+Z003-MediumItalic.t1 -urw-z003-medium-i-normal--0-0-0-0-p-0-iso8859-13
+Z003-MediumItalic.t1 -urw-z003-medium-i-normal--0-0-0-0-p-0-iso8859-15
+Z003-MediumItalic.t1 -urw-z003-medium-i-normal--0-0-0-0-p-0-iso8859-16
+Z003-MediumItalic.t1 -urw-z003-medium-i-normal--0-0-0-0-p-0-iso8859-2
+Z003-MediumItalic.t1 -urw-z003-medium-i-normal--0-0-0-0-p-0-iso8859-3
+Z003-MediumItalic.t1 -urw-z003-medium-i-normal--0-0-0-0-p-0-iso8859-4
+Z003-MediumItalic.t1 -urw-z003-medium-i-normal--0-0-0-0-p-0-iso8859-5
+Z003-MediumItalic.t1 -urw-z003-medium-i-normal--0-0-0-0-p-0-iso8859-7
+Z003-MediumItalic.t1 -urw-z003-medium-i-normal--0-0-0-0-p-0-iso8859-9
+Z003-MediumItalic.t1 -urw-z003-medium-i-normal--0-0-0-0-p-0-koi8-e
+Z003-MediumItalic.t1 -urw-z003-medium-i-normal--0-0-0-0-p-0-koi8-r
+Z003-MediumItalic.t1 -urw-z003-medium-i-normal--0-0-0-0-p-0-koi8-ru
+Z003-MediumItalic.t1 -urw-z003-medium-i-normal--0-0-0-0-p-0-koi8-u
+Z003-MediumItalic.t1 -urw-z003-medium-i-normal--0-0-0-0-p-0-koi8-uni
+Z003-MediumItalic.t1 -urw-z003-medium-i-normal--0-0-0-0-p-0-microsoft-cp1252

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 # Search for the built-in keyboard by name
 BUILT_IN_KB=$(xinput list | grep -i "AT Translated Set 2 keyboard" | grep -o 'id=[0-9]*' | cut -d= -f2)

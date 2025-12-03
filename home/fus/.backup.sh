@@ -6,7 +6,7 @@ source /home/fus/.fus/shell_utils.sh
 export DEV_MODE=0
 SOURCE_DIR=
 HOME_DIR=/home/fus
-TARGET_DIR=/mnt/ExtSSD/VoidLinux-Note
+TARGET_DIR=/home/fus/Downloads/VoidLinux-Note
 # BINs ################################
 SUDO=/usr/bin/sudo
 DIRNAME=/usr/bin/dirname
@@ -25,9 +25,11 @@ BACKUP=(
     "home/fus/.xinitrc"
     "home/fus/.display"
     "home/fus/.zprofile"
+    "etc/X11/xorg.conf.d"
     "etc/acpi/handler.sh"
     "home/fus/.backup.sh"
     "home/fus/.config/nvim"
+    "etc/elogind/logind.conf"
     "home/fus/.config/fcitx"
     "home/fus/.config/fcitx5"
     "home/fus/.ngxxfus.init.system.sh"
@@ -37,9 +39,23 @@ BACKUP=(
 EXCLUDE=(
     ".git"
     "readme.md"
+    ".gitmodules"
 )
 
 # FUNCTIONS ###########################
+
+# copy_all(){
+#     # only accept TWO params
+#     if [[ $# -ne 2 ]]; then
+#         print_msg "${LRED}Error: copy_all requires exactly 2 arguments.${NORM}"
+#         return 1
+#     fi
+# 
+#     print_msg "---> $SUDO cp -rf -- $1 $2"
+#     if [ $DEV_MODE -eq 0 ]; then
+#         $SUDO cp -rf $1 $2
+#     fi
+# }
 
 copy_all(){
     # only accept TWO params
@@ -48,9 +64,9 @@ copy_all(){
         return 1
     fi
 
-    print_msg "---> $SUDO cp -rf -- $1 $2"
+    print_msg "---> $SUDO rsync -a --info=progress2 --human-readable -- $1 $2"
     if [ $DEV_MODE -eq 0 ]; then
-        $SUDO cp -rf $1 $2
+        $SUDO rsync -a --info=progress2 --human-readable -- "$1" "$2"
     fi
 }
 
