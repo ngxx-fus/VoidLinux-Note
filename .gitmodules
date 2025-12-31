@@ -1,0 +1,9 @@
+[submodule "home/fus/.display"]
+	path = home/fus/.display
+	url = https://github.com/ngxx-fus/voidlinux-cus-display.git
+[submodule "home/fus/.fus/esp-idf"]
+	path = home/fus/.fus/esp-idf
+	url = https://github.com/espressif/esp-idf.git
+[submodule "home/fus/.config/nvim"]
+	path = home/fus/.config/nvim
+	url = https://github.com/ngxx-fus/neovim-conf.git
