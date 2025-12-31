@@ -27,10 +27,11 @@ if [ -f "$HOME/.fus/esp-idf/export.sh" ]; then
     alias idf_init="source /home/fus/.fus/esp-idf/export.sh"
 fi
 
+# For SSH  remote 
+
 if [[ -n "$TMUX" ]]; then
   export TERM=tmux-256color
 else
   export TERM=xterm-256color
 fi
 
-export GEMINI_API_KEY="AIzaSyDzzUlolOmuKT0AZKT3oQLnj7xnh0blbRA"
