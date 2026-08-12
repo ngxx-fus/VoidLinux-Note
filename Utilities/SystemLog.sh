@@ -114,7 +114,7 @@ SL_Entry() {
     local time_str
     time_str=$("$SL_DATE_PATH" "+[%Y/%m/%d - %H:%M:%S.%3N]")
     
-    "$SL_PRINTF_PATH" "\n%s[>>>] %s\n" "$time_str" "$1" | "$SL_TEE_PATH" -a "$SL_LOG_PATH"
+    "$SL_PRINTF_PATH" "\n%s[>>>] %s" "$time_str" "$1" | "$SL_TEE_PATH" -a "$SL_LOG_PATH"
     
     # Exit function successfully
     return 0
@@ -131,9 +131,9 @@ SL_Exit() {
     
     # Check the argument count to determine formatting
     if [ "$#" -eq 2 ]; then
-        "$SL_PRINTF_PATH" "\n%s[<<<][CODE=%s] %s\n" "$time_str" "$1" "$2" | "$SL_TEE_PATH" -a "$SL_LOG_PATH"
+        "$SL_PRINTF_PATH" "\n%s[<<<][CODE=%s] %s" "$time_str" "$1" "$2" | "$SL_TEE_PATH" -a "$SL_LOG_PATH"
     else
-        "$SL_PRINTF_PATH" "\n%s[<<<] %s\n" "$time_str" "$1" | "$SL_TEE_PATH" -a "$SL_LOG_PATH"
+        "$SL_PRINTF_PATH" "\n%s[<<<] %s" "$time_str" "$1" | "$SL_TEE_PATH" -a "$SL_LOG_PATH"
     fi
     
     # Exit function successfully
@@ -148,7 +148,7 @@ SL_Info() {
     local time_str
     time_str=$("$SL_DATE_PATH" "+[%Y/%m/%d - %H:%M:%S.%3N]")
     
-    "$SL_PRINTF_PATH" "\n%s[INFO] %s\n" "$time_str" "$1" | "$SL_TEE_PATH" -a "$SL_LOG_PATH"
+    "$SL_PRINTF_PATH" "\n%s[INFO] %s" "$time_str" "$1" | "$SL_TEE_PATH" -a "$SL_LOG_PATH"
     
     # Exit function successfully
     return 0
@@ -162,7 +162,7 @@ SL_Print() {
     local time_str
     time_str=$("$SL_DATE_PATH" "+[%Y/%m/%d - %H:%M:%S.%3N]")
     
-    "$SL_PRINTF_PATH" "\n%s %s\n" "$time_str" "$1" | "$SL_TEE_PATH" -a "$SL_LOG_PATH"
+    "$SL_PRINTF_PATH" "\n%s %s" "$time_str" "$1" | "$SL_TEE_PATH" -a "$SL_LOG_PATH"
     
     # Exit function successfully
     return 0
@@ -178,6 +178,11 @@ SL_ContinuousPrint() {
     # Exit function successfully
     return 0
 }
+
+# EXEC INIT ###################################################################
+
+# Initialize SystemLog safely upon sourcing
+SL_Init || return 1 2>/dev/null || exit 1
 
 # SYSTEM LOG | END ############################################################
 ###############################################################################
