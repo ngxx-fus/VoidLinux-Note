@@ -51,13 +51,18 @@ if [ -x "$BLKID_PATH" ]; then
     fs_type=$("$BLKID_PATH" -o value -s TYPE "$TARGET_DEV" 2>/dev/null)
 fi
 
-# Execute read-only mount operation with optional explicit type
-if [ -n "$fs_type" ]; then
-    SL_Info "Detected filesystem type '$fs_type' on '$TARGET_DEV'."
-    mount -t "$fs_type" -o ro "$TARGET_DEV" "$TARGET_DIR"
+# Execute read-write mount operation based on detected filesystem
+if [ "$fs_type" = "ntfs" ]; then
+    # Mount NTFS partition using ntfs-3g driver if available
+    mount -t ntfs-3g -o rw "$TARGET_DEV" "$TARGET_DIR" 2>/dev/null || mount -o rw "$TARGET_DEV" "$TARGET_DIR"
+    mount_status=$?
+elif [ -n "$fs_type" ]; then
+    # Mount with explicitly detected filesystem
+    mount -t "$fs_type" -o rw "$TARGET_DEV" "$TARGET_DIR"
     mount_status=$?
 else
-    mount -o ro "$TARGET_DEV" "$TARGET_DIR"
+    # Fallback to standard kernel auto-detection
+    mount -o rw "$TARGET_DEV" "$TARGET_DIR"
     mount_status=$?
 fi
 

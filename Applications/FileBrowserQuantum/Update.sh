@@ -10,7 +10,7 @@
 
 export WGET_PATH="/usr/bin/wget"
 export EXEC_VERSION="v2.0.0-beta"
-export EXEC_FILENAME="linux-amd64-filebrowser"
+export EXEC_FILENAME="linux-arm64-filebrowser"
 export EXEC_URL="https://github.com/gtsteffaniak/filebrowser/releases/download/${EXEC_VERSION}/${EXEC_FILENAME}"
 export TARGET_EXEC_NAME="filebrowser"
 

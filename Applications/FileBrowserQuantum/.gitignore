@@ -1,0 +1,22 @@
+# Ignore SQLite database and WAL/SHM temporary files
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite3
+
+# Ignore temporary cache directories
+/cache/
+/tmp/
+
+# Ignore compiled binaries or compressed releases
+filebrowser
+FileBrowserQuantum
+*.tar.gz
+*.zip
+UPX*
+
+# Ignore runtime logs
+*.log
