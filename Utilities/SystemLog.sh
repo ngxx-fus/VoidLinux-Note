@@ -11,13 +11,14 @@
 ###############################################################################
 # GUARD CHECK | BEGIN #########################################################
 
-# Evaluate if the terminal log initialization flag is already set
+# Do not export this variable so it remains local to the current shell session
 if [ "${SL_LOG_TERMINAL_INITIALIZED:-0}" -ne 0 ]; then 
-    # Halt execution to prevent multiple inclusions without killing the host shell
-    return 1 2>/dev/null || exit 1
+    # Halt execution to prevent re-defining functions in the same shell
+    return 0 2>/dev/null || exit 0
 fi
 
-export SL_LOG_TERMINAL_INITIALIZED=1
+# Use standard variable instead of 'export'
+SL_LOG_TERMINAL_INITIALIZED=1
 
 # GUARD CHECK | END ###########################################################
 ###############################################################################
@@ -114,7 +115,7 @@ SL_Entry() {
     local time_str
     time_str=$("$SL_DATE_PATH" "+[%Y/%m/%d - %H:%M:%S.%3N]")
     
-    "$SL_PRINTF_PATH" "\n%s[>>>] %s" "$time_str" "$1" | "$SL_TEE_PATH" -a "$SL_LOG_PATH"
+    "$SL_PRINTF_PATH" "%s[>>>] %s\n" "$time_str" "$1" | "$SL_TEE_PATH" -a "$SL_LOG_PATH"
     
     # Exit function successfully
     return 0
@@ -131,9 +132,9 @@ SL_Exit() {
     
     # Check the argument count to determine formatting
     if [ "$#" -eq 2 ]; then
-        "$SL_PRINTF_PATH" "\n%s[<<<][CODE=%s] %s" "$time_str" "$1" "$2" | "$SL_TEE_PATH" -a "$SL_LOG_PATH"
+        "$SL_PRINTF_PATH" "%s[<<<][CODE=%s] %s\n" "$time_str" "$1" "$2" | "$SL_TEE_PATH" -a "$SL_LOG_PATH"
     else
-        "$SL_PRINTF_PATH" "\n%s[<<<] %s" "$time_str" "$1" | "$SL_TEE_PATH" -a "$SL_LOG_PATH"
+        "$SL_PRINTF_PATH" "%s[<<<] %s\n" "$time_str" "$1" | "$SL_TEE_PATH" -a "$SL_LOG_PATH"
     fi
     
     # Exit function successfully
@@ -148,7 +149,7 @@ SL_Info() {
     local time_str
     time_str=$("$SL_DATE_PATH" "+[%Y/%m/%d - %H:%M:%S.%3N]")
     
-    "$SL_PRINTF_PATH" "\n%s[INFO] %s" "$time_str" "$1" | "$SL_TEE_PATH" -a "$SL_LOG_PATH"
+    "$SL_PRINTF_PATH" "%s[INFO] %s\n" "$time_str" "$1" | "$SL_TEE_PATH" -a "$SL_LOG_PATH"
     
     # Exit function successfully
     return 0
@@ -162,7 +163,7 @@ SL_Print() {
     local time_str
     time_str=$("$SL_DATE_PATH" "+[%Y/%m/%d - %H:%M:%S.%3N]")
     
-    "$SL_PRINTF_PATH" "\n%s %s" "$time_str" "$1" | "$SL_TEE_PATH" -a "$SL_LOG_PATH"
+    "$SL_PRINTF_PATH" "%s %s\n" "$time_str" "$1" | "$SL_TEE_PATH" -a "$SL_LOG_PATH"
     
     # Exit function successfully
     return 0
@@ -173,7 +174,43 @@ SL_Print() {
  * @param $1 The message to be logged.
  */'
 SL_ContinuousPrint() {
-    "$SL_PRINTF_PATH" "%s" "$1" | "$SL_TEE_PATH" -a "$SL_LOG_PATH"
+    "$SL_PRINTF_PATH" "%s\n" "$1" | "$SL_TEE_PATH" -a "$SL_LOG_PATH"
+    
+    # Exit function successfully
+    return 0
+}
+
+: '/*
+ * @brief Checks whether a given file or resource exists on the system.
+ * @param $1 The absolute or relative path to the file/resource.
+ * @return 0 if the path exists, 1 otherwise.
+ */'
+SL_Exists() {
+    # Evaluate if the specified path exists as a valid file or directory
+    if [ -e "$1" ]; then
+        # Path exists on host system
+        return 0
+    fi
+
+    # Path does not exist on host system
+    return 1
+}
+
+: '/*
+ * @brief Logs an error message with an optional error code and timestamp.
+ * @param $1 The error code (if two arguments are passed), else the message.
+ * @param $2 The message to be logged (if error code is provided).
+ */'
+SL_Error() {
+    local time_str
+    time_str=$("$SL_DATE_PATH" "+[%Y/%m/%d - %H:%M:%S.%3N]")
+    
+    # Check the argument count to determine formatting
+    if [ "$#" -eq 2 ]; then
+        "$SL_PRINTF_PATH" "%s[ERROR][CODE=%s] %s\n" "$time_str" "$1" "$2" | "$SL_TEE_PATH" -a "$SL_LOG_PATH"
+    else
+        "$SL_PRINTF_PATH" "%s[ERROR] %s\n" "$time_str" "$1" | "$SL_TEE_PATH" -a "$SL_LOG_PATH"
+    fi
     
     # Exit function successfully
     return 0

@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# Ensure target log directory exists
+mkdir -p /var/log/AutoMount
+
+# Execute svlogd to handle service stdout/stderr
+exec svlogd -tt /var/log/AutoMount

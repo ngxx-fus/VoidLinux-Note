@@ -1,0 +1,15 @@
+# Temporary and system log files
+*.log
+tmp/
+/mnt/*
+
+# Runit runtime socket / supervise directories
+supervise/
+status
+pid
+
+# Editor temporary files
+*.swp
+*.swo
+*~
+.DS_Store
