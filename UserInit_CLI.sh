@@ -9,6 +9,7 @@ SL_Entry "UserInit_CLI.sh"
 
 ###################################################################################################
 # ADD USER ALIASES ################################################################################        
+ScriptInit_RootDir="/home/fus/.fus"
 
 if SL_Exists "$ScriptInit_RootDir/Utilities/UserAlias.sh"; then
     SL_Info "Sourcing UserAlias.sh"

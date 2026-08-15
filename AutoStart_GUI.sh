@@ -1,9 +1,12 @@
-#!/bin/sh
+#!/bin/zsh
  
 ###################################################################################################
 # SYSTEM LOG ######################################################################################        
 
-. /home/fus/.fus/Utilities/SystemLog.sh
+source /home/fus/.fus/Utilities/SystemLog.sh
+
+echo "[DEBUG] PATH_GLOBAL_LOG=$PATH_GLOBAL_LOG"
+echo "[DEBUG] PATH_GLOBAL_LOG=$PATH_GLOBAL_LOG" >> $PATH_GLOBAL_LOG
 
 SL_Entry "AutoStart_GUI.sh"
 
@@ -17,28 +20,34 @@ SL_Info "Fetching [GlobalVars.sh] ..."
 # DWM-BLOCKS ######################################################################################
 
 SL_Info "Starting [dwmblocks] ..."
-exec /usr/local/bin/dwmblocks >> "${PATH_GLOABL_LOG}" 2>&1 &
+exec /usr/local/bin/dwmblocks >> "${PATH_GLOBAL_LOG}" 2>&1 &
 
 ###################################################################################################
 # copyq ###########################################################################################
 
 SL_Info "Starting [copyq] ..."
-exec /usr/bin/copyq >> "${PATH_GLOABL_LOG}" 2>&1 &
+exec /usr/bin/copyq >> "${PATH_GLOBAL_LOG}" 2>&1 &
 
 ###################################################################################################
 # SET BACKGROUND ##################################################################################
 
 SL_Info "Starting [SetupBackgroun.sh] ..."
-exec /home/fus/.fus/Utilities/SetupBackgroun.sh >> "${PATH_GLOABL_LOG}" 2>&1 &
+exec /home/fus/.fus/Utilities/SetupBackgroun.sh >> "${PATH_GLOBAL_LOG}" 2>&1 &
 
 ###################################################################################################
 # SET FCITX #######################################################################################
 
 SL_Info "Starting [fcitx5] ..."
-exec /usr/bin/fcitx5 >> "${PATH_GLOABL_LOG}" 2>&1 &
+exec /usr/bin/fcitx5 >> "${PATH_GLOBAL_LOG}" 2>&1 &
 
 ###################################################################################################
 # START PICOM #####################################################################################
 
 SL_Info "Starting [picom] ..."
-exec /usr/bin/picom --backend xrender >> "${PATH_GLOABL_LOG}" 2>&1 &
+exec /usr/bin/picom --backend xrender >> "${PATH_GLOBAL_LOG}" 2>&1 &
+
+###################################################################################################
+# START DWM-BLOCKS #####################################################################################
+
+SL_Info "Starting [dwmblocks] ..."
+exec /usr/bin/dwmblocks &

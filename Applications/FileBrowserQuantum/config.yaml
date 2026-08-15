@@ -19,9 +19,9 @@ server:
         defaultPermissions:
           view: true
           download: true
-          modify: false
-          delete: false
-          create: false
+          modify: true
+          delete: true
+          create: true
     - path: /mnt/disk0
       name: "Disk0"
       config:
@@ -34,9 +34,9 @@ server:
         defaultPermissions:
           view: true
           download: true
-          modify: false
-          delete: false
-          create: false
+          modify: true
+          delete: true
+          create: true
   cacheDir: /tmp
   cacheDirCleanup: true
   maxArchiveSize: 512

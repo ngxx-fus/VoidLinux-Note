@@ -8,7 +8,7 @@
 # Source SystemLog logging utilities using POSIX dot operator
 . /home/fus/.fus/Utilities/SystemLog.sh
 
-export TARGET_DEV="/dev/sda1"
+export TARGET_DEV="/dev/disk/by-uuid/f41f2609-d5df-414b-bb6d-d457f9004718" # "/dev/sdb1"
 export TARGET_DIR="/mnt/disk0"
 export UDEVADM_PATH="/usr/bin/udevadm"
 export BLKID_PATH="/usr/bin/blkid"

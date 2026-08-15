@@ -13,4 +13,12 @@ SL_Entry "AutoStart_CLI.sh"
 SL_Info "Souring [GlobalVars.sh] ..."
 . "/home/fus/.fus/Utilities/GlobalVars.sh"
 
+###################################################################################################
+# INIT GLOBAL VARS $$$$############################################################################        
+
+# SL_Info "Creating [/run/user/1000] ..."
+# sudo mkdir -p /run/user/1000
+# sudo chown 1000:1000 /run/user/1000
+# sudo chmod 700 /run/user/1000
+
 SL_Exit "AutoStart_CLI.sh"

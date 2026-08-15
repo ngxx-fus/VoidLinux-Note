@@ -9,21 +9,6 @@
 ###############################################################################
 
 ###############################################################################
-# GUARD CHECK | BEGIN #########################################################
-
-# Do not export this variable so it remains local to the current shell session
-if [ "${SL_LOG_TERMINAL_INITIALIZED:-0}" -ne 0 ]; then 
-    # Halt execution to prevent re-defining functions in the same shell
-    return 0 2>/dev/null || exit 0
-fi
-
-# Use standard variable instead of 'export'
-SL_LOG_TERMINAL_INITIALIZED=1
-
-# GUARD CHECK | END ###########################################################
-###############################################################################
-
-###############################################################################
 # TEXT EFFECTS | BEGIN ########################################################
 # To use the text effects below, insert the code to apply the text style. 
 #   E.g: printf "${BOLD}${LRED}This is a bolded-red line!${NORM}\n"
@@ -77,10 +62,29 @@ export RESET="\033[0m"
 # SYSTEM LOG | BEGIN ##########################################################
 
 export SL_LOG_PATH="/tmp/SystemLog.log"
+export PATH_GLOBAL_LOG=$SL_LOG_PATH 
 export SL_DATE_PATH="/usr/bin/date"
 export SL_TEE_PATH="/usr/bin/tee"
 export SL_PRINTF_PATH="/usr/bin/printf"
 export SL_DIRNAME_PATH="/usr/bin/dirname"
+
+echo "[AUTO-LOG] Call <SystemLog.sh>!"
+echo "[AUTO-LOG] Call <SystemLog.sh>!" >> $SL_LOG_PATH
+
+###############################################################################
+# GUARD CHECK | BEGIN #########################################################
+
+# Do not export this variable so it remains local to the current shell session
+if [ "${SL_LOG_TERMINAL_INITIALIZED:-0}" -ne 0 ]; then 
+    # Halt execution to prevent re-defining functions in the same shell
+    return 0 2>/dev/null || exit 0
+fi
+
+# Use standard variable instead of 'export'
+SL_LOG_TERMINAL_INITIALIZED=1
+
+# GUARD CHECK | END ###########################################################
+###############################################################################
 
 : '/*
  * @brief Resets the log file, validates required binaries, and creates the host directory.
