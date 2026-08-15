@@ -1,0 +1,5 @@
+.XCBC_Data/*
+!.XCBC_Data/.gitkeep
+!.XCBC_Data/DBs/
+.XCBC_Data/DBs/*
+!.XCBC_Data/DBs/.gitkeep

@@ -1,0 +1,36 @@
+#!/bin/sh
+
+: '/*
+ * @file run
+ * @brief Runit service run script for AutoMount service.
+ */'
+
+export WORKSPACE_DIR="/home/fus/.fus/Applications/AutoMount"
+export EXEC_PATH="${WORKSPACE_DIR}/AutoMount.sh"
+
+# Evaluate whether the application workspace directory exists
+if [ ! -d "$WORKSPACE_DIR" ]; then
+    echo "Error: Workspace directory '$WORKSPACE_DIR' does not exist."
+    
+    # Abort service execution due to missing target directory
+    exit 1
+fi
+
+# Change working directory to the application workspace
+cd "$WORKSPACE_DIR" || {
+    echo "Error: Failed to change directory to '$WORKSPACE_DIR'."
+    
+    # Abort service execution on directory change failure
+    exit 1
+}
+
+# Evaluate whether the target executable file exists and has execute permissions
+if [ ! -x "$EXEC_PATH" ]; then
+    echo "Error: AutoMount executable '$EXEC_PATH' is missing or not executable."
+    
+    # Abort service execution due to missing target binary
+    exit 1
+fi
+
+# Replace current shell process with AutoMount exec in foreground mode to prevent redundant PIDs
+exec "$EXEC_PATH"

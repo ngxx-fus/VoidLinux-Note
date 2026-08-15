@@ -1,0 +1,3 @@
+[submodule "Display"]
+	path = Display
+	url = https://github.com/ngxx-fus/voidlinux-cus-display
