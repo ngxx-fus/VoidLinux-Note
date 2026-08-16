@@ -34,3 +34,5 @@ alias tmuxList="tmux ls"
 alias tmuxAttachLast="tmux a"
 alias tmuxAttach="tmux a -t"
 alias tmuxKill="tmux kill-session -t"
+
+alias remote="xfreerdp3 /v:ngxxfus.ddns.net:3689 /u:fus /p:3568 /dynamic-resolution /cert:ignore /f"

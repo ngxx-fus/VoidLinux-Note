@@ -55,7 +55,7 @@ fi
 # Steering logic: Handle disconnected Wi-Fi state vs active link
 if [[ -z "$RSSI" ]]; then
     # Output no-wifi icon with optional Ethernet indicator
-    echo -e "${nowifi_icon_3}${SPACE}${ETHERNET}"
+    echo -e "${nowifi_icon_3} ${SPACE}${ETHERNET}"
     # Terminate script execution on disconnection
     return 0 2>/dev/null || exit 0
 fi
