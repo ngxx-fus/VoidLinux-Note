@@ -61,7 +61,9 @@ export RESET="\033[0m"
 ###############################################################################
 # SYSTEM LOG | BEGIN ##########################################################
 
-export SL_LOG_PATH="/tmp/SystemLog.log"
+export DOT_FUS="/home/fus/.fus"
+export DOT_FUS_TMP="/tmp/.fus"
+export SL_LOG_PATH="/tmp/.fus/SystemLog.log"
 export PATH_GLOBAL_LOG=$SL_LOG_PATH 
 export SL_DATE_PATH="/usr/bin/date"
 export SL_TEE_PATH="/usr/bin/tee"
