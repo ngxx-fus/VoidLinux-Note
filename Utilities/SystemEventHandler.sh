@@ -141,6 +141,8 @@ volume_mute_toggle() {
                 "$PACTL" set-sink-mute "$DEF_SINK" toggle
 }
 
+write_noti "$1"
+
 # Evaluate primary event target
 case "$1" in
     -vu|--volume-up|button/volumeup)

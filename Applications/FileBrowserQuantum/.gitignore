@@ -1,22 +1,31 @@
-# Ignore SQLite database and WAL/SHM temporary files
+# Databases and SQLite journal/temporary files
 *.db
 *.db-wal
 *.db-shm
+*.db.old
 *.sqlite
 *.sqlite-wal
 *.sqlite-shm
 *.sqlite3
 
-# Ignore temporary cache directories
-/cache/
-/tmp/
+# Backups and old configurations
+*.bak
+*.backup
+*.old
 
-# Ignore compiled binaries or compressed releases
+# Cache and temporary directories
+tmp/
+cache/
+
+# Binaries and compressed release archives
 filebrowser
 FileBrowserQuantum
+linux-arm64-filebrowser
+*-filebrowser
 *.tar.gz
 *.zip
 UPX*
 
-# Ignore runtime logs
+# Logs
 *.log
+

@@ -5,41 +5,34 @@ server:
   disablePreviews: false
   disablePreviewResize: false
   disableTypeDetectionByHeader: false
-  logging: []
+  logging:
+    - levels: "info|warning|error"
+      apiLevels: ""
+      output: "stdout"
+      noColors: false
+      json: false
+      utc: false
+      apiFilter: ""
+  database:
+    path: "./filebrowser.sqlite"
   sources:
-    - path: /home/fus
-      name: "RPi5"
+    - path: "/home/fus/"
+      name: "ssd_fus"
       config:
-        private: false
-        rules: []
-        defaultUserScope: "/"
-        defaultEnabled: false
-        createUserDir: false
-        useLogicalSize: false
+        defaultEnabled: true
         defaultPermissions:
           view: true
           download: true
-          modify: true
-          delete: true
-          create: true
-    - path: /mnt/disk0
-      name: "Disk0"
+    - path: "/mnt/ExternalDisk"
+      name: "fus_hdd"
       config:
-        private: false
-        rules: []
-        defaultUserScope: "/"
-        defaultEnabled: false
-        createUserDir: false
-        useLogicalSize: false
+        defaultEnabled: true
         defaultPermissions:
           view: true
           download: true
-          modify: true
-          delete: true
-          create: true
-  cacheDir: /tmp
-  cacheDirCleanup: true
-  maxArchiveSize: 512
+  cacheDir: "tmp"
+  cacheDirCleanup: false
+  maxArchiveSize: 20
   filesystem:
     createFilePermission: "644"
     createDirectoryPermission: "755"
@@ -48,18 +41,22 @@ server:
     cacheSizeMB: 32
     walMode: false
     disableReuse: false
-    startupIntegrityCheck: quickCheck
-  database:
-    path: "filebrowser.sqlite"
-    migrateFrom: ""
-    activity:
-      disabled: false
-      retentionDays: 30
-      flushIntervalSeconds: 10
-      maxBufferSize: 10000
+    startupIntegrityCheck: "quickCheck"
+
 auth:
   tokenExpirationHours: 2
+  adminUsername: "admin"
+  # adminPassword: "admin"
   methods:
+    password:
+      enabled: true
+      minLength: 5
+      signup: false
+      recaptcha:
+        host: ""
+        key: ""
+        secret: ""
+      enforcedOtp: false
     proxy:
       enabled: false
       adminGroup: ""
@@ -70,16 +67,6 @@ auth:
       logoutRedirectUrl: ""
       createUser: false
       header: ""
-    noauth: false
-    password:
-      enabled: true
-      minLength: 5
-      signup: false
-      recaptcha:
-        host: ""
-        key: ""
-        secret: ""
-      enforcedOtp: false
     oidc:
       enabled: false
       adminGroup: ""
@@ -125,12 +112,12 @@ auth:
       rpId: ""
       rpOrigins: []
       loginButtonText: ""
+    noauth: false
   key: ""
-  adminUsername: admin
-  adminPassword: admin
   totpSecret: ""
+
 frontend:
-  name: FileBrowser Quantum
+  name: "FileBrowser Quantum"
   disableDefaultLinks: false
   disableUsedPercentage: false
   externalLinks: []
@@ -146,6 +133,8 @@ frontend:
   loginIcon: ""
   loginButtonText: ""
   oidcLoginButtonText: ""
+  disablePWAInstall: false
+
 userDefaults:
   sidebar:
     disableQuickToggles: false
@@ -164,7 +153,7 @@ userDefaults:
     hideFileExt: ""
     showCopyPath: false
     deleteAfterArchive: true
-    viewMode: normal
+    viewMode: "normal"
     gallerySize: 3
   preview:
     image: true
@@ -178,22 +167,33 @@ userDefaults:
     folder: true
     models: true
   fileViewer:
-    editorQuickSave: false
     autoplayMedia: true
     disableViewingExt: ""
-    disableOnlyOfficeExt: .md .txt .pdf .html .xml
+    disableOnlyOfficeExt: ".md .txt .pdf .html .xml"
     preferEditorForMarkdown: false
     debugOffice: false
+  search:
+    disableOptions: false
   ui:
     darkMode: true
-    themeColor: var(--blue)
+    themeColor: "var(--blue)"
     customTheme: ""
-    locale: en
+    locale: "en"
   fileLoading:
     maxConcurrentUpload: 10
     uploadChunkSizeMb: 10
     clearAll: false
     downloadChunkSizeMb: 0
+  account:
+    permissions:
+      api: false
+      admin: false
+      share: false
+      realtime: false
+    lockPassword: false
+    disableSettings: false
+    disableUpdateNotifications: false
+
 integrations:
   office:
     url: ""
@@ -228,15 +228,16 @@ integrations:
     debug: false
     extractEmbeddedSubtitles: false
     hardwareAcceleration: false
+
 http:
-  socket: ""
-  tlsKey: ""
-  tlsCert: ""
   port: 3676
   listen: ""
+  socket: ""
+  tlsCert: "/etc/letsencrypt/live/ngxxfus.io.vn/fullchain.pem"
+  tlsKey: "/etc/letsencrypt/live/ngxxfus.io.vn/privkey.pem"
   baseURL: ""
   externalUrl: ""
   internalUrl: ""
   disableWebDAV: false
-  trustProxyHeaders: false
+  trustProxyHeaders: true
   disableRateLimit: false
