@@ -9,6 +9,7 @@ A modular, security-hardened **Void Linux (`x86_64`)** desktop environment built
 - [Overview](#-overview)
 - [Repository Structure](#-repository-structure)
 - [3-Stage Installation Workflow](#-3-stage-installation-workflow)
+  - [Pre-Install: Bootstrap SSH & Zsh on Live ISO (`SSHAtInstall.sh`)](#pre-install-bootstrap-ssh--zsh-on-live-iso-sshatinstallsh)
   - [Stage 0: Core System, Firmware, Drivers & Dev Libraries (`SetupStage0.sh`)](#stage-0-core-system-firmware-drivers--dev-libraries-setupstage0sh)
   - [Stage 1: Xorg, BSPWM UI Stack, CopyQ & Applications (`SetupStage1.sh`)](#stage-1-xorg-bspwm-ui-stack-copyq--applications-setupstage1sh)
   - [Stage 2: Deploy Configurations (`root/`) & Enable Runit Services (`SetupStage2.sh`)](#stage-2-deploy-configurations-root--enable-runit-services-setupstage2sh)
@@ -24,6 +25,7 @@ A modular, security-hardened **Void Linux (`x86_64`)** desktop environment built
 
 This repository provides a clean, staged workflow ("install packages first, configure second") to bootstrap a fresh **Void Linux (`x86_64`)** laptop or PC:
 
+0. **[`SSHAtInstall.sh`](file:///home/fus/Downloads/VoidLinux-Note/SSHAtInstall.sh)** *(Optional Pre-Install / Live ISO)* — Enables `sshd` and installs `zsh` right inside the Void Linux Live ISO (or injects them directly into `/mnt` before rebooting out of `void-installer`), allowing you to install and configure Void Linux remotely over SSH with a full Zsh shell.
 1. **[`SetupStage0.sh`](file:///home/fus/Downloads/VoidLinux-Note/SetupStage0.sh)** — Syncs `xbps`, enables `void-repo-nonfree` & `void-repo-multilib`, auto-detects CPU/GPU hardware (Intel/AMD microcode, `sof-firmware`, Mesa/VA-API/Vulkan drivers), and installs core system daemons, PipeWire audio, CLI tools, and `-devel` build libraries.
 2. **[`SetupStage1.sh`](file:///home/fus/Downloads/VoidLinux-Note/SetupStage1.sh)** — Installs the Xorg display server, `libinput` drivers, the full **BSPWM** desktop stack (`bspwm`, `sxhkd`, `polybar`, `rofi`, `picom`, `dunst`, `feh`, `touchegg`), **CopyQ**, **Flameshot**, **Fcitx5** (Vietnamese Bamboo/Unikey), **Thunar**, fonts, themes, and daily GUI applications.
 3. **[`SetupStage2.sh`](file:///home/fus/Downloads/VoidLinux-Note/SetupStage2.sh)** — Deploys the Void-ready configurations from [`root/`](file:///home/fus/Downloads/VoidLinux-Note/root) into `$HOME`, `/etc/`, and `/usr/local/bin/` based on [`PathLists.txt`](file:///home/fus/Downloads/VoidLinux-Note/PathLists.txt), configures user hardware groups, and links essential `runit` services in `/var/service/`.
@@ -34,6 +36,7 @@ This repository provides a clean, staged workflow ("install packages first, conf
 
 ```text
 VoidLinux-Note/
+├── SSHAtInstall.sh        # Pre-Install: Enable OpenSSH + Zsh during Live ISO or into /mnt
 ├── SetupStage0.sh         # Stage 0: Core packages, firmware, GPU/CPU drivers & -devel libs
 ├── SetupStage1.sh         # Stage 1: Xorg, BSPWM, CopyQ, Fcitx5, fonts, themes & GUI apps
 ├── SetupStage2.sh         # Stage 2: Restore root/ configs, user groups & runit services
@@ -57,6 +60,20 @@ VoidLinux-Note/
 ---
 
 ## 🚀 3-Stage Installation Workflow
+
+### Pre-Install: Bootstrap SSH & Zsh on Live ISO (`SSHAtInstall.sh`)
+
+Run inside the Void Linux Live ISO (or immediately on first boot) to get an active OpenSSH server and Zsh shell:
+
+```bash
+# Enable SSH (with root login allowed) + Zsh on Live ISO / current system
+./SSHAtInstall.sh --yes --permit-root
+
+# After running void-installer (before rebooting), also inject SSH + Zsh into /mnt:
+./SSHAtInstall.sh --yes --permit-root --mnt /mnt
+```
+
+---
 
 ### Stage 0: Core System, Firmware, Drivers & Dev Libraries (`SetupStage0.sh`)
 
