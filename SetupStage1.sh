@@ -386,6 +386,7 @@ RunStage1() {
         obs
         xournalpp
         gnome-calculator
+        gsimplecal
         cheese
     )
     InstallGroup "07-Desktop-and-Media-Apps" "${gui_apps_pkgs[@]}"

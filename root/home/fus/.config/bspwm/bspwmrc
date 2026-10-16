@@ -75,14 +75,19 @@ bspc rule -a float-term state=floating
 bspc rule -a Code:code:Open* state=floating rectangle=950x650+0+0 center=on
 bspc rule -a Code:code:Save* state=floating rectangle=950x650+0+0 center=on
 
+# Launch PipeWire audio stack once (required on Void Linux / runit without systemd user units)
+pgrep -x pipewire > /dev/null       || /usr/bin/pipewire &
+pgrep -x pipewire-pulse > /dev/null || /usr/bin/pipewire-pulse &
+pgrep -x wireplumber > /dev/null    || /usr/bin/wireplumber &
+
 # Launch core daemons once
-/usr/bin/lxpolkit           &
-/usr/bin/fcitx5             -d &
-/usr/bin/dunst              -config $DOT_CONF/bspwm/dunst/dunstrc &
-/usr/bin/picom              --config $DOT_CONF/bspwm/picom/picom.conf -b &
-/usr/local/bin/skippy-xd    --config $DOT_CONF/bspwm/skippy-xd/skippy-xd.rc --start-daemon &
-/usr/bin/copyq              &
-pgrep -x touchegg > /dev/null || /usr/bin/touchegg &
+pgrep -x lxpolkit > /dev/null       || /usr/bin/lxpolkit &
+pgrep -x fcitx5 > /dev/null         || /usr/bin/fcitx5 -d &
+pgrep -x dunst > /dev/null          || /usr/bin/dunst -config $DOT_CONF/bspwm/dunst/dunstrc &
+pgrep -x picom > /dev/null          || /usr/bin/picom --config $DOT_CONF/bspwm/picom/picom.conf -b &
+pgrep -x skippy-xd > /dev/null      || /usr/local/bin/skippy-xd --config $DOT_CONF/bspwm/skippy-xd/skippy-xd.rc --start-daemon &
+pgrep -x copyq > /dev/null          || /usr/bin/copyq &
+pgrep -x touchegg > /dev/null       || /usr/bin/touchegg &
 
 # Mouse interaction (Super key + Mouse drag)
 bspc config pointer_modifier   mod4
@@ -100,9 +105,9 @@ bspc config pointer_motion_interval 17
 $DOT_CONF/bspwm/scripts/Service-Polybar &
 $DOT_CONF/bspwm/scripts/Service-Background &
 
-# Inactivity lock and suspend daemon
-/home/fus/.cargo/bin/xidlehook \
+# Inactivity lock and suspend daemon (Void Linux elogind compatible)
+pgrep -x xidlehook > /dev/null || /home/fus/.cargo/bin/xidlehook \
     --not-when-audio \
     --not-when-fullscreen \
     --timer 300 'betterlockscreen -l blur' '' \
-    --timer 600 'systemctl suspend' '' &
+    --timer 600 'loginctl suspend' '' &

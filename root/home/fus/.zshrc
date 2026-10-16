@@ -102,8 +102,11 @@ source $ZSH/oh-my-zsh.sh
 # - $ZSH_CUSTOM/macos.zsh
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-# User aliases
-source /home/fus/.fus/user_aliases.sh
+# Void Linux XBPS package manager aliases
+alias iy="sudo xbps-install -Sy"
+alias iuy="sudo xbps-install -Syu"
+alias r="sudo xbps-remove -Ry"
+alias q="xbps-query -Rs"
+
+# User aliases (if present)
+[ -f "$HOME/.fus/user_aliases.sh" ] && source "$HOME/.fus/user_aliases.sh"

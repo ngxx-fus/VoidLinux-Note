@@ -76,7 +76,7 @@ EventGroup_WMI() {
                     sudo -u "$TARGET_USER" \
                         DISPLAY=:0 \
                         DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/${TARGET_UID}/bus" \
-                        /home/fus/.config/openbox/scripts/changekeyboardbrightlight
+                        /home/fus/.config/bspwm/scripts/Helper-ChangeKeyboardBrightness
                     
                     # Exit the 000000ff action case.
                     ;;
